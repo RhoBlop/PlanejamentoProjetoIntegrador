@@ -87,7 +87,14 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
 -->        
 ![Conceitual](https://github.com/RhoBlop/template_projeto_integrador/blob/nova/arquivos/Conceitual_ContrataAi.png?raw=true "Modelo Conceitual")
-      
+
+##### Principais Entidades
+- Usuário
+- Contrato
+- Profissão
+
+#### Principais Fluxos
+
     
 #### 7.1 Descrição dos dados 
 <!--
