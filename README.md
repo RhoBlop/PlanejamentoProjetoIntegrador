@@ -31,7 +31,7 @@ a) Personas desenvolvidos pelo grupo<br>
 Persona 1 - José <br>
 ![Persona 1 - José](https://github.com/RhoBlop/template_projeto_integrador/blob/nova/arquivos/Persona_Jose.jpg?raw=true "Persona 1 - José")
 
-![Link para o PDF das Personas](https://github.com/RhoBlop/template_projeto_integrador/blob/nova/arquivos/Personas.pdf? "Personas")
+![Link para o PDF das Personas](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Personas.pdf? "Personas")
 
 b) inclusão das Histórias de usuário desenvolvidas pelo grupo
 
