@@ -1,5 +1,5 @@
-# TRABALHO DE PI:  Título do Trabalho
-Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado
+# TRABALHO DE PI:  Contrata Aí
+Trabalho desenvolvido durante a disciplina de Projeto Integrador
 
 # Sumário
 
@@ -10,40 +10,46 @@ Thiago Neves Luz: nevesluzthiago@gmail.com<br>
 Matheus de Oliveira Magnago: magnagomatheus7@gmail.com<br>
 
 ### 2.MINIMUNDO<br>
-Descrever o mini-mundo! (Não deve ser maior do que 30 linhas, se necessário resumir para justar)
+<!-- Descrever o mini-mundo! (Não deve ser maior do que 30 linhas, se necessário resumir para justar)
 Entrevista com o usuário e identificação dos requisitos.(quando for o caso de sistemas com cliente real)
 Descrição textual das regras de negócio definidas como um subconjunto do mundo real cujos elementos são propriedades que desejamos incluir, processar, armazenar, gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
-<br>
+<br> -->
 
-> O sistema proposto para a "Devcom Projetos conterá as informacões aqui detalhadas. Dos Projetos serão armazenados o número, nome e cidade. Dos Departamentos serão armazenados o número e nome. O cliente destacou que cada projeto pode ter vários departamentos auxiliando no seu desenvolvimento, e cada departamento pode estar envolvido em vários projetos. Os dados relativos aos empregados que serão armazenados são: rg, nome, cpf, salário, data inicial do salario e supervisor de cada empregado. É importante destacar que cada empregado pode ser supervisionado por outro empregado, e obrigatoriamente deve estar alocado a um único departamento, mas pode gerenciar vários departamentos ou não gerenciar nenhum. Um empregado também pode participar de vários projetos, caso seja necessário, mas não precisa obrigatoriamente estar alocado em algum projeto. Com relação aos dependentes serão armazenadas as informações de nome do dependente, data de nascimento, sexo e grau de parentesco. Cada empregado pode ter vários dependentes, mas um dependente esta associado apenas a um único empregado. Com relação ao histórico de salário devemos armazenar as informações de valor do salário, data de início do salário no período e data final do salário no período. É importante lembrar que cada funcionario pode ter diversos eventos de histórico de salário associados a ele visto que este dado pode ser alterado várias vezes..
- 
+> O Mundo está ficando cada vez mais modernizado... Utilizamos cada vez mais nossos celulares e computadores para facilitar nossas tarefas diárias. Pensando nisso, um grupo de estudantes do IFES Serra resolveu desenvolver um aplicativo focado em serviços autônomos, para que tanto os prestadores quanto os clientes desses serviços sejam beneficiados. O Sistema do "Contrata Aí" seria feito nos seguintes moldes: O Usuário se cadastraria com as seguintes informações: nome, data de nascimento, cpf, email, senha, telefone, localização (bairro) e uma foto de perfil. Ele também irá informar se possui ou não uma profissão, para que assim podermos diferenciar os Profissionais dos Clientes. Nem toda profissão precisa necessariamente estar ligada a um usuário, porém todo usuário deve informar se possui uma profissão (mesmo que ela seja NENHUMA). Cada profissão possui uma Especialização, que serve para descrever melhor qual o ramo da profissão que aquele usuário possui (Um pintor de ACABAMENTO, um WEB-designer e etc). O Usuário com profissão iria também colocar a sua disponibilidade, para ela fique visível em seu perfil e assim a pessoa que queria o contratar fique ciente dos dias da semana em que ele está disponível. Cadastrado, o usuário contrataria um serviço com os seguintes passos: buscaria um profissional em um mecanismo de busca com diversos filtros (região, profissão, especialização, avaliações), checaria a agenda do mesmo e então mandaria um solicitação para o contratar. Com a solicitação aceita, ambos iniciariam uma conversa até que o serviço seja realmente contratado. Passada a data da realização do contrato, o usuário poderia então avaliar o serviço feito, colocando sua nota, um comentário e uma imagem (opcional). Os usuários também podem contatar os desenvolvedores, enviando uma mensagem com um tópico pré-definido. 
  
 ### 3.PMC<br>
-![Exemplo de PMC](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Canvas.png?raw=true "PMC")
+![PMC - Contrata Aí](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Canvas.png?raw=true "PMC")
 <br>
 
 
 ### 4.Personas e Histórias de usuário<br>
+<!--
 <img src="https://neilpatel.com/wp-content/uploads/2019/07/exemplo-carlos.png" Personas src="https://neilpatel.com/wp-content/uploads/2019/07/exemplo-carlos.png" width="500" height="500" /> <br>
-a) inclusão dos Persons desenvolvidos pelo grupo<br>
-<br>
-<img src="https://miro.medium.com/max/1400/1*r5GVnOvqpMdxnGUYNRXqbg.png" UserStory src="https://miro.medium.com/max/1400/1*r5GVnOvqpMdxnGUYNRXqbg.png" width="500" height="300" /> <br>
-b) inclusão das Histórias de usuário desenvolvidas pelo grupo
-<br>
+-->
+a) Personas desenvolvidos pelo grupo<br>
 
+Persona 1 - José <br>
+![Persona 1 - José](https://github.com/RhoBlop/template_projeto_integrador/blob/nova/arquivos/Persona_Jose.jpg?raw=true "Persona 1 - José")
+
+![Link para o PDF das Personas](https://github.com/RhoBlop/template_projeto_integrador/blob/nova/arquivos/Personas.pdf? "Personas")
+
+b) inclusão das Histórias de usuário desenvolvidas pelo grupo
+
+![Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/template_projeto_integrador/blob/nova/arquivos/HistóriasdeUsuário.pdf? "Histórias de Usuário")
 
 ### 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visualização: <br>
 
 Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7%C3%A3o-Mobile?node-id=2%3A38<br>
 
-![Alt text](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Mockup.png?raw=true "Title")
+![Figma](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Mockup.png?raw=true "Print do Figma")
 
 
 #### 5.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
+<!--
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-    
+-->    
 > a) Informações voltadas aos usuários 
 
 > b) A Empresa Contratai precisa inicialmente dos seguintes relatórios:
@@ -56,17 +62,20 @@ Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7
  
 
 ### 6 TABELA DE DADOS DO SISTEMA:
+<!--
     A) Esta tabela deve conter **todos os atributos do sistema** e um mínimo de 10 linhas/registros de dados.
     B) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
  <br> (veja o exemplo abaixo antes de criar a tabela para seu trabalho)
     C) Após criada esta tabela não deve ser modificada, pois será comparada com os resultados finais na conclusão do trabalho
-    
-![Exemplo de Tabela de dados da Empresa Devcom](https://github.com/discproint/template_projeto_integrador/blob/main/arquivos/TabelaEmpresaDevCom_sample.xlsx?raw=true "Tabela - Empresa Devcom")
+-->    
 
 
- 
+Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets/d/16KPcQIgBEPmTegCXIHZ1YxdCZvrzmB23dAoRtXDNnhg/edit?usp=sharing <br>
+
+
  
  ### 7.MODELO CONCEITUAL<br>
+<!--
     A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
     B) O mínimo de entidades do modelo conceitual pare este trabalho será igual a 4.
         * informe quais são as 3 principais entidades do sistema em densenvolvimento
@@ -76,23 +85,37 @@ Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7
         Garantir que a semântica dos atributos seja clara no esquema (nomes coerentes com os dados).
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
-        
-![Alt text](https://github.com/discproint/template_projeto_integrador/blob/main/arquivos/concept_sample.png?raw=true "Modelo Conceitual")
+-->        
+![Conceitual](https://github.com/RhoBlop/template_projeto_integrador/blob/nova/arquivos/Conceitual_ContrataAi.png?raw=true "Modelo Conceitual")
       
     
 #### 7.1 Descrição dos dados 
+<!--
     [objeto]: [descrição do objeto]
     
     EXEMPLO:
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+-->
+**USUÁRIO**: Tabela que armazena as informações dos usuários cadastrados <br>
+**PROFISSÃO**: Tabela que armazena as informações sobre as profissões cadastradas no sistema <br>
+**ESPECIALIZAÇÃO**: Tabela referente às informações sobre a especialização de uma profissão <br>
+**DISPONIBILIDADE**: Tabela referente à disponibilidade daquele usuário <br>
+**AVALIAÇÃO**: Tabela que refere as avaliações dos serviços de usuário <br>
+**CONTATO**: Tabela referente ao contato entre os usuários e os desenvolverores (nós) <br>
+**CONTRATO**: Relacionamento entre os usuários referente aos serviços. Um usuário contrata alguem para que sua demanda seja realizada. <br>
+**BAIRRO, CIDADE, ESTADO**: Tabelas referentes a localização do usuário <br>
 
+
+        
+
+<!-- 
 ### 8	RASTREABILIDADE DOS ARTEFATOS<br>
         a) Historia de usuários vs protótipo (mockup)
         b) Protótipo vs Modelo conceitual
         (não serão aceitos modelos que não estejam em conformidade)
         c) Backlog (caso solicitado)
-        
+       
 
 
 ### 9	MODELO LÓGICO<br>
@@ -184,3 +207,4 @@ http://sis4.com/brModelo/brModelo/download.html
 
 Link para curso de GIT<br>
 ![https://www.youtube.com/curso_git](https://www.youtube.com/playlist?list=PLo7sFyCeiGUdIyEmHdfbuD2eR4XPDqnN2?raw=true "Title")
+-->
