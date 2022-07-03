@@ -104,19 +104,43 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
 -->
-**USUÁRIO**: Tabela que armazena as informações dos usuários cadastrados 
+**USUÁRIO**: Tabela que armazena as informações dos usuários cadastrados <br>
 - **Nome**: Armazena o nome completo do usuário cadastrado.
 - **Nascimento**: Armazena a data de nascimento do usuário cadastrado.
 - **CPF**: Armazena o número de CPF do usuário cadastrado.
-- **Email**: Armazena o endereço de email do usuário cadastrado. 
-**PROFISSÃO**: Tabela que armazena as informações sobre as profissões cadastradas no sistema <br>
-**ESPECIALIZAÇÃO**: Tabela referente às informações sobre a especialização de uma profissão <br>
-**DISPONIBILIDADE**: Tabela referente à disponibilidade daquele usuário <br>
-**AVALIAÇÃO**: Tabela que refere as avaliações dos serviços de usuário <br>
-**CONTATO**: Tabela referente ao contato entre os usuários e os desenvolverores (nós) <br>
-**CONTRATO**: Relacionamento entre os usuários referente aos serviços. Um usuário contrata alguem para que sua demanda seja realizada. <br>
-**BAIRRO, CIDADE, ESTADO**: Tabelas referentes a localização do usuário <br>
+- **Email**: Armazena o endereço de email do usuário cadastrado.
+- **Telefone**: Armazena o número de telefone do usuário cadastrado.
+- **Foto**: Armazena a foto de perfil escolhida pelo usuário.
+- **Senha**: Armazena a senha (criptografada) escolhida pelo usuário.
 
+**PROFISSÃO**: Tabela que armazena as informações sobre as profissões cadastradas no sistema <br>
+- **Nome_Profissao**: Armazena o nome da profissão cadastrada no sistema. 
+
+**ESPECIALIZAÇÃO**: Tabela referente às informações sobre a especialização de uma profissão <br>
+- **Dsc_Espec**: Armazena o nome da especialização cadastrada no sistema.
+
+**DISPONIBILIDADE**: Tabela referente à disponibilidade daquele usuário <br>
+- **Inicio**: Hora inicial do período de disponibilidade.
+- **Fim**: Hora final do período de disponibilidade.
+
+**DIA_SEMANA**: Tabela que armazena os dias da semana <br>
+- **dscDia**: Nome do dia da semana cadastrado.
+
+**AVALIAÇÃO**: Tabela que refere as avaliações dos serviços de usuário <br>
+- **Nota**: Valor da nota dada de 1 a 10 pelo usuário avaliador para quem está sendo avaliado.
+- **Comentário**: Comentário feito pelo usuário avaliador para quem está sendo avaliado.
+- **Imagem**: Atributo que armazena uma imagem enviada pelo usuário avaliador (não é obrigatória).
+
+**CONTATO**: Tabela referente ao contato entre os usuários e os desenvolverores (nós) <br>
+- **Tópico**: Tópico do da mensagem que o usuário irá enviar.
+- **Mensagem**: Armazena a mensagem propriamente escrita pelo usuário.
+
+**CONTRATO**: Relacionamento entre os usuários referente aos serviços. Um usuário contrata alguem para que sua demanda seja realizada. <br>
+- **Data_Contratacao**: Data referente ao dia em que houve a contratação.
+- **Data_Fim**: Data em que o serviço foi finalizado.
+
+**BAIRRO, CIDADE, ESTADO**: Tabelas referentes a localização do usuário <br>
+- **nome_Bairro, nome_Cidade, nome_Estado**: Armazenam os nomes dos bairros, cidades e estados cadastrados no sistema respectivamente. 
 
         
 
