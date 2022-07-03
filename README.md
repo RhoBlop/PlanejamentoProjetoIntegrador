@@ -88,7 +88,7 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 -->        
 ![Conceitual](https://github.com/RhoBlop/template_projeto_integrador/blob/nova/arquivos/Conceitual_ContrataAi.png?raw=true "Modelo Conceitual")
 
-##### Principais Entidades
+#### Principais Entidades
 - Usuário
 - Contrato
 - Profissão
@@ -105,6 +105,9 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
 -->
 **USUÁRIO**: Tabela que armazena as informações dos usuários cadastrados <br>
+- Nome: Armazena o nome completo do usuário cadastrado.
+- Nascimento: Armazena a data de nascimento do usuário cadastrado.
+
 **PROFISSÃO**: Tabela que armazena as informações sobre as profissões cadastradas no sistema <br>
 **ESPECIALIZAÇÃO**: Tabela referente às informações sobre a especialização de uma profissão <br>
 **DISPONIBILIDADE**: Tabela referente à disponibilidade daquele usuário <br>
