@@ -104,10 +104,11 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
 -->
-**USUÁRIO**: Tabela que armazena as informações dos usuários cadastrados <br>
-- Nome: Armazena o nome completo do usuário cadastrado.
+**USUÁRIO**: Tabela que armazena as informações dos usuários cadastrados 
+- **Nome**: Armazena o nome completo do usuário cadastrado.
 - **Nascimento**: Armazena a data de nascimento do usuário cadastrado.
-
+- **CPF**: Armazena o número de CPF do usuário cadastrado.
+- **Email**: Armazena o endereço de email do usuário cadastrado. 
 **PROFISSÃO**: Tabela que armazena as informações sobre as profissões cadastradas no sistema <br>
 **ESPECIALIZAÇÃO**: Tabela referente às informações sobre a especialização de uma profissão <br>
 **DISPONIBILIDADE**: Tabela referente à disponibilidade daquele usuário <br>
