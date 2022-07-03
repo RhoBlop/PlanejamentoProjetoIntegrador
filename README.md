@@ -106,7 +106,7 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 -->
 **USUÁRIO**: Tabela que armazena as informações dos usuários cadastrados <br>
 - Nome: Armazena o nome completo do usuário cadastrado.
-- Nascimento: Armazena a data de nascimento do usuário cadastrado.
+- **Nascimento**: Armazena a data de nascimento do usuário cadastrado.
 
 **PROFISSÃO**: Tabela que armazena as informações sobre as profissões cadastradas no sistema <br>
 **ESPECIALIZAÇÃO**: Tabela referente às informações sobre a especialização de uma profissão <br>
