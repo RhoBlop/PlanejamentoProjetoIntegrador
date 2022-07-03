@@ -10,10 +10,6 @@ Thiago Neves Luz: nevesluzthiago@gmail.com<br>
 Matheus de Oliveira Magnago: magnagomatheus7@gmail.com<br>
 
 ### 2.MINIMUNDO<br>
-<!-- Descrever o mini-mundo! (Não deve ser maior do que 30 linhas, se necessário resumir para justar)
-Entrevista com o usuário e identificação dos requisitos.(quando for o caso de sistemas com cliente real)
-Descrição textual das regras de negócio definidas como um subconjunto do mundo real cujos elementos são propriedades que desejamos incluir, processar, armazenar, gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
-<br> -->
 
 > O Mundo está ficando cada vez mais modernizado... Utilizamos cada vez mais nossos celulares e computadores para facilitar nossas tarefas diárias. Pensando nisso, um grupo de estudantes do IFES Serra resolveu desenvolver um aplicativo focado em serviços autônomos, para que tanto os prestadores quanto os clientes desses serviços sejam beneficiados. O Sistema do "Contrata Aí" seria feito nos seguintes moldes: O Usuário se cadastraria com as seguintes informações: nome, data de nascimento, cpf, email, senha, telefone, localização (bairro) e uma foto de perfil. Ele também irá informar se possui ou não uma profissão, para que assim podermos diferenciar os Profissionais dos Clientes. Nem toda profissão precisa necessariamente estar ligada a um usuário, porém todo usuário deve informar se possui uma profissão (mesmo que ela seja NENHUMA). Cada profissão possui uma Especialização, que serve para descrever melhor qual o ramo da profissão que aquele usuário possui (Um pintor de ACABAMENTO, um WEB-designer e etc). O Usuário com profissão iria também colocar a sua disponibilidade, para ela fique visível em seu perfil e assim a pessoa que queria o contratar fique ciente dos dias da semana em que ele está disponível. Cadastrado, o usuário contrataria um serviço com os seguintes passos: buscaria um profissional em um mecanismo de busca com diversos filtros (região, profissão, especialização, avaliações), checaria a agenda do mesmo e então mandaria um solicitação para o contratar. Com a solicitação aceita, ambos iniciariam uma conversa até que o serviço seja realmente contratado. Passada a data da realização do contrato, o usuário poderia então avaliar o serviço feito, colocando sua nota, um comentário e uma imagem (opcional). Os usuários também podem contatar os desenvolvedores, enviando uma mensagem com um tópico pré-definido. 
  
@@ -23,9 +19,7 @@ Descrição textual das regras de negócio definidas como um subconjunto do mund
 
 
 ### 4.Personas e Histórias de usuário<br>
-<!--
-<img src="https://neilpatel.com/wp-content/uploads/2019/07/exemplo-carlos.png" Personas src="https://neilpatel.com/wp-content/uploads/2019/07/exemplo-carlos.png" width="500" height="500" /> <br>
--->
+
 a) Personas desenvolvidos pelo grupo<br>
 
 Persona 1 - José <br>
@@ -46,10 +40,7 @@ Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7
 
 
 #### 5.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-<!--
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
--->    
+  
 > a) Informações voltadas aos usuários 
 
 > b) A Empresa Contratai precisa inicialmente dos seguintes relatórios:
@@ -62,30 +53,13 @@ Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7
  
 
 ### 6 TABELA DE DADOS DO SISTEMA:
-<!--
-    A) Esta tabela deve conter **todos os atributos do sistema** e um mínimo de 10 linhas/registros de dados.
-    B) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
- <br> (veja o exemplo abaixo antes de criar a tabela para seu trabalho)
-    C) Após criada esta tabela não deve ser modificada, pois será comparada com os resultados finais na conclusão do trabalho
--->    
-
 
 Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets/d/16KPcQIgBEPmTegCXIHZ1YxdCZvrzmB23dAoRtXDNnhg/edit?usp=sharing <br>
 
 
  
  ### 7.MODELO CONCEITUAL<br>
-<!--
-    A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
-    B) O mínimo de entidades do modelo conceitual pare este trabalho será igual a 4.
-        * informe quais são as 3 principais entidades do sistema em densenvolvimento
- <br>(se houverem mais de 3 entidades, pense na importância da entidade para o sistema)       
-    C) Principais fluxos de informação/entidades do sistema (mínimo 2). <br>Dica: normalmente estes fluxos estão associados as tabelas que conterão maior quantidade de dados 
-    D) Qualidade e Clareza
-        Garantir que a semântica dos atributos seja clara no esquema (nomes coerentes com os dados).
-        Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
-        e tuplas falsas (Aplicar os conceitos de normalização abordados).   
--->        
+     
 ![Conceitual](https://github.com/RhoBlop/template_projeto_integrador/blob/nova/arquivos/Conceitual_ContrataAi.png?raw=true "Modelo Conceitual")
 
 #### Principais Entidades
@@ -97,13 +71,7 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 
     
 #### 7.1 Descrição dos dados 
-<!--
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
--->
+
 **USUÁRIO**: Tabela que armazena as informações dos usuários cadastrados <br>
 - **Nome**: Armazena o nome completo do usuário cadastrado.
 - **Nascimento**: Armazena a data de nascimento do usuário cadastrado.
@@ -144,15 +112,12 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 
         
 
-<!-- 
+ 
 ### 8	RASTREABILIDADE DOS ARTEFATOS<br>
-        a) Historia de usuários vs protótipo (mockup)
-        b) Protótipo vs Modelo conceitual
-        (não serão aceitos modelos que não estejam em conformidade)
-        c) Backlog (caso solicitado)
-       
 
+Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/d/1XBFnOMejbF9WeBEAKDRbdR5ea8CP0M6xNnkPvz2_YnU/edit?usp=sharing <br>
 
+<!--
 ### 9	MODELO LÓGICO<br>
         a) inclusão do esquema lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
