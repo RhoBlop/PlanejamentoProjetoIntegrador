@@ -35,7 +35,7 @@ Persona 1 - José <br>
 
 b) inclusão das Histórias de usuário desenvolvidas pelo grupo
 
-![Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/template_projeto_integrador/blob/nova/arquivos/HistóriasdeUsuário.pdf? "Histórias de Usuário")
+![Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/template_projeto_integrador/blob/nova/arquivos/HistóriasdeUsuário.pdf?raw=true "Histórias de Usuário")
 
 ### 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visualização: <br>
