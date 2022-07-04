@@ -68,7 +68,10 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 - Profissão
 
 #### Principais Fluxos
-
+- Usuário -> Avalia -> Usuário
+- Usuário -> Tem -> Profissão
+- Usuário -> Contrato -> Usuário
+- Usuário -> Possui -> Disponibilidade
     
 #### 7.1 Descrição dos dados 
 
@@ -110,9 +113,7 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 **BAIRRO, CIDADE, ESTADO**: Tabelas referentes a localização do usuário <br>
 - **nome_Bairro, nome_Cidade, nome_Estado**: Armazenam os nomes dos bairros, cidades e estados cadastrados no sistema respectivamente. 
 
-        
 
- 
 ### 8	RASTREABILIDADE DOS ARTEFATOS<br>
 
 Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/d/1XBFnOMejbF9WeBEAKDRbdR5ea8CP0M6xNnkPvz2_YnU/edit?usp=sharing <br>
