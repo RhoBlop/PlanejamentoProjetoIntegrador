@@ -68,10 +68,10 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 - Profissão
 
 #### Principais Fluxos
-- Usuário -> Avalia -> Usuário
-- Usuário -> Tem -> Profissão
-- Usuário -> Contrato -> Usuário
-- Usuário -> Possui -> Disponibilidade
+- Usuário → Avalia → Usuário
+- Usuário → Tem → Profissão
+- Usuário → Contrato → Usuário
+- Usuário → Possui → Disponibilidade
     
 #### 7.1 Descrição dos dados 
 
