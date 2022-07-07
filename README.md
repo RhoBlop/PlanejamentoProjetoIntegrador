@@ -2,10 +2,10 @@
 Trabalho desenvolvido durante a disciplina de Projeto Integrador
 
 # Sumário
-1. [Componentes](#1-componentesbr)
+1. [Componentes](#1-componentes)
 8. [Rastreabilidade dos Artefatos](#8-rastreabilidade-dos-artefatos)
 
-### 1. COMPONENTES<br>
+### 1. COMPONENTES <a id="1-componentes"></a>
 Integrantes do grupo<br>
 Rafael Rodrigues Matos: rafael1309mt@gmail.com <br>
 Thiago Neves Luz: nevesluzthiago@gmail.com<br>
