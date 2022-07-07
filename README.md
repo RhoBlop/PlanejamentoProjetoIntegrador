@@ -142,20 +142,20 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 
 [Voltar ao início](#topo)
 
-### 8 RASTREABILIDADE DOS ARTEFATOS <a id="8-rastreabilidade-dos-artefatos"></a>
+### 8 RASTREABILIDADE DOS ARTEFATOS
 
 Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/d/1XBFnOMejbF9WeBEAKDRbdR5ea8CP0M6xNnkPvz2_YnU/edit?usp=sharing <br>
 
 [Voltar ao início](#topo)
 
 
-### 9 MODELO LÓGICO <a id="9-modelo-lógico"></a>
+### 9 MODELO LÓGICO 
 
 ![Lógico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Lógico_ContrataAi.png?raw=true "Modelo Lógico")
 
 [Voltar ao início](#topo)
 
-### 10 MODELO FÍSICO <a id="10-modelo-físico"></a>
+### 10 MODELO FÍSICO 
 
 Segue abaixo o link para o Modelo Físico :point_down: <br>
 
