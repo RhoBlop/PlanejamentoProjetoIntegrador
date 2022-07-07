@@ -12,6 +12,11 @@ Trabalho desenvolvido durante a disciplina de Projeto Integrador
 7. [Modelo Conceitual](#7modelo-conceitual)
     1. [Descrição dos dados](#71-descrição-dos-dados)
 8. [Rastreabilidade dos Artefatos](#8-rastreabilidade-dos-artefatos)
+9. [Modelo Lógico](#9-modelo-lógico)
+10. [Modelo Físico](#10-modelo-físico)
+11. [Inserts](#11-insert-aplicado-nas-tabelas-do-banco-de-dados)
+12. [Anteprojeto](#123-anteprojeto-versão-1)
+
 
 ### 1. COMPONENTES <a id="1-componentes"></a>
 Integrantes do grupo<br>
@@ -133,17 +138,17 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/d/1XBFnOMejbF9WeBEAKDRbdR5ea8CP0M6xNnkPvz2_YnU/edit?usp=sharing <br>
 
 
-### 9	MODELO LÓGICO<br>
+### 9 MODELO LÓGICO
         a) inclusão do esquema lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
 
-### 10	MODELO FÍSICO<br>
+### 10 MODELO FÍSICO
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
         (criação de tabelas, alterações, etc..) 
         
        
-### 11	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
+### 11 INSERT APLICADO NAS TABELAS DO BANCO DE DADOS
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
         (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
         b) Criar um novo banco de dados para testar a restauracao 
