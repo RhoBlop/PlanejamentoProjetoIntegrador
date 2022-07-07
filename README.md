@@ -49,7 +49,7 @@ Persona 1 - José <br>
 
 b) 📚 Inclusão das Histórias de usuário desenvolvidas pelo grupo
 
-![Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/HistóriasdeUsuário.pdf?raw=true "Histórias de Usuário")
+[Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/HistóriasdeUsuário.pdf?raw=true "Histórias de Usuário")
 
 [Voltar ao início](#topo)
 
