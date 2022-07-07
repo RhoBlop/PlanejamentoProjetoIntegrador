@@ -12,17 +12,17 @@ INSERT INTO Cidade (idEstado, dscCidade) VALUES
 (3, 'Salvador');
 
 INSERT INTO Bairro (idCidade, dscBairro) VALUES
-('Praia de Carapebus', 1),
-('Santo Antônio', 1),
-('Jardim da Penha', 2),
-('Colina de Laranjeiras', 1);
+(1, 'Praia de Carapebus'),
+(1, 'Santo Antônio'),
+(2, 'Jardim da Penha'),
+(1, 'Colina de Laranjeiras');
 
 INSERT INTO Usuario (idBairro, nomUsr, datNascimentoUsr, numCPFUsr, numTelefoneUsr, dscFotoUsr, dscEmailUsr, dscSenhaUsr) VALUES
-('Rafael Rodrigues', '1990-09-13', '16443762703', '27997550259', 'rafael.png', 'rafael1309@gmail.com', 'gabigolmengao231119'),
-('Matheus Magnago', '2003-04-17', '19047174704', '27998230645', 'matheus.png', 'matheus@gmail.com', 'santospeixao2011'),
-('Jordana Lourenço', '2004-19-05', '15356745710', '27999445510', 'jordana.png', 'jordana@hotmail.com', 'cambridge2023'),
-('Breno Amâncio', '2003-11-03', '19829381707', '27997528603', 'breno.png', 'breno@outlook.com', 'breninlindo2003'),
-('Thiago Neves', '2004-08-08', '11111111111', '27912345678', 'thiago.png', 'snow.thiago@gmail.com', 'batata123');
+(1, 'Rafael Rodrigues', '1990-09-13', '16443762703', '27997550259', 'rafael.png', 'rafael1309@gmail.com', 'gabigolmengao231119'),
+(2, 'Matheus Magnago', '2003-04-17', '19047174704', '27998230645', 'matheus.png', 'matheus@gmail.com', 'santospeixao2011'),
+(3, 'Jordana Lourenço', '2004-05-19', '15356745710', '27999445510', 'jordana.png', 'jordana@hotmail.com', 'cambridge2023'),
+(4, 'Breno Amâncio', '2003-11-03', '19829381707', '27997528603', 'breno.png', 'breno@outlook.com', 'breninlindo2003'),
+(3, 'Thiago Neves', '2004-08-08', '11111111111', '27912345678', 'thiago.png', 'snow.thiago@gmail.com', 'batata123');
 
 INSERT INTO Profissao (dscProf) VALUES
 ('professor'),
@@ -57,7 +57,7 @@ INSERT INTO Contato (idUsr, dscTopicoCont, dscMensagemContr) VALUES
 (2, 'Problemas com Login', 'Esqueci minha senha, o que faço agora?'),
 (1, 'Sugestão', 'Estou gostando muito do aplicativo, mas sinto que seria bom um chat próprio para tornar a comunicação com meus clientes mais simples');
 
-INSERT INTO Dia_Semana (dscDiaSemn) VALUES
+INSERT INTO DiaSemana (dscDiaSemn) VALUES
 ('domingo'),
 ('segunda'),
 ('terça'),
@@ -67,12 +67,12 @@ INSERT INTO Dia_Semana (dscDiaSemn) VALUES
 ('sábado');
 
 INSERT INTO Contrato (idContratado, idContratante, datInicioContrt, datFimContrt) VALUES
-(1, 2, '23-06-2022', '30-06-2022'),
-(1, 4, '08-08-2022', '10-08-2022'),
-(1, 5, '09-08-2022', '15-08-2022')
-(2, 3, '03-02-2022', '04-02-2022');
+(1, 2, '2022-06-23', '2022-06-30'),
+(1, 4, '2022-08-08', '2022-08-10'),
+(1, 5, '2022-08-09', '2022-08-15'),
+(2, 3, '2022-02-03', '2022-02-04');
 
-INSERT INTO Disponibilidade (idUsr, idDiaSemn, datInicioDisp, datFimDisp) VALUES
+INSERT INTO Disponibilidade (idDiaSemn, horaInicioDisp, horaFimDisp) VALUES
 (2, '06:00', '07:00'),
 (2, '07:00', '08:00'),
 (2, '08:00', '09:00'),
@@ -163,7 +163,7 @@ INSERT INTO UsrDisp (idUsr, idDisp) VALUES
 (1, 14),
 (1, 15),
 (1, 16),
-(1, 17)
+(1, 17),
 (1, 30),
 (1, 31),
 (1, 32),

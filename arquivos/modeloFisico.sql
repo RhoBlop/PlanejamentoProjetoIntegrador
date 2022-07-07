@@ -87,6 +87,11 @@ CREATE TABLE UsrEspec (
     idUsr INT,
     idEspec INT
 );
+
+CREATE TABLE UsrDisp (
+    idUsr INT,
+    idDisp INT
+);
  
 ALTER TABLE Usuario ADD CONSTRAINT FK_Usuario_2
     FOREIGN KEY (idBairro)
@@ -112,11 +117,6 @@ ALTER TABLE Contato ADD CONSTRAINT FK_Contato_2
     FOREIGN KEY (idUsr)
     REFERENCES Usuario (idUsr)
     ON DELETE CASCADE;
- 
-ALTER TABLE Disponibilidade ADD CONSTRAINT FK_Disponibilidade_2
-    FOREIGN KEY (idUsr)
-    REFERENCES Usuario (idUsr)
-    ON DELETE RESTRICT;
  
 ALTER TABLE Disponibilidade ADD CONSTRAINT FK_Disponibilidade_3
     FOREIGN KEY (idDiaSemn)
