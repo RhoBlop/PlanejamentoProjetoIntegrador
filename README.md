@@ -38,7 +38,6 @@ Para feedback quanto ao aplicativo, sejam para sugestões, problemas ou reclama�
 ![PMC - Contrata Aí](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Canvas.png?raw=true "PMC")
 <br>
 
-
 ### 4.Personas e Histórias de usuário
 
 a) Personas desenvolvidos pelo grupo<br>
@@ -50,7 +49,10 @@ Persona 1 - José <br>
 
 b) inclusão das Histórias de usuário desenvolvidas pelo grupo
 
+
 ![Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/HistóriasdeUsuário.pdf?raw=true "Histórias de Usuário")
+
+[Voltar ao início](#topo)
 
 ### 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)
 O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visualização: <br>
@@ -59,6 +61,7 @@ Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7
 
 ![Figma](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Mockup.png?raw=true "Print do Figma")
 
+[Voltar ao início](#topo)
 
 #### 5.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
   
@@ -71,14 +74,14 @@ Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7
 * Relatório com a quantidade de usuários cadastrados que possuem profissão. 
 * Relatório com as especializações de cada profissão, contendo as seguintes informações: profissão e especialização.
 
- 
+[Voltar ao início](#topo)
 
 ### 6 TABELA DE DADOS DO SISTEMA:
 
 Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets/d/16KPcQIgBEPmTegCXIHZ1YxdCZvrzmB23dAoRtXDNnhg/edit?usp=sharing <br>
 
+[Voltar ao início](#topo)
 
- 
  ### 7.MODELO CONCEITUAL
      
 ![Conceitual](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Conceitual_ContrataAi.png?raw=true "Modelo Conceitual")
@@ -93,6 +96,8 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 - Usuário → Tem → Profissão
 - Usuário → Contrato → Usuário
 - Usuário → Possui → Disponibilidade
+
+[Voltar ao início](#topo)
     
 #### 7.1 Descrição dos dados 
 
@@ -135,6 +140,7 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 - **dscBairro, dscCidade, dscEstado**: Armazenam os nomes dos bairros, cidades e estados cadastrados no sistema respectivamente. 
 - **dscSiglaEstado**: Armazena a sigla do estado correspondente.
 
+[Voltar ao início](#topo)
 
 ### 8 RASTREABILIDADE DOS ARTEFATOS <a id="8-rastreabilidade-dos-artefatos"></a>
 
