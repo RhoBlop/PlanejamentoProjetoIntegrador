@@ -165,7 +165,7 @@ Segue abaixo o link para o Modelo Físico :point_down: <br>
 
 ### 11 INSERT APLICADO NAS TABELAS DO BANCO DE DADOS <a id="11-insert-aplicado-nas-tabelas-do-banco-de-dados"></a>
 
-Segue abaixo o link para os Inserts do Banco de Dados :point_down: <br>
+ :point_down: Segue abaixo o link para os Inserts do Banco de Dados <br>
 
 :page_with_curl: [Script dos Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/exampleInserts.sql?raw=true)
 
