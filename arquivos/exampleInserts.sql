@@ -67,7 +67,12 @@ INSERT INTO Dia_Semana (dscDiaSemn) VALUES
 ('sábado');
 
 INSERT INTO Disponibilidade (idUsr, idDiaSemn, datInicioDisp, datFimDisp) VALUES
-(1, );
+();
+
+/*
+INSERT INTO UsrDisp (idUsr, idDisp) VALUES
+();
+*/
 
 INSERT INTO Contrato (idContratado, idContratante, datInicioContrt, datFimContrt) VALUES
 (1, 2, '23-06-2022', '30-06-2022'),
