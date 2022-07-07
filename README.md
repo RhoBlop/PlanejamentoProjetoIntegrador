@@ -119,7 +119,7 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 - **nome_Bairro, nome_Cidade, nome_Estado**: Armazenam os nomes dos bairros, cidades e estados cadastrados no sistema respectivamente. 
 
 
-### 8 RASTREABILIDADE DOS ARTEFATOS <a id="#8-rastreabilidade-dos-artefato"></a>
+### 8 RASTREABILIDADE DOS ARTEFATOS <a id="#8-rastreabilidade-dos-artefatos"></a>
 
 Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/d/1XBFnOMejbF9WeBEAKDRbdR5ea8CP0M6xNnkPvz2_YnU/edit?usp=sharing <br>
 
