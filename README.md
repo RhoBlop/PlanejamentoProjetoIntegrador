@@ -40,14 +40,14 @@ Para feedback quanto ao aplicativo, sejam para sugestões, problemas ou reclama�
 
 ### 👥4.Personas e Histórias de usuário
 
-a) 👤Personas desenvolvidos pelo grupo<br>
+👤 a) Personas desenvolvidos pelo grupo<br>
 
 Persona 1 - José <br>
 ![Persona 1 - José](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Persona_Jose.jpg?raw=true "Persona 1 - José")
 
-![Link para o PDF das Personas](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Personas.pdf?raw=true "Personas")
+[Link para o PDF das Personas](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Personas.pdf?raw=true "Personas")
 
-b) 📚 Inclusão das Histórias de usuário desenvolvidas pelo grupo
+📚 b) Inclusão das Histórias de usuário desenvolvidas pelo grupo
 
 [Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/HistóriasdeUsuário.pdf?raw=true "Histórias de Usuário")
 
