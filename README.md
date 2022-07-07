@@ -25,7 +25,7 @@ Rafael Rodrigues Matos: rafael1309mt@gmail.com <br>
 Thiago Neves Luz: nevesluzthiago@gmail.com<br>
 Matheus de Oliveira Magnago: magnagomatheus7@gmail.com<br>
 
-### 2.MINIMUNDO
+### :earth_americas: 2.MINIMUNDO
 
 > O Mundo está ficando cada vez mais modernizado... Utilizamos cada vez mais nossos celulares e computadores para facilitar nossas tarefas diárias. Pensando nisso, um grupo de estudantes do IFES Serra resolveu desenvolver um aplicativo focado em serviços autônomos, com o objetivo de facilitar a comunicação entre ambos clientes e prestadores de serviços.<br>
 O Sistema do "Contrata Aí" seria feito nos seguintes moldes: O **USUÁRIO** se cadastraria com as seguintes informações: **nome**, **data de nascimento**, **cpf**, **email**, **senha**, **telefone**, REGIÃO (**BAIRRO**, **CIDADE**, **ESTADO**) e uma **foto** de perfil. Ele também irá informar as suas **ESPECIALIZAÇÕES**, caso seja um prestador de serviços, para que assim possamos diferenciar os profissionais dos clientes. O **USUÁRIO** que possua **ESPECIALIZAÇÕES** irá também colocar a sua **DISPONIBILIDADE**, para que ela fique visível em seu perfil e assim a pessoa que o queira contratar fique ciente dos dias da semana em que ele está disponível.<br>
