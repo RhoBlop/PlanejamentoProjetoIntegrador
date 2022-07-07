@@ -36,7 +36,7 @@ Para feedback quanto ao aplicativo, sejam para sugestões, problemas ou reclama�
 ![PMC - Contrata Aí](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Canvas.png?raw=true "PMC")
 <br>
 
-[Voltar ao início](#topo)
+⬆️[Voltar ao início](#topo)
 
 ### 👥4.Personas e Histórias de usuário
 
@@ -51,7 +51,7 @@ Persona 1 - José <br>
 
 [Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/HistóriasdeUsuário.pdf?raw=true "Histórias de Usuário")
 
-[Voltar ao início](#topo)
+⬆️[Voltar ao início](#topo)
 
 ### 📝 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)
 O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visualização: <br>
@@ -60,7 +60,7 @@ Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7
 
 ![Figma](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Mockup.png?raw=true "Print do Figma")
 
-[Voltar ao início](#topo)
+⬆️[Voltar ao início](#topo)
 
 #### ❓5.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
   
@@ -73,15 +73,15 @@ Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7
 * Relatório com a quantidade de usuários cadastrados que possuem profissão. 
 * Relatório com as especializações de cada profissão, contendo as seguintes informações: profissão e especialização.
 
-[Voltar ao início](#topo)
+⬆️[Voltar ao início](#topo)
 
 ### 📊 6 TABELA DE DADOS DO SISTEMA:
 
 Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets/d/16KPcQIgBEPmTegCXIHZ1YxdCZvrzmB23dAoRtXDNnhg/edit?usp=sharing <br>
 
-[Voltar ao início](#topo)
+⬆️[Voltar ao início](#topo)
 
- ### 💭7.MODELO CONCEITUAL
+### 💭7.MODELO CONCEITUAL
      
 ![Conceitual](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Conceitual_ContrataAi.png?raw=true "Modelo Conceitual")
 
@@ -90,13 +90,13 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 - Contrato
 - Profissão
 
-#### Principais Fluxos
+#### 🔀 Principais Fluxos
 - Usuário → Avalia → Usuário
 - Usuário → Tem → Profissão
 - Usuário → Contrato → Usuário
 - Usuário → Possui → Disponibilidade
 
-[Voltar ao início](#topo)
+⬆️[Voltar ao início](#topo)
     
 #### 📄7.1 Descrição dos dados 
 
@@ -139,20 +139,20 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 - **dscBairro, dscCidade, dscEstado**: Armazenam os nomes dos bairros, cidades e estados cadastrados no sistema respectivamente. 
 - **dscSiglaEstado**: Armazena a sigla do estado correspondente.
 
-[Voltar ao início](#topo)
+⬆️[Voltar ao início](#topo)
 
 ### 📡8 RASTREABILIDADE DOS ARTEFATOS
 
 Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/d/1XBFnOMejbF9WeBEAKDRbdR5ea8CP0M6xNnkPvz2_YnU/edit?usp=sharing <br>
 
-[Voltar ao início](#topo)
+⬆️[Voltar ao início](#topo)
 
 
 ### 🧬9 MODELO LÓGICO 
 
 ![Lógico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Lógico_ContrataAi.png?raw=true "Modelo Lógico")
 
-[Voltar ao início](#topo)
+⬆️[Voltar ao início](#topo)
 
 ### 📄10 MODELO FÍSICO 
 
@@ -160,7 +160,7 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
 
 :page_with_curl: [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
 
-[Voltar ao início](#topo)
+⬆️[Voltar ao início](#topo)
 
 ### 📄11 INSERT APLICADO NAS TABELAS DO BANCO DE DADOS <a id="11-insert-aplicado-nas-tabelas-do-banco-de-dados"></a>
 
@@ -173,7 +173,7 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
 :page_with_curl: [Físico + Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/)
 
 
-[Voltar ao início](#topo)
+⬆️[Voltar ao início](#topo)
 
 <!--
 ### 12	TABELAS E PRINCIPAIS CONSULTAS<br>
