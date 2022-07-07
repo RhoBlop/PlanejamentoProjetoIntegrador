@@ -140,9 +140,8 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
 
 
 ### 9 MODELO LÓGICO <a id="9-modelo-lógico"></a>
-        a) inclusão do esquema lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
+
+![Lógico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Lógico_ContrataAi.png?raw=true "Modelo Lógico")
 
 ### 10 MODELO FÍSICO <a id="10-modelo-físico"></a>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
