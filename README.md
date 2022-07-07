@@ -139,17 +139,17 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/d/1XBFnOMejbF9WeBEAKDRbdR5ea8CP0M6xNnkPvz2_YnU/edit?usp=sharing <br>
 
 
-### 9 MODELO LÓGICO
+### 9 MODELO LÓGICO <a id="9-modelo-lógico"></a>
         a) inclusão do esquema lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
 
-### 10 MODELO FÍSICO
+### 10 MODELO FÍSICO <a id="10-modelo-físico"></a>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
         (criação de tabelas, alterações, etc..) 
         
        
-### 11 INSERT APLICADO NAS TABELAS DO BANCO DE DADOS
+### 11 INSERT APLICADO NAS TABELAS DO BANCO DE DADOS <a id="11-insert-aplicado-nas-tabelas-do-banco-de-dados"></a>
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
         (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
         b) Criar um novo banco de dados para testar a restauracao 
@@ -167,7 +167,7 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
  <br>
   b) Além da consulta deve ser apresentada uma imagem com o resultado obtido para cada consulta.<br>
 -->
-### 12.3 ANTEPROJETO VERSÃO 1
+### 12.3 ANTEPROJETO VERSÃO 1 <a id="123-anteprojeto-versão-1"></a>
  
  Link para [Modelo de Anteprojeto](https://docs.google.com/document/d/1oeVS2CUffbSNYWxIWZFY_mX6E5ao_PHU/edit?usp=sharing&ouid=104104747195236161434&rtpof=true&sd=true)
  
