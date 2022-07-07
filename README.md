@@ -89,42 +89,43 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 #### 7.1 Descrição dos dados 
 
 **USUÁRIO**: Tabela que armazena as informações dos usuários cadastrados <br>
-- **Nome**: Armazena o nome completo do usuário cadastrado.
-- **Nascimento**: Armazena a data de nascimento do usuário cadastrado.
-- **CPF**: Armazena o número de CPF do usuário cadastrado.
-- **Email**: Armazena o endereço de email do usuário cadastrado.
-- **Telefone**: Armazena o número de telefone do usuário cadastrado.
-- **Foto**: Armazena a foto de perfil escolhida pelo usuário.
-- **Senha**: Armazena a senha (criptografada) escolhida pelo usuário.
-
-**PROFISSÃO**: Tabela que armazena as informações sobre as profissões cadastradas no sistema <br>
-- **Nome_Profissao**: Armazena o nome da profissão cadastrada no sistema. 
+- **nomUsr**: Armazena o nome completo do usuário cadastrado.
+- **datNascimentoUsr**: Armazena a data de nascimento do usuário cadastrado.
+- **numCPFUsr**: Armazena o número de CPF do usuário cadastrado.
+- **dscEmailUsr**: Armazena o endereço de email do usuário cadastrado.
+- **numTelefoneUsr**: Armazena o número de telefone do usuário cadastrado.
+- **dscFotoUsr**: Armazena a foto de perfil escolhida pelo usuário.
+- **dscSenhaUsr**: Armazena a senha (criptografada) escolhida pelo usuário.
 
 **ESPECIALIZAÇÃO**: Tabela referente às informações sobre a especialização de uma profissão <br>
-- **Dsc_Espec**: Armazena o nome da especialização cadastrada no sistema.
+- **dscEspec**: Armazena o nome da especialização cadastrada no sistema.
+
+**PROFISSÃO**: Tabela que armazena as informações sobre as profissões cadastradas no sistema <br>
+- **dscProf**: Armazena o nome da profissão cadastrada no sistema. 
 
 **DISPONIBILIDADE**: Tabela referente à disponibilidade daquele usuário <br>
-- **Inicio**: Hora inicial do período de disponibilidade.
-- **Fim**: Hora final do período de disponibilidade.
+- **horaInicioDisp**: Hora inicial do período de disponibilidade.
+- **horaFimDisp**: Hora final do período de disponibilidade.
 
-**DIA_SEMANA**: Tabela que armazena os dias da semana <br>
-- **dscDia**: Nome do dia da semana cadastrado.
+**DIASEMANA**: Tabela que armazena os dias da semana <br>
+- **dscDiaSemn**: Nome do dia da semana cadastrado.
 
 **AVALIAÇÃO**: Tabela que refere as avaliações dos serviços de usuário <br>
-- **Nota**: Valor da nota dada de 1 a 10 pelo usuário avaliador para quem está sendo avaliado.
-- **Comentário**: Comentário feito pelo usuário avaliador para quem está sendo avaliado.
-- **Imagem**: Atributo que armazena uma imagem enviada pelo usuário avaliador (não é obrigatória).
+- **numNotaAvalia**: Valor da nota dada de 1 a 10 pelo usuário avaliador para quem está sendo avaliado.
+- **dscComentarioAvalia**: Comentário feito pelo usuário avaliador para quem está sendo avaliado.
+- **dscImagemAvalia**: Atributo que armazena uma imagem enviada pelo usuário avaliador (não é obrigatória).
 
 **CONTATO**: Tabela referente ao contato entre os usuários e os desenvolverores (nós) <br>
-- **Tópico**: Tópico do da mensagem que o usuário irá enviar.
-- **Mensagem**: Armazena a mensagem propriamente escrita pelo usuário.
+- **dscTopicoCont**: Tópico do da mensagem que o usuário irá enviar.
+- **dscMensagemCont**: Armazena a mensagem propriamente escrita pelo usuário.
 
 **CONTRATO**: Relacionamento entre os usuários referente aos serviços. Um usuário contrata alguem para que sua demanda seja realizada. <br>
-- **Data_Contratacao**: Data referente ao dia em que houve a contratação.
-- **Data_Fim**: Data em que o serviço foi finalizado.
+- **datInicioContrt**: Data referente ao dia em que houve a contratação.
+- **datFimContrt**: Data em que o serviço foi finalizado.
 
 **BAIRRO, CIDADE, ESTADO**: Tabelas referentes a localização do usuário <br>
-- **nome_Bairro, nome_Cidade, nome_Estado**: Armazenam os nomes dos bairros, cidades e estados cadastrados no sistema respectivamente. 
+- **dscBairro, dscCidade, dscEstado**: Armazenam os nomes dos bairros, cidades e estados cadastrados no sistema respectivamente. 
+- **dscSiglaEstado**: Armazena a sigla do estado correspondente.
 
 
 ### 8 RASTREABILIDADE DOS ARTEFATOS <a id="8-rastreabilidade-dos-artefatos"></a>
