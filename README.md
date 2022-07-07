@@ -157,7 +157,7 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
 
 ### 10 MODELO FÍSICO 
 
-Segue abaixo o link para o Modelo Físico :point_down: <br>
+:point_down: Segue abaixo o link para o Modelo Físico <br>
 
 :page_with_curl: [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
 
@@ -165,11 +165,11 @@ Segue abaixo o link para o Modelo Físico :point_down: <br>
 
 ### 11 INSERT APLICADO NAS TABELAS DO BANCO DE DADOS <a id="11-insert-aplicado-nas-tabelas-do-banco-de-dados"></a>
 
- :point_down: Segue abaixo o link para os Inserts do Banco de Dados <br>
+:point_down: Segue abaixo o link para os Inserts do Banco de Dados <br>
 
 :page_with_curl: [Script dos Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/exampleInserts.sql?raw=true)
 
-Caso prefira, aqui está o link para o Modelo Físico + Inserts :point_down: <br>
+:point_down: Caso prefira, aqui está o link para o Modelo Físico + Inserts <br>
 
 :page_with_curl: [Físico + Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/)
 
