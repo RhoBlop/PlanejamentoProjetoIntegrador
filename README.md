@@ -132,7 +132,7 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 
 Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/d/1XBFnOMejbF9WeBEAKDRbdR5ea8CP0M6xNnkPvz2_YnU/edit?usp=sharing <br>
 
-<!--
+
 ### 9	MODELO LÓGICO<br>
         a) inclusão do esquema lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
@@ -151,7 +151,7 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
 
-
+<!--
 ### 12	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 12.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
@@ -161,16 +161,15 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
   a) Você deve apresentar as consultas em formato SQL para cad um dos relatórios.
  <br>
   b) Além da consulta deve ser apresentada uma imagem com o resultado obtido para cada consulta.<br>
- #### 12.3 ANTEPROJETO VERSÃO 1
+-->
+#### 12.3 ANTEPROJETO VERSÃO 1
  
  Link para [Modelo de Anteprojeto](https://docs.google.com/document/d/1oeVS2CUffbSNYWxIWZFY_mX6E5ao_PHU/edit?usp=sharing&ouid=104104747195236161434&rtpof=true&sd=true)
  
  <br>
  <br>
  
- 
- 
- 
+<!--
  ### 13 Gráficos, relatórios, integração com Linguagem de programação e outras solicitações.<br>
      OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
  #### 13.1	Integração com Linguagem de programação; <br>
