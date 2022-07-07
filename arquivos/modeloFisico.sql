@@ -50,7 +50,7 @@ CREATE TABLE Contato (
     idCont INT PRIMARY KEY,
     dscTopicoCont varchar(100),
     dscMensagemContr varchar(500),
-    fk_Usuario_idUsr INT
+    idUsr INT
 );
 
 CREATE TABLE Disponibilidade (
@@ -61,7 +61,7 @@ CREATE TABLE Disponibilidade (
     idDiaSemn INT
 );
 
-CREATE TABLE Dia_Semana (
+CREATE TABLE DiaSemana (
     idDiaSemn INT PRIMARY KEY,
     dscDiaSemn varchar(100)
 );
@@ -109,7 +109,7 @@ ALTER TABLE Especializacao ADD CONSTRAINT FK_Especializacao_2
     ON DELETE CASCADE;
  
 ALTER TABLE Contato ADD CONSTRAINT FK_Contato_2
-    FOREIGN KEY (fk_Usuario_idUsr)
+    FOREIGN KEY (idUsr)
     REFERENCES Usuario (idUsr)
     ON DELETE CASCADE;
  
@@ -120,7 +120,7 @@ ALTER TABLE Disponibilidade ADD CONSTRAINT FK_Disponibilidade_2
  
 ALTER TABLE Disponibilidade ADD CONSTRAINT FK_Disponibilidade_3
     FOREIGN KEY (idDiaSemn)
-    REFERENCES Dia_Semana (idDiaSemn)
+    REFERENCES DiaSemana (idDiaSemn)
     ON DELETE CASCADE;
  
 ALTER TABLE Avaliacao ADD CONSTRAINT FK_Avaliacao_2
