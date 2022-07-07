@@ -38,23 +38,22 @@ Para feedback quanto ao aplicativo, sejam para sugestões, problemas ou reclama�
 
 [Voltar ao início](#topo)
 
-### 👤4.Personas e Histórias de usuário
+### 👥4.Personas e Histórias de usuário
 
-a) Personas desenvolvidos pelo grupo<br>
+a) 👤Personas desenvolvidos pelo grupo<br>
 
 Persona 1 - José <br>
 ![Persona 1 - José](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Persona_Jose.jpg?raw=true "Persona 1 - José")
 
 ![Link para o PDF das Personas](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Personas.pdf?raw=true "Personas")
 
-b) inclusão das Histórias de usuário desenvolvidas pelo grupo
-
+b) 📚 Inclusão das Histórias de usuário desenvolvidas pelo grupo
 
 ![Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/HistóriasdeUsuário.pdf?raw=true "Histórias de Usuário")
 
 [Voltar ao início](#topo)
 
-### :pencil: 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)
+### 📝 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)
 O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visualização: <br>
 
 Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7%C3%A3o-Mobile?node-id=2%3A38<br>
@@ -63,7 +62,7 @@ Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7
 
 [Voltar ao início](#topo)
 
-#### 5.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
+#### ❓5.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
   
 > a) Informações voltadas aos usuários 
 
@@ -76,17 +75,17 @@ Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7
 
 [Voltar ao início](#topo)
 
-### 6 TABELA DE DADOS DO SISTEMA:
+### 📊 6 TABELA DE DADOS DO SISTEMA:
 
 Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets/d/16KPcQIgBEPmTegCXIHZ1YxdCZvrzmB23dAoRtXDNnhg/edit?usp=sharing <br>
 
 [Voltar ao início](#topo)
 
- ### 7.MODELO CONCEITUAL
+ ### 💭7.MODELO CONCEITUAL
      
 ![Conceitual](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Conceitual_ContrataAi.png?raw=true "Modelo Conceitual")
 
-#### Principais Entidades
+#### ⬜ Principais Entidades
 - Usuário
 - Contrato
 - Profissão
@@ -99,7 +98,7 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 
 [Voltar ao início](#topo)
     
-#### 7.1 Descrição dos dados 
+#### 📄7.1 Descrição dos dados 
 
 **USUÁRIO**: Tabela que armazena as informações dos usuários cadastrados <br>
 - **nomUsr**: Armazena o nome completo do usuário cadastrado.
@@ -142,20 +141,20 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 
 [Voltar ao início](#topo)
 
-### 8 RASTREABILIDADE DOS ARTEFATOS
+### 📡8 RASTREABILIDADE DOS ARTEFATOS
 
 Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/d/1XBFnOMejbF9WeBEAKDRbdR5ea8CP0M6xNnkPvz2_YnU/edit?usp=sharing <br>
 
 [Voltar ao início](#topo)
 
 
-### 9 MODELO LÓGICO 
+### 🧬9 MODELO LÓGICO 
 
 ![Lógico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Lógico_ContrataAi.png?raw=true "Modelo Lógico")
 
 [Voltar ao início](#topo)
 
-### 10 MODELO FÍSICO 
+### 📄10 MODELO FÍSICO 
 
 :arrow_down: Segue abaixo o link para o Modelo Físico <br>
 
@@ -163,7 +162,7 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
 
 [Voltar ao início](#topo)
 
-### 11 INSERT APLICADO NAS TABELAS DO BANCO DE DADOS <a id="11-insert-aplicado-nas-tabelas-do-banco-de-dados"></a>
+### 📄11 INSERT APLICADO NAS TABELAS DO BANCO DE DADOS <a id="11-insert-aplicado-nas-tabelas-do-banco-de-dados"></a>
 
 :arrow_down: Segue abaixo o link para os Inserts do Banco de Dados <br>
 
@@ -187,7 +186,7 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
  <br>
   b) Além da consulta deve ser apresentada uma imagem com o resultado obtido para cada consulta.<br>
 -->
-### 12.3 ANTEPROJETO VERSÃO 1 
+### 📑12.3 ANTEPROJETO VERSÃO 1 
  
  Link para [Modelo de Anteprojeto](https://docs.google.com/document/d/1oeVS2CUffbSNYWxIWZFY_mX6E5ao_PHU/edit?usp=sharing&ouid=104104747195236161434&rtpof=true&sd=true)
 
