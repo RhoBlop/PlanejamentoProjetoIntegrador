@@ -38,7 +38,7 @@ Para feedback quanto ao aplicativo, sejam para sugestões, problemas ou reclama�
 
 [Voltar ao início](#topo)
 
-### 4.Personas e Histórias de usuário
+### 👤4.Personas e Histórias de usuário
 
 a) Personas desenvolvidos pelo grupo<br>
 
