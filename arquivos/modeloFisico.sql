@@ -1,11 +1,17 @@
 /* CONTRATAI */
 
+
+/* Exclui caso exista a tabela Contratai */
 DROP SCHEMA IF EXISTS CONTRATAI;
 
+/* Cria a base de dados Contratai */
 CREATE DATABASE CONTRATAI;
 
+/*Seleciona a base de dados criada */
 USE CONTRATAI;
 
+
+/* Criação da Tabela Usuário*/
 CREATE TABLE Usuario (
     idUsr INT PRIMARY KEY AUTO_INCREMENT,
     nomUsr varchar(50),
@@ -18,35 +24,41 @@ CREATE TABLE Usuario (
     idBairro INT
 );
 
+/* Criação da Tabela Cidade */
 CREATE TABLE Cidade (
     idCidade INT PRIMARY KEY AUTO_INCREMENT,
     dscCidade varchar(200),
     idEstado INT
 );
 
+/* Criação da Tabela Estado*/
 CREATE TABLE Estado (
     idEstado INT PRIMARY KEY AUTO_INCREMENT,
     dscEstado varchar(200),
     dscSiglaEstado char(2)
 );
 
+/* Criação da Tabela Bairro*/
 CREATE TABLE Bairro (
     idBairro INT PRIMARY KEY AUTO_INCREMENT,
     dscBairro varchar(200),
     idCidade INT
 );
 
+/* Criação da Tabela Profissão*/
 CREATE TABLE Profissao (
     idProf INT PRIMARY KEY AUTO_INCREMENT,
     dscProf varchar(50)
 );
 
+/* Criação da Tabela Especializacao */
 CREATE TABLE Especializacao (
     idEspec INT PRIMARY KEY AUTO_INCREMENT,
     dscEspec varchar(50),
     idProf INT
 );
 
+/* Criação da Tabela Contato */
 CREATE TABLE Contato (
     idCont INT PRIMARY KEY AUTO_INCREMENT,
     dscTopicoCont varchar(100),
@@ -54,6 +66,7 @@ CREATE TABLE Contato (
     idUsr INT
 );
 
+/* Criação da Tabela Disponibilidade */
 CREATE TABLE Disponibilidade (
     idDisp INT PRIMARY KEY AUTO_INCREMENT, 
     horaInicioDisp time, 
@@ -61,11 +74,13 @@ CREATE TABLE Disponibilidade (
     idDiaSemn INT
 );
 
+/* Criação da Tabela DiaSemana */
 CREATE TABLE DiaSemana (
     idDiaSemn INT PRIMARY KEY AUTO_INCREMENT,
     dscDiaSemn varchar(100)
 );
 
+/* Criação da Tabela Avaliacao */
 CREATE TABLE Avaliacao (
     idAvalia INT PRIMARY KEY AUTO_INCREMENT,
     idAvaliador INT,
@@ -75,6 +90,7 @@ CREATE TABLE Avaliacao (
     dscImagemAvalia varchar(100)
 );
 
+/* Criação da Tabela Contrat */
 CREATE TABLE Contrato (
     idContrt INT PRIMARY KEY AUTO_INCREMENT,
     idContratante INT,
@@ -83,16 +99,20 @@ CREATE TABLE Contrato (
     datFimContrt date
 );
 
+/* Criação da Tabela UsrEspec */
 CREATE TABLE UsrEspec (
     idUsr INT,
     idEspec INT
 );
 
+/* Criação da Tabela UsrDisp */
 CREATE TABLE UsrDisp (
     idUsr INT,
     idDisp INT
 );
- 
+
+/* Atribuição das Chaves Primárias e Estrangeiras nas tabelas */
+
 ALTER TABLE Usuario ADD CONSTRAINT FK_Usuario_2
     FOREIGN KEY (idBairro)
     REFERENCES Bairro (idBairro)
