@@ -19,7 +19,7 @@ Trabalho desenvolvido durante a disciplina de Projeto Integrador
     1. [Anteprojeto](#123-anteprojeto-versão-1)
 
 
-### 1. COMPONENTES <a id="1-componentes"></a>
+### :man_technologist: 1. COMPONENTES <a id="1-componentes"></a>
 Integrantes do grupo<br>
 Rafael Rodrigues Matos: rafael1309mt@gmail.com <br>
 Thiago Neves Luz: nevesluzthiago@gmail.com<br>
