@@ -140,22 +140,29 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 
 Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/d/1XBFnOMejbF9WeBEAKDRbdR5ea8CP0M6xNnkPvz2_YnU/edit?usp=sharing <br>
 
+[Voltar ao início](#topo)
+
 
 ### 9 MODELO LÓGICO <a id="9-modelo-lógico"></a>
 
 ![Lógico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Lógico_ContrataAi.png?raw=true "Modelo Lógico")
 
+[Voltar ao início](#topo)
+
 ### 10 MODELO FÍSICO <a id="10-modelo-físico"></a>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
         (criação de tabelas, alterações, etc..) 
         
-       
+[Voltar ao início](#topo)
+
 ### 11 INSERT APLICADO NAS TABELAS DO BANCO DE DADOS <a id="11-insert-aplicado-nas-tabelas-do-banco-de-dados"></a>
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
         (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
         b) Criar um novo banco de dados para testar a restauracao 
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
+
+[Voltar ao início](#topo)
 
 <!--
 ### 12	TABELAS E PRINCIPAIS CONSULTAS<br>
