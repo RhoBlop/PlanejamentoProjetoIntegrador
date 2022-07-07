@@ -32,11 +32,11 @@ O Sistema do "Contrata Aí" seria feito nos seguintes moldes: O **USUÁRIO** se 
 Cadastrado, o **USUÁRIO** contrataria um serviço com os seguintes passos: buscaria um profissional em um mecanismo de busca com diversos filtros (REGIÃO, **PROFISSÃO**, **ESPECIALIZAÇÃO**, **AVALIAÇÃO**), checaria a agenda do mesmo, entraria em contato com ele e, caso ambos resolvam fazer um **CONTRATO**, ele informará ao nosso sistema a **data de contratação** e a **data de fim** do serviço. O **CONTRATO** não ficará visível a todos os clientes, mas essas datas serão usadas para montar a agenda pública do profissional (caso ele tenha um contrato em X horário no dia Y, aquele horário não estará disponível). Passada a data da realização do **CONTRATO**, o **USUÁRIO** poderia então fazer uma **AVALIAÇÃO** do serviço feito, colocando sua **nota**, um **comentário** e uma **imagem** (opcional).<br>
 Para feedback quanto ao aplicativo, sejam para sugestões, problemas ou reclamações, os **USUÁRIOS** podem fazer um **CONTATO** com nós, desenvolvedores, enviando uma **mensagem** com um **tópico** pré-definido.
  
-### 📋3.PMC
+### 📋 3.PMC
 ![PMC - Contrata Aí](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Canvas.png?raw=true "PMC")
 <br>
 
-⬆️[Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo)
 
 ### 👥4.Personas e Histórias de usuário
 
@@ -51,7 +51,7 @@ Persona 1 - José <br>
 
 [Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/HistóriasdeUsuário.pdf?raw=true "Histórias de Usuário")
 
-⬆️[Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo)
 
 ### 📝 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)
 O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visualização: <br>
@@ -60,9 +60,9 @@ Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7
 
 ![Figma](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Mockup.png?raw=true "Print do Figma")
 
-⬆️[Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo)
 
-#### ❓5.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
+#### ❓ 5.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
   
 > a) Informações voltadas aos usuários 
 
@@ -74,14 +74,15 @@ Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7
 * Relatório com as especializações de cada profissão, contendo as seguintes informações: profissão e especialização.
 
 ⬆️[Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo)
 
 ### 📊 6 TABELA DE DADOS DO SISTEMA:
 
 Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets/d/16KPcQIgBEPmTegCXIHZ1YxdCZvrzmB23dAoRtXDNnhg/edit?usp=sharing <br>
 
-⬆️[Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo)
 
-### 💭7.MODELO CONCEITUAL
+### 💭 7.MODELO CONCEITUAL
      
 ![Conceitual](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Conceitual_ContrataAi.png?raw=true "Modelo Conceitual")
 
@@ -96,9 +97,9 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 - Usuário → Contrato → Usuário
 - Usuário → Possui → Disponibilidade
 
-⬆️[Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo)
     
-#### 📄7.1 Descrição dos dados 
+#### 📄 7.1 Descrição dos dados 
 
 **USUÁRIO**: Tabela que armazena as informações dos usuários cadastrados <br>
 - **nomUsr**: Armazena o nome completo do usuário cadastrado.
@@ -139,30 +140,30 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 - **dscBairro, dscCidade, dscEstado**: Armazenam os nomes dos bairros, cidades e estados cadastrados no sistema respectivamente. 
 - **dscSiglaEstado**: Armazena a sigla do estado correspondente.
 
-⬆️[Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo)
 
 ### 📡8 RASTREABILIDADE DOS ARTEFATOS
 
 Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/d/1XBFnOMejbF9WeBEAKDRbdR5ea8CP0M6xNnkPvz2_YnU/edit?usp=sharing <br>
 
-⬆️[Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo)
 
 
-### 🧬9 MODELO LÓGICO 
+### 🧬 9 MODELO LÓGICO 
 
 ![Lógico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Lógico_ContrataAi.png?raw=true "Modelo Lógico")
 
-⬆️[Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo)
 
-### 📄10 MODELO FÍSICO 
+### 📄 10 MODELO FÍSICO 
 
 :arrow_down: Segue abaixo o link para o Modelo Físico <br>
 
-- :page_with_curl: [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
+-:page_with_curl: [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
 
-⬆️[Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo)
 
-### 📄11 INSERT APLICADO NAS TABELAS DO BANCO DE DADOS <a id="11-insert-aplicado-nas-tabelas-do-banco-de-dados"></a>
+### 📄 11 INSERT APLICADO NAS TABELAS DO BANCO DE DADOS <a id="11-insert-aplicado-nas-tabelas-do-banco-de-dados"></a>
 
 :arrow_down: Segue abaixo o link para os Inserts do Banco de Dados <br>
 
@@ -173,7 +174,7 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
 - :page_with_curl: [Físico + Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/)
 
 
-⬆️[Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo)
 
 <!--
 ### 12	TABELAS E PRINCIPAIS CONSULTAS<br>
@@ -186,7 +187,7 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
  <br>
   b) Além da consulta deve ser apresentada uma imagem com o resultado obtido para cada consulta.<br>
 -->
-### 📑12.3 ANTEPROJETO VERSÃO 1 
+### 📑 12.3 ANTEPROJETO VERSÃO 1 
  
  Link para [Modelo de Anteprojeto](https://docs.google.com/document/d/1oeVS2CUffbSNYWxIWZFY_mX6E5ao_PHU/edit?usp=sharing&ouid=104104747195236161434&rtpof=true&sd=true)
 
