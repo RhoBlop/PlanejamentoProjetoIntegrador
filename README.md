@@ -34,9 +34,13 @@ O Sistema do "Contrata Aí" seria feito nos seguintes moldes: O **USUÁRIO** se 
 Cadastrado, o **USUÁRIO** contrataria um serviço com os seguintes passos: buscaria um profissional em um mecanismo de busca com diversos filtros (REGIÃO, **PROFISSÃO**, **ESPECIALIZAÇÃO**, **AVALIAÇÃO**), checaria a agenda do mesmo, entraria em contato com ele e, caso ambos resolvam fazer um **CONTRATO**, ele informará ao nosso sistema a **data de contratação** e a **data de fim** do serviço. O **CONTRATO** não ficará visível a todos os clientes, mas essas datas serão usadas para montar a agenda pública do profissional (caso ele tenha um contrato em X horário no dia Y, aquele horário não estará disponível). Passada a data da realização do **CONTRATO**, o **USUÁRIO** poderia então fazer uma **AVALIAÇÃO** do serviço feito, colocando sua **nota**, um **comentário** e uma **imagem** (opcional).<br>
 Para feedback quanto ao aplicativo, sejam para sugestões, problemas ou reclamações, os **USUÁRIOS** podem fazer um **CONTATO** com nós, desenvolvedores, enviando uma **mensagem** com um **tópico** pré-definido.
  
+[Voltar ao início](#topo)
+
 ### 3.PMC
 ![PMC - Contrata Aí](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Canvas.png?raw=true "PMC")
 <br>
+
+[Voltar ao início](#topo)
 
 ### 4.Personas e Histórias de usuário
 
