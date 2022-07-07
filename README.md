@@ -7,10 +7,10 @@ Trabalho desenvolvido durante a disciplina de Projeto Integrador
 3. [PMC](#3pmc)
 4. [Personas e Histórias de Usuário](#4personas-e-histórias-de-usuário)
 5. [Protótipo](#5rascunhos-básicos-da-interface-mockups)
-    5.1 [Quais perguntas podem ser respondidas com o sistema proposto](#51-quais-perguntas-podem-ser-respondidas-com-o-sistema-proposto)
+   5.1 [Quais perguntas podem ser respondidas com o sistema proposto](#51-quais-perguntas-podem-ser-respondidas-com-o-sistema-proposto)
 6. [Tabela de Dados](#6-tabela-de-dados-do-sistema)
 7. [Modelo Conceitual](#7modelo-conceitual)
-    7.1 [Descrição dos dados](#71-descrição-dos-dados)
+   7.1 [Descrição dos dados](#71-descrição-dos-dados)
 8. [Rastreabilidade dos Artefatos](#8-rastreabilidade-dos-artefatos)
 
 ### 1. COMPONENTES <a id="1-componentes"></a>
