@@ -2,30 +2,30 @@
 Trabalho desenvolvido durante a disciplina de Projeto Integrador
 
 # Sumário <a id="topo"></a>
-1. [Componentes](#1-componentes)
-2. [Minimundo](#2minimundo)
-3. [PMC](#3pmc)
-4. [Personas e Histórias de Usuário](#4personas-e-histórias-de-usuário)
-5. [Protótipo](#5rascunhos-básicos-da-interface-mockups)
-    1. [Quais perguntas podem ser respondidas com o sistema proposto](#51-quais-perguntas-podem-ser-respondidas-com-o-sistema-proposto)
-6. [Tabela de Dados](#6-tabela-de-dados-do-sistema)
-7. [Modelo Conceitual](#7modelo-conceitual)
-    1. [Descrição dos dados](#71-descrição-dos-dados)
-8. [Rastreabilidade dos Artefatos](#8-rastreabilidade-dos-artefatos)
-9. [Modelo Lógico](#9-modelo-lógico)
-10. [Modelo Físico](#10-modelo-físico)
-11. [Inserts](#11-insert-aplicado-nas-tabelas-do-banco-de-dados)
+1. [Componentes](#👨‍💻-1-componentes)
+2. [Minimundo](#🌎-2minimundo)
+3. [PMC](#📋-3pmc)
+4. [Personas e Histórias de Usuário](#👥4personas-e-histórias-de-usuário)
+5. [Protótipo](#📝-5rascunhos-básicos-da-interface-mockups)
+    1. [Quais perguntas podem ser respondidas com o sistema proposto](#❓-51-quais-perguntas-podem-ser-respondidas-com-o-sistema-proposto)
+6. [Tabela de Dados](#📊-6-tabela-de-dados-do-sistema)
+7. [Modelo Conceitual](#💭-7modelo-conceitual)
+    1. [Descrição dos dados](#📄-71-descrição-dos-dados)
+8. [Rastreabilidade dos Artefatos](#📡8-rastreabilidade-dos-artefatos)
+9. [Modelo Lógico](#🧬-9-modelo-lógico)
+10. [Modelo Físico](#📄-10-modelo-físico)
+11. [Inserts](#📄-11-insert-aplicado-nas-tabelas-do-banco-de-dados-a-id11-insert-aplicado-nas-tabelas-do-banco-de-dadosa)
 12. Tabelas e Principais Consultas 
-    1. [Anteprojeto](#123-anteprojeto-versão-1)
+    1. [Anteprojeto](#📑-123-anteprojeto-versão-1)
 
 
-### :man_technologist: 1. COMPONENTES <a id="1-componentes"></a>
+### 👨‍💻 1. COMPONENTES 
 Integrantes do grupo<br>
 Rafael Rodrigues Matos: rafael1309mt@gmail.com <br>
 Thiago Neves Luz: nevesluzthiago@gmail.com<br>
 Matheus de Oliveira Magnago: magnagomatheus7@gmail.com<br>
 
-### :earth_americas: 2.MINIMUNDO
+### 🌎 2.MINIMUNDO 
 
 > O Mundo está ficando cada vez mais modernizado... Utilizamos cada vez mais nossos celulares e computadores para facilitar nossas tarefas diárias. Pensando nisso, um grupo de estudantes do IFES Serra resolveu desenvolver um aplicativo focado em serviços autônomos, com o objetivo de facilitar a comunicação entre ambos clientes e prestadores de serviços.<br>
 O Sistema do "Contrata Aí" seria feito nos seguintes moldes: O **USUÁRIO** se cadastraria com as seguintes informações: **nome**, **data de nascimento**, **cpf**, **email**, **senha**, **telefone**, REGIÃO (**BAIRRO**, **CIDADE**, **ESTADO**) e uma **foto** de perfil. Ele também irá informar as suas **ESPECIALIZAÇÕES**, caso seja um prestador de serviços, para que assim possamos diferenciar os profissionais dos clientes. O **USUÁRIO** que possua **ESPECIALIZAÇÕES** irá também colocar a sua **DISPONIBILIDADE**, para que ela fique visível em seu perfil e assim a pessoa que o queira contratar fique ciente dos dias da semana em que ele está disponível.<br>
@@ -156,21 +156,21 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
 
 ### 📄 10 MODELO FÍSICO 
 
-:arrow_down: Segue abaixo o link para o Modelo Físico <br>
+⬇️ Segue abaixo o link para o Modelo Físico <br>
 
-- :page_with_curl: [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
+- 📃 [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
 
 ⬆️ [Voltar ao início](#topo)
 
 ### 📄 11 INSERT APLICADO NAS TABELAS DO BANCO DE DADOS <a id="11-insert-aplicado-nas-tabelas-do-banco-de-dados"></a>
 
-:arrow_down: Segue abaixo o link para os Inserts do Banco de Dados <br>
+⬇️ Segue abaixo o link para os Inserts do Banco de Dados <br>
 
-- :page_with_curl: [Script dos Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/exampleInserts.sql?raw=true)
+- 📃 [Script dos Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/exampleInserts.sql?raw=true)
 
-:arrow_down: Caso prefira, aqui está o link para o Modelo Físico + Inserts <br>
+⬇️ Caso prefira, aqui está o link para o Modelo Físico + Inserts <br>
 
-- :page_with_curl: [Físico + Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/)
+- 📃 [Físico + Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/)
 
 
 ⬆️ [Voltar ao início](#topo)
