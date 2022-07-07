@@ -157,7 +157,9 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
 
 ### 10 MODELO FÍSICO <a id="10-modelo-físico"></a>
 
-![Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
+Segue abaixo o link para o Modelo Físico :point_down: <br>
+
+[Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
 
 [Voltar ao início](#topo)
 
