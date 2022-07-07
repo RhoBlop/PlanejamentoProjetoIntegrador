@@ -73,7 +73,6 @@ Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7
 * Relatório com a quantidade de usuários cadastrados que possuem profissão. 
 * Relatório com as especializações de cada profissão, contendo as seguintes informações: profissão e especialização.
 
-⬆️[Voltar ao início](#topo)
 ⬆️ [Voltar ao início](#topo)
 
 ### 📊 6 TABELA DE DADOS DO SISTEMA:
