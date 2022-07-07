@@ -158,7 +158,7 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
 
 :arrow_down: Segue abaixo o link para o Modelo Físico <br>
 
-:page_with_curl: [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
+- :page_with_curl: [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
 
 ⬆️[Voltar ao início](#topo)
 
@@ -166,11 +166,11 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
 
 :arrow_down: Segue abaixo o link para os Inserts do Banco de Dados <br>
 
-:page_with_curl: [Script dos Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/exampleInserts.sql?raw=true)
+- :page_with_curl: [Script dos Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/exampleInserts.sql?raw=true)
 
 :arrow_down: Caso prefira, aqui está o link para o Modelo Físico + Inserts <br>
 
-:page_with_curl: [Físico + Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/)
+- :page_with_curl: [Físico + Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/)
 
 
 ⬆️[Voltar ao início](#topo)
