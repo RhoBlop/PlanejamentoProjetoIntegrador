@@ -3,7 +3,7 @@ Trabalho desenvolvido durante a disciplina de Projeto Integrador
 
 # Sumário
 1. [Componentes](#1-componentesbr)
-8. ![Rastreabilidade dos Artefatos](#8-rastreabilidade-dos-artefatosbr)
+8. [Rastreabilidade dos Artefatos](#8-rastreabilidade-dos-artefatosbr)
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
