@@ -3,7 +3,7 @@ Trabalho desenvolvido durante a disciplina de Projeto Integrador
 
 # Sumário
 1. [Componentes](#1-componentesbr)
-8. [Rastreabilidade dos Artefatos](#8-rastreabilidade-dos-artefatosbr)
+8. [Rastreabilidade dos Artefatos](#8-rastreabilidade-dos-artefatos)
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
@@ -119,7 +119,7 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 - **nome_Bairro, nome_Cidade, nome_Estado**: Armazenam os nomes dos bairros, cidades e estados cadastrados no sistema respectivamente. 
 
 
-### 8	RASTREABILIDADE DOS ARTEFATOS<br>
+### 8	RASTREABILIDADE DOS ARTEFATOS
 
 Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/d/1XBFnOMejbF9WeBEAKDRbdR5ea8CP0M6xNnkPvz2_YnU/edit?usp=sharing <br>
 
