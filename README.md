@@ -54,7 +54,7 @@ b) inclusão das Histórias de usuário desenvolvidas pelo grupo
 
 [Voltar ao início](#topo)
 
-### 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)
+### :pencil: 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)
 O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visualização: <br>
 
 Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7%C3%A3o-Mobile?node-id=2%3A38<br>
