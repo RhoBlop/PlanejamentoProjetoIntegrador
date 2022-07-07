@@ -2,9 +2,8 @@
 Trabalho desenvolvido durante a disciplina de Projeto Integrador
 
 # Sumário
-
-1. [Componentes](https://github.com/RhoBlop/template_projeto_integrador#1-componentes) 
-8. ![Rastreabilidade dos Artefatos](https://github.com/RhoBlop/template_projeto_integrador#8rastreabilidade-dos-artefatos)
+1. [Componentes](#1-componentesbr)
+8. ![Rastreabilidade dos Artefatos](#8-rastreabilidade-dos-artefatosbr)
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
