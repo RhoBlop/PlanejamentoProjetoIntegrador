@@ -1,4 +1,4 @@
-/* Lógico_1: */
+/* CONTRATAI */
 
 DROP SCHEMA IF EXISTS CONTRATAI;
 
@@ -7,7 +7,7 @@ CREATE DATABASE CONTRATAI;
 USE CONTRATAI;
 
 CREATE TABLE Usuario (
-    idUsr INT PRIMARY KEY,
+    idUsr INT PRIMARY KEY AUTO_INCREMENT,
     nomUsr varchar(50),
     datNascimentoUsr date,
     numTelefoneUsr varchar(13),
@@ -19,55 +19,55 @@ CREATE TABLE Usuario (
 );
 
 CREATE TABLE Cidade (
-    idCidade INT PRIMARY KEY,
+    idCidade INT PRIMARY KEY AUTO_INCREMENT,
     dscCidade varchar(200),
     idEstado INT
 );
 
 CREATE TABLE Estado (
-    idEstado INT PRIMARY KEY,
+    idEstado INT PRIMARY KEY AUTO_INCREMENT,
     dscEstado varchar(200)
 );
 
 CREATE TABLE Bairro (
-    idBairro INT PRIMARY KEY,
+    idBairro INT PRIMARY KEY AUTO_INCREMENT,
     dscBairro varchar(200),
     idCidade INT
 );
 
 CREATE TABLE Profissao (
-    idProf INT PRIMARY KEY,
+    idProf INT PRIMARY KEY AUTO_INCREMENT,
     dscProf varchar(50)
 );
 
 CREATE TABLE Especializacao (
-    idEspec INT PRIMARY KEY,
+    idEspec INT PRIMARY KEY AUTO_INCREMENT,
     dscEspec varchar(50),
     idProf INT
 );
 
 CREATE TABLE Contato (
-    idCont INT PRIMARY KEY,
+    idCont INT PRIMARY KEY AUTO_INCREMENT,
     dscTopicoCont varchar(100),
     dscMensagemContr varchar(500),
     idUsr INT
 );
 
 CREATE TABLE Disponibilidade (
-    idDisp INT PRIMARY KEY,
+    idDisp INT PRIMARY KEY AUTO_INCREMENT,
     idUsr INT,
-    datInicioDisp date,
-    datFimDisp date,
+    datInicioDisp date,  -- mudar o tipo 
+    datFimDisp date,  -- mudar o tipo
     idDiaSemn INT
 );
 
 CREATE TABLE DiaSemana (
-    idDiaSemn INT PRIMARY KEY,
+    idDiaSemn INT PRIMARY KEY AUTO_INCREMENT,
     dscDiaSemn varchar(100)
 );
 
 CREATE TABLE Avaliacao (
-    idAvalia INT PRIMARY KEY,
+    idAvalia INT PRIMARY KEY AUTO_INCREMENT,
     idAvaliador INT,
     idAvaliado INT,
     numNotaAvalia integer,
@@ -76,7 +76,7 @@ CREATE TABLE Avaliacao (
 );
 
 CREATE TABLE Contrato (
-    idContrt INT PRIMARY KEY,
+    idContrt INT PRIMARY KEY AUTO_INCREMENT,
     idContratante INT,
     idContratado INT,
     datInicioContrt date,
