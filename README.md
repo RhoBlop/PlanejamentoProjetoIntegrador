@@ -159,16 +159,16 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
 
 Segue abaixo o link para o Modelo Físico :point_down: <br>
 
-[Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
+:page_with_curl: [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
 
 [Voltar ao início](#topo)
 
 ### 11 INSERT APLICADO NAS TABELAS DO BANCO DE DADOS <a id="11-insert-aplicado-nas-tabelas-do-banco-de-dados"></a>
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
-        (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+
+Segue abaixo o link para os Inserts do Banco de Dados :point_down: <br>
+
+:page_with_curl: [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
+
 
 [Voltar ao início](#topo)
 
