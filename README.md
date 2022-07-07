@@ -3,6 +3,14 @@ Trabalho desenvolvido durante a disciplina de Projeto Integrador
 
 # Sumário
 1. [Componentes](#1-componentes)
+2. [Minimundo](#2minimundo)
+3. [PMC](#3pmc)
+4. [Personas e Histórias de Usuário](#4personas-e-histórias-de-usuário)
+5. [Protótipo](#5rascunhos-básicos-da-interface-mockups)
+    5.1 [Quais perguntas podem ser respondidas com o sistema proposto](#51-quais-perguntas-podem-ser-respondidas-com-o-sistema-proposto)
+6. [Tabela de Dados](#6-tabela-de-dados-do-sistema)
+7. [Modelo Conceitual](#7modelo-conceitual)
+    7.1 [Descrição dos dados](#71-descrição-dos-dados)
 8. [Rastreabilidade dos Artefatos](#8-rastreabilidade-dos-artefatos)
 
 ### 1. COMPONENTES <a id="1-componentes"></a>
@@ -11,19 +19,19 @@ Rafael Rodrigues Matos: rafael1309mt@gmail.com <br>
 Thiago Neves Luz: nevesluzthiago@gmail.com<br>
 Matheus de Oliveira Magnago: magnagomatheus7@gmail.com<br>
 
-### 2.MINIMUNDO<br>
+### 2.MINIMUNDO
 
 > O Mundo está ficando cada vez mais modernizado... Utilizamos cada vez mais nossos celulares e computadores para facilitar nossas tarefas diárias. Pensando nisso, um grupo de estudantes do IFES Serra resolveu desenvolver um aplicativo focado em serviços autônomos, com o objetivo de facilitar a comunicação entre ambos clientes e prestadores de serviços.<br>
 O Sistema do "Contrata Aí" seria feito nos seguintes moldes: O **USUÁRIO** se cadastraria com as seguintes informações: **nome**, **data de nascimento**, **cpf**, **email**, **senha**, **telefone**, REGIÃO (**BAIRRO**, **CIDADE**, **ESTADO**) e uma **foto** de perfil. Ele também irá informar as suas **ESPECIALIZAÇÕES**, caso seja um prestador de serviços, para que assim possamos diferenciar os profissionais dos clientes. O **USUÁRIO** que possua **ESPECIALIZAÇÕES** irá também colocar a sua **DISPONIBILIDADE**, para que ela fique visível em seu perfil e assim a pessoa que o queira contratar fique ciente dos dias da semana em que ele está disponível.<br>
 Cadastrado, o **USUÁRIO** contrataria um serviço com os seguintes passos: buscaria um profissional em um mecanismo de busca com diversos filtros (REGIÃO, **PROFISSÃO**, **ESPECIALIZAÇÃO**, **AVALIAÇÃO**), checaria a agenda do mesmo, entraria em contato com ele e, caso ambos resolvam fazer um **CONTRATO**, ele informará ao nosso sistema a **data de contratação** e a **data de fim** do serviço. O **CONTRATO** não ficará visível a todos os clientes, mas essas datas serão usadas para montar a agenda pública do profissional (caso ele tenha um contrato em X horário no dia Y, aquele horário não estará disponível). Passada a data da realização do **CONTRATO**, o **USUÁRIO** poderia então fazer uma **AVALIAÇÃO** do serviço feito, colocando sua **nota**, um **comentário** e uma **imagem** (opcional).<br>
 Para feedback quanto ao aplicativo, sejam para sugestões, problemas ou reclamações, os **USUÁRIOS** podem fazer um **CONTATO** com nós, desenvolvedores, enviando uma **mensagem** com um **tópico** pré-definido.
  
-### 3.PMC<br>
+### 3.PMC
 ![PMC - Contrata Aí](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Canvas.png?raw=true "PMC")
 <br>
 
 
-### 4.Personas e Histórias de usuário<br>
+### 4.Personas e Histórias de usuário
 
 a) Personas desenvolvidos pelo grupo<br>
 
@@ -36,7 +44,7 @@ b) inclusão das Histórias de usuário desenvolvidas pelo grupo
 
 ![Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/HistóriasdeUsuário.pdf?raw=true "Histórias de Usuário")
 
-### 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
+### 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)
 O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visualização: <br>
 
 Link para acesso: https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7%C3%A3o-Mobile?node-id=2%3A38<br>
@@ -63,7 +71,7 @@ Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets
 
 
  
- ### 7.MODELO CONCEITUAL<br>
+ ### 7.MODELO CONCEITUAL
      
 ![Conceitual](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Conceitual_ContrataAi.png?raw=true "Modelo Conceitual")
 
