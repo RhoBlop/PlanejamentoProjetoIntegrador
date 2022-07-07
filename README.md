@@ -1,9 +1,7 @@
 # TRABALHO DE PI:  Contrata Aí
 Trabalho desenvolvido durante a disciplina de Projeto Integrador
 
-<a id="topo"></a>
-
-# Sumário
+# Sumário <a id="topo"></a>
 1. [Componentes](#1-componentes)
 2. [Minimundo](#2minimundo)
 3. [PMC](#3pmc)
