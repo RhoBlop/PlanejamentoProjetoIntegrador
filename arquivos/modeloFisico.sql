@@ -26,7 +26,8 @@ CREATE TABLE Cidade (
 
 CREATE TABLE Estado (
     idEstado INT PRIMARY KEY AUTO_INCREMENT,
-    dscEstado varchar(200)
+    dscEstado varchar(200),
+    dscSiglaEstado char(2)
 );
 
 CREATE TABLE Bairro (
@@ -54,10 +55,9 @@ CREATE TABLE Contato (
 );
 
 CREATE TABLE Disponibilidade (
-    idDisp INT PRIMARY KEY AUTO_INCREMENT,
-    idUsr INT,
-    datInicioDisp date,  -- mudar o tipo 
-    datFimDisp date,  -- mudar o tipo
+    idDisp INT PRIMARY KEY AUTO_INCREMENT, 
+    horaInicioDisp time, 
+    horaFimDisp time,
     idDiaSemn INT
 );
 
@@ -143,6 +143,16 @@ ALTER TABLE Contrato ADD CONSTRAINT FK_Contrato_3
     REFERENCES Usuario (idUsr)
     ON DELETE CASCADE;
  
+ALTER TABLE UsrDisp ADD CONSTRAINT FK_UsrDisp_1
+    FOREIGN KEY (idDisp)
+    REFERENCES Disponibilidade (idDisp)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE UsrDisp ADD CONSTRAINT FK_UsrDisp_2
+    FOREIGN KEY (idUsr)
+    REFERENCES Usuario (idUsr)
+    ON DELETE SET NULL;
+
 ALTER TABLE UsrEspec ADD CONSTRAINT FK_UsrEspec_1
     FOREIGN KEY (idUsr)
     REFERENCES Usuario (idUsr)
