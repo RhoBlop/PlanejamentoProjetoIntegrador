@@ -158,7 +158,7 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
 
 :arrow_down: Segue abaixo o link para o Modelo Físico <br>
 
--:page_with_curl: [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
+- :page_with_curl: [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
 
 ⬆️ [Voltar ao início](#topo)
 
@@ -190,7 +190,7 @@ Link para a rastreabilidade dos artefatos: https://docs.google.com/spreadsheets/
  
  Link para [Modelo de Anteprojeto](https://docs.google.com/document/d/1oeVS2CUffbSNYWxIWZFY_mX6E5ao_PHU/edit?usp=sharing&ouid=104104747195236161434&rtpof=true&sd=true)
 
-[Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo)
  
  
 <!--
