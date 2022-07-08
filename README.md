@@ -19,7 +19,7 @@ Trabalho desenvolvido durante a disciplina de Projeto Integrador
     1. [Anteprojeto](#123-anteprojeto-versão-1)
 
 
-<br><br>
+<br>
 
 ### 👨‍💻 1. COMPONENTES <a id="1-componentes"></a>
 Integrantes do grupo<br>
