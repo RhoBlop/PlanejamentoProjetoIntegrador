@@ -96,7 +96,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 #### 🔀 Principais Fluxos
 - Usuário → Avalia → Usuário
-- Usuário → Tem → Profissão
+- Usuário → Tem → Especialização
 - Usuário → Contrato → Usuário
 - Usuário → Possui → Disponibilidade
 
