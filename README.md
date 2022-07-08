@@ -45,7 +45,7 @@ Para feedback quanto ao aplicativo, sejam para sugestões, problemas ou reclama�
 Persona 1 - José <br>
 ![Persona 1 - José](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Persona_Jose.jpg?raw=true "Persona 1 - José")
 
-🔗 [Link para o PDF das Personas](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Personas.pdf?raw=true "Personas")
+🔗 [Link para o PDF das Personas](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Personas.pdf?raw=true "Personas") <br><br>
 
 📚 b) Inclusão das Histórias de usuário desenvolvidas pelo grupo
 
