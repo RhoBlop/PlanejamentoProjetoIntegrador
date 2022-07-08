@@ -196,8 +196,6 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
   b) Além da consulta deve ser apresentada uma imagem com o resultado obtido para cada consulta.<br>
 -->
 
-<br>
-
 ### 📑 12.3 ANTEPROJETO VERSÃO 1 <a id="123-anteprojeto-versão-1"></a>
  
 🔗 Link para [Modelo de Anteprojeto](https://docs.google.com/document/d/1j5ghB1QAEJij-8y80AIXdLZREqfTdI0EJTIJvSlYktc/edit?usp=sharing)
