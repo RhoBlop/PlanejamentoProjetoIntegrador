@@ -19,6 +19,8 @@ Trabalho desenvolvido durante a disciplina de Projeto Integrador
     1. [Anteprojeto](#123-anteprojeto-versão-1)
 
 
+<br><br>
+
 ### 👨‍💻 1. COMPONENTES <a id="1-componentes"></a>
 Integrantes do grupo<br>
 Rafael Rodrigues Matos: rafael1309mt@gmail.com <br>
