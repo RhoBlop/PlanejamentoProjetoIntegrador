@@ -49,7 +49,7 @@ Persona 1 - José <br>
 
 📚 b) Inclusão das Histórias de usuário desenvolvidas pelo grupo
 
-🔗 [Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/HistóriasdeUsuário.pdf?raw=true "Histórias de Usuário")
+🔗 [Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/HistóriasdeUsuário.pdf?raw=true "Histórias de Usuário") <br>
 
 ⬆️ [Voltar ao início](#topo)
 
@@ -58,7 +58,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 🔗 [Link para acesso](https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7%C3%A3o-Mobile?node-id=2%3A38) <br>
 
-![Figma](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Mockup.png?raw=true "Print do Figma")
+![Figma](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Mockup.png?raw=true "Print do Figma") 
 
 ⬆️ [Voltar ao início](#topo)
 
@@ -77,7 +77,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 ### 📊 6 TABELA DE DADOS DO SISTEMA <a id="6-tabela-de-dados-do-sistema"></a>
 
-🔗 Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets/d/16KPcQIgBEPmTegCXIHZ1YxdCZvrzmB23dAoRtXDNnhg/edit?usp=sharing <br>
+🔗 Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets/d/16KPcQIgBEPmTegCXIHZ1YxdCZvrzmB23dAoRtXDNnhg/edit?usp=sharing <br><br>
 
 ⬆️ [Voltar ao início](#topo)
 
@@ -95,6 +95,8 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 - Usuário → Tem → Profissão
 - Usuário → Contrato → Usuário
 - Usuário → Possui → Disponibilidade
+
+<br>
 
 ⬆️ [Voltar ao início](#topo)
     
@@ -139,6 +141,8 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 - **dscBairro, dscCidade, dscEstado**: Armazenam os nomes dos bairros, cidades e estados cadastrados no sistema respectivamente. 
 - **dscSiglaEstado**: Armazena a sigla do estado correspondente.
 
+<br>
+
 ⬆️ [Voltar ao início](#topo)
 
 ### 📡8 RASTREABILIDADE DOS ARTEFATOS <a id="8-rastreabilidade-dos-artefatos"></a>
@@ -152,15 +156,15 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 ![Lógico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Lógico_ContrataAi.png?raw=true "Modelo Lógico")
 
-⬆️ [Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo) <br>
 
 ### 📄 10 MODELO FÍSICO <a id="10-modelo-físico"></a>
 
 ⬇️ Segue abaixo o link para o Modelo Físico <br>
 
-- 📃 [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true)
+- 📃 [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true) <br>
 
-⬆️ [Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo) <br>
 
 ### 📄 11 INSERT APLICADO NAS TABELAS DO BANCO DE DADOS <a id="11-insert-aplicado-nas-tabelas-do-banco-de-dados"></a>
 
@@ -172,6 +176,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 - 📃 [Físico + Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/)
 
+<br>
 
 ⬆️ [Voltar ao início](#topo)
 
