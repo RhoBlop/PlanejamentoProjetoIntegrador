@@ -53,6 +53,8 @@ Persona 1 - José <br>
 
 ⬆️ [Voltar ao início](#topo)
 
+<br>
+
 ### 📝 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS) <a id="5rascunhos-básicos-da-interface-mockups"></a> 
 O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visualização: <br>
 
@@ -77,9 +79,11 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 ### 📊 6 TABELA DE DADOS DO SISTEMA <a id="6-tabela-de-dados-do-sistema"></a>
 
-🔗 Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets/d/16KPcQIgBEPmTegCXIHZ1YxdCZvrzmB23dAoRtXDNnhg/edit?usp=sharing <br><br>
+🔗 Link para a Tabela de Dados - Contrata Aí: https://docs.google.com/spreadsheets/d/16KPcQIgBEPmTegCXIHZ1YxdCZvrzmB23dAoRtXDNnhg/edit?usp=sharing <br>
 
 ⬆️ [Voltar ao início](#topo)
+
+<br>
 
 ### 💭 7.MODELO CONCEITUAL <a id="7modelo-conceitual"></a>
      
@@ -96,9 +100,9 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 - Usuário → Contrato → Usuário
 - Usuário → Possui → Disponibilidade
 
-<br>
-
 ⬆️ [Voltar ao início](#topo)
+
+<br>
     
 #### 📄 7.1 Descrição dos dados <a id="71-descrição-dos-dados"></a>
 
@@ -141,9 +145,10 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 - **dscBairro, dscCidade, dscEstado**: Armazenam os nomes dos bairros, cidades e estados cadastrados no sistema respectivamente. 
 - **dscSiglaEstado**: Armazena a sigla do estado correspondente.
 
-<br>
 
 ⬆️ [Voltar ao início](#topo)
+
+<br>
 
 ### 📡8 RASTREABILIDADE DOS ARTEFATOS <a id="8-rastreabilidade-dos-artefatos"></a>
 
@@ -191,6 +196,9 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
  <br>
   b) Além da consulta deve ser apresentada uma imagem com o resultado obtido para cada consulta.<br>
 -->
+
+<br><br>
+
 ### 📑 12.3 ANTEPROJETO VERSÃO 1 <a id="123-anteprojeto-versão-1"></a>
  
 🔗 Link para [Modelo de Anteprojeto](https://docs.google.com/document/d/1oeVS2CUffbSNYWxIWZFY_mX6E5ao_PHU/edit?usp=sharing&ouid=104104747195236161434&rtpof=true&sd=true)
