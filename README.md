@@ -183,9 +183,6 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 - 📃 [Físico + Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/FisicoInserts.sql?raw=true)
 
-<br>
-
-⬆️ [Voltar ao início](#topo)
 
 <!--
 ### 12	TABELAS E PRINCIPAIS CONSULTAS<br>
