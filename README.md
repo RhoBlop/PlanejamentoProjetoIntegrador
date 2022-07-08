@@ -22,7 +22,7 @@ Trabalho desenvolvido durante a disciplina de Projeto Integrador
 <br>
 
 ### 👨‍💻 1. COMPONENTES <a id="1-componentes"></a>
-Integrantes do grupo<br>
+Integrantes do grupo<br><br>
 Rafael Rodrigues Matos: rafael1309mt@gmail.com <br>
 Thiago Neves Luz: nevesluzthiago@gmail.com<br>
 Matheus de Oliveira Magnago: magnagomatheus7@gmail.com<br>
