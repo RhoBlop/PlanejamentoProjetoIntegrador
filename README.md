@@ -179,7 +179,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 ⬇️ Caso prefira, aqui está o link para o Modelo Físico + Inserts <br>
 
-- 📃 [Físico + Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/)
+- 📃 [Físico + Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/FisicoInserts.sql?raw=true)
 
 <br>
 
