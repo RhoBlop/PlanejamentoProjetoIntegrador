@@ -1,9 +1,9 @@
 /* Inserts na Tabela Estado */
 INSERT INTO ESTADO (dscEstado) VALUES
-('Espírito Santo'),
-('São Paulo'),
-('Bahia'),
-('Rio Grande do Sul');
+('Espírito Santo', ES),
+('São Paulo', SP),
+('Bahia', SP),
+('Rio Grande do Sul', RS);
 
 /* Inserts na Tabela Cidade */
 INSERT INTO Cidade (idEstado, dscCidade) VALUES
@@ -60,7 +60,7 @@ INSERT INTO Avaliacao (idAvaliado, idAvaliador, numNotaAvalia, dscComentarioAval
 (2, 3, 2, 'contratei ele para transportar os móveis durante minha mudança, mas, apesar do bom preço, um dos móveis chegou amassado >:(', 'feedback4.png');
 
 /* Inserts na Tabela Contato */
-INSERT INTO Contato (idUsr, dscTopicoCont, dscMensagemContr) VALUES
+INSERT INTO Contato (idUsr, dscTopicoCont, dscMensagemCont) VALUES
 (3, 'Problemas com a Profissão', 'Não consegui colocar minha profissão adequadamente'),
 (2, 'Problemas com Login', 'Esqueci minha senha, o que faço agora?'),
 (1, 'Sugestão', 'Estou gostando muito do aplicativo, mas sinto que seria bom um chat próprio para tornar a comunicação com meus clientes mais simples');

@@ -62,7 +62,7 @@ CREATE TABLE Especializacao (
 CREATE TABLE Contato (
     idCont INT PRIMARY KEY AUTO_INCREMENT,
     dscTopicoCont varchar(100),
-    dscMensagemContr varchar(500),
+    dscMensagemCont varchar(500),
     idUsr INT
 );
 

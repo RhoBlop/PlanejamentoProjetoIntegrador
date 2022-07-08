@@ -2,21 +2,21 @@
 Trabalho desenvolvido durante a disciplina de Projeto Integrador
 
 # Sumário <a id="topo"></a>
-1. [Componentes](#👨‍💻-1-componentes)
-2. [Minimundo](#🌎-2minimundo)
-3. [PMC](#📋-3pmc)
-4. [Personas e Histórias de Usuário](#👥4personas-e-histórias-de-usuário)
-5. [Protótipo](#📝-5rascunhos-básicos-da-interface-mockups)
-    1. [Quais perguntas podem ser respondidas com o sistema proposto](#❓-51-quais-perguntas-podem-ser-respondidas-com-o-sistema-proposto)
-6. [Tabela de Dados](#📊-6-tabela-de-dados-do-sistema)
+1. [Componentes](#1-componentes)
+2. [Minimundo](#2minimundo)
+3. [PMC](#3pmc)
+4. [Personas e Histórias de Usuário](#4personas-e-histórias-de-usuário)
+5. [Protótipo](#5rascunhos-básicos-da-interface-mockups)
+    1. [Quais perguntas podem ser respondidas com o sistema proposto](#51-quais-perguntas-podem-ser-respondidas-com-o-sistema-proposto)
+6. [Tabela de Dados](#6-tabela-de-dados-do-sistema)
 7. [Modelo Conceitual](#💭-7modelo-conceitual)
-    1. [Descrição dos dados](#📄-71-descrição-dos-dados)
-8. [Rastreabilidade dos Artefatos](#📡8-rastreabilidade-dos-artefatos)
-9. [Modelo Lógico](#🧬-9-modelo-lógico)
-10. [Modelo Físico](#📄-10-modelo-físico)
-11. [Inserts](#📄-11-insert-aplicado-nas-tabelas-do-banco-de-dados-a-id11-insert-aplicado-nas-tabelas-do-banco-de-dadosa)
+    1. [Descrição dos dados](#71-descrição-dos-dados)
+8. [Rastreabilidade dos Artefatos](#8-rastreabilidade-dos-artefatos)
+9. [Modelo Lógico](#9-modelo-lógico)
+10. [Modelo Físico](#10-modelo-físico)
+11. [Inserts](#11-insert-aplicado-nas-tabelas-do-banco-de-dados-a-id11-insert-aplicado-nas-tabelas-do-banco-de-dadosa)
 12. Tabelas e Principais Consultas 
-    1. [Anteprojeto](#📑-123-anteprojeto-versão-1)
+    1. [Anteprojeto](#123-anteprojeto-versão-1)
 
 
 ### 👨‍💻 1. COMPONENTES 
