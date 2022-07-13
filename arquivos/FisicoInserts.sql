@@ -103,12 +103,14 @@ CREATE TABLE Contrato (
 
 /* Criação da Tabela UsrEspec */
 CREATE TABLE UsrEspec (
+    idUsrEspec INT PRIMARY KEY AUTO_INCREMENT,
     idUsr INT,
     idEspec INT
 );
 
 /* Criação da Tabela UsrDisp */
 CREATE TABLE UsrDisp (
+    idUsrDisp INT PRIMARY KEY AUTO_INCREMENT,
     idUsr INT,
     idDisp INT
 );
