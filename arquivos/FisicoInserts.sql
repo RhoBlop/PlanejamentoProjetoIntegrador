@@ -188,11 +188,11 @@ ALTER TABLE UsrEspec ADD CONSTRAINT FK_UsrEspec_2
 /* INSERTS */
 
 /* Inserts na Tabela Estado */
-INSERT INTO ESTADO (dscEstado) VALUES
-('Espírito Santo', ES),
-('São Paulo', SP),
-('Bahia', SP),
-('Rio Grande do Sul', RS);
+INSERT INTO ESTADO (dscEstado, dscSiglaEstado) VALUES
+('Espírito Santo', 'ES'),
+('São Paulo', 'SP'),
+('Bahia', 'SP'),
+('Rio Grande do Sul', 'RS');
 
 /* Inserts na Tabela Cidade */
 INSERT INTO Cidade (idEstado, dscCidade) VALUES
