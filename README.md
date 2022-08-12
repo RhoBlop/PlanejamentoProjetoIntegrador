@@ -33,7 +33,7 @@ Cadastrado, o **USUÁRIO** contrataria um serviço com os seguintes passos: busc
 Para feedback quanto ao aplicativo, sejam para sugestões, problemas ou reclamações, os **USUÁRIOS** podem fazer um **CONTATO** com nós, desenvolvedores, enviando uma **mensagem** com um **tópico** pré-definido.
  
 ### 📋 3.PMC <a id="3pmc"></a>
-![PMC - Contrata Aí](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Canvas.png?raw=true "PMC")
+![PMC - Contrata Aí](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Canvas.png?raw=true "PMC")
 <br>
 
 ⬆️ [Voltar ao início](#topo)
@@ -43,13 +43,13 @@ Para feedback quanto ao aplicativo, sejam para sugestões, problemas ou reclama�
 👤 a) Personas desenvolvidos pelo grupo<br>
 
 Persona 1 - José <br>
-![Persona 1 - José](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Persona_Jose.jpg?raw=true "Persona 1 - José")
+![Persona 1 - José](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Persona_Jose.jpg?raw=true "Persona 1 - José")
 
-🔗 [Link para o PDF das Personas](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Personas.pdf?raw=true "Personas") <br><br>
+🔗 [Link para o PDF das Personas](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Personas.pdf?raw=true "Personas") <br><br>
 
 📚 b) Inclusão das Histórias de usuário desenvolvidas pelo grupo
 
-🔗 [Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/HistóriasdeUsuário.pdf?raw=true "Histórias de Usuário") <br>
+🔗 [Link para o PDF das Histórias de Usuários](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/HistóriasdeUsuário.pdf?raw=true "Histórias de Usuário") <br>
 
 ⬆️ [Voltar ao início](#topo)
 
@@ -60,7 +60,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 🔗 [Link para acesso](https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7%C3%A3o-Mobile?node-id=2%3A38) <br>
 
-![Figma](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Mockup.png?raw=true "Print do Figma") 
+![Figma](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Mockup.png?raw=true "Print do Figma") 
 
 ⬆️ [Voltar ao início](#topo)
 
@@ -87,7 +87,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 ### 💭 7.MODELO CONCEITUAL <a id="7modelo-conceitual"></a>
      
-![Conceitual](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Conceitual_ContrataAi.png?raw=true "Modelo Conceitual")
+![Conceitual](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Conceitual_ContrataAi.png?raw=true "Modelo Conceitual")
 
 #### ⬜ Principais Entidades
 - Usuário
@@ -159,7 +159,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 ### 🧬 9 MODELO LÓGICO <a id="9-modelo-lógico"></a>
 
-![Lógico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/Lógico_ContrataAi.png?raw=true "Modelo Lógico")
+![Lógico](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Lógico_ContrataAi.png?raw=true "Modelo Lógico")
 
 ⬆️ [Voltar ao início](#topo) <br>
 
@@ -167,7 +167,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 ⬇️ Segue abaixo o link para o Modelo Físico <br>
 
-- 📃 [Script do Modelo Físico](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/modeloFisico.sql?raw=true) <br>
+- 📃 [Script do Modelo Físico](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/modeloFisico.sql?raw=true) <br>
 
 ⬆️ [Voltar ao início](#topo) <br>
 
@@ -175,11 +175,11 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 ⬇️ Segue abaixo o link para os Inserts do Banco de Dados <br>
 
-- 📃 [Script dos Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/exampleInserts.sql?raw=true)
+- 📃 [Script dos Inserts](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/exampleInserts.sql?raw=true)
 
 ⬇️ Caso prefira, aqui está o link para o Modelo Físico + Inserts <br>
 
-- 📃 [Físico + Inserts](https://github.com/RhoBlop/template_projeto_integrador/blob/main/arquivos/FisicoInserts.sql?raw=true)
+- 📃 [Físico + Inserts](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/FisicoInserts.sql?raw=true)
 
 
 <!--
