@@ -1,19 +1,3 @@
-/* Deleção de possíveis tabelas que já existam */
-DROP TABLE IF EXISTS Estado;
-DROP TABLE IF EXISTS Cidade;
-DROP TABLE IF EXISTS Bairro;
-DROP TABLE IF EXISTS Usuario;
-DROP TABLE IF EXISTS Profissao;
-DROP TABLE IF EXISTS Especializacao;
-DROP TABLE IF EXISTS Profissao;
-DROP TABLE IF EXISTS UsrEspec;
-DROP TABLE IF EXISTS Avaliacao;
-DROP TABLE IF EXISTS Contato;
-DROP TABLE IF EXISTS DiaSemana;
-DROP TABLE IF EXISTS Contrato;
-DROP TABLE IF EXISTS Disponibilidade;
-DROP TABLE IF EXISTS UsrDisp;
-
 /* Inserts na Tabela Estado */
 INSERT INTO Estado (dscEstado, dscSiglaEstado) VALUES
 ('Espírito Santo', 'ES'),
