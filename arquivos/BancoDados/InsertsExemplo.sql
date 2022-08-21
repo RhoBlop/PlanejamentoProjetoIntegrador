@@ -17,12 +17,13 @@ INSERT INTO Bairro (idCidade, dscBairro) VALUES
 (1, 'Praia de Carapebus'),
 (1, 'Santo Antônio'),
 (2, 'Jardim da Penha'),
-(1, 'Colina de Laranjeiras');
+(1, 'Colina de Laranjeiras'),
+(3, 'Morumbi');
 
 /* Inserts na Tabela Usuario */
 INSERT INTO Usuario (idBairro, nomUsr, datNascimentoUsr, numCPFUsr, numTelefoneUsr, dscFotoUsr, dscEmailUsr, dscSenhaUsr) VALUES
 (1, 'Rafael Rodrigues', '1990-09-13', '16443762703', '27997550259', 'rafael.png', 'rafael1309@gmail.com', 'gabigolmengao231119'),
-(2, 'Matheus Magnago', '2003-04-17', '19047174704', '27998230645', 'matheus.png', 'matheus@gmail.com', 'santospeixao2011'),
+(5, 'Matheus Magnago', '2003-04-17', '19047174704', '27998230645', 'matheus.png', 'matheus@gmail.com', 'santospeixao2011'),
 (3, 'Jordana Lourenço', '2004-05-19', '15356745710', '27999445510', 'jordana.png', 'jordana@hotmail.com', 'cambridge2023'),
 (4, 'Breno Amâncio', '2003-11-03', '19829381707', '27997528603', 'breno.png', 'breno@outlook.com', 'breninlindo2003'),
 (3, 'Thiago Neves', '2004-08-08', '11111111111', '27912345678', 'thiago.png', 'snow.thiago@gmail.com', 'batata123');
