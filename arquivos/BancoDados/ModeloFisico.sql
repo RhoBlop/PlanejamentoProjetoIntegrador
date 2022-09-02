@@ -49,12 +49,12 @@ CREATE TABLE Bairro (
 CREATE TABLE Usuario (
     idUsr SERIAL,
     nomUsr varchar(50),
-    datNascimentoUsr date,
-    numTelefoneUsr varchar(13),
-    numCPFUsr char(13),
-    dscFotoUsr varchar(50),
     dscEmailUsr varchar(100),
     dscSenhaUsr varchar(100),
+    numCPFUsr char(13),
+    dscFotoUsr varchar(50),
+    datNascimentoUsr date,
+    numTelefoneUsr varchar(13),
 
     idBairro INT,
 
