@@ -20,7 +20,7 @@ DROP TABLE IF EXISTS UsrDisp CASCADE;
 CREATE TABLE Estado (
     idEstado SERIAL,
     dscEstado varchar(200),
-    dscSiglaEstado char(2),
+    siglaEstado char(2),
 
     PRIMARY KEY(idEstado)
 );
@@ -49,12 +49,13 @@ CREATE TABLE Bairro (
 CREATE TABLE Usuario (
     idUsr SERIAL,
     nomUsr varchar(50),
-    datNascimentoUsr date,
-    numTelefoneUsr varchar(13),
-    numCPFUsr char(13),
-    dscFotoUsr varchar(50),
-    dscEmailUsr varchar(100),
-    dscSenhaUsr varchar(100),
+    nascimentoUsr date,
+    telefoneUsr varchar(13),
+    cpfUsr char(13),
+    imgUsr text,
+    emailUsr varchar(100),
+    senhaUsr varchar(100),
+    biografiaUsr text;
 
     idBairro INT,
 
@@ -91,26 +92,26 @@ CREATE TABLE UsrEspec (
 
 /* Criação da Tabela Avaliacao */
 CREATE TABLE Avaliacao (
-    idAvalia SERIAL,
-    numNotaAvalia integer,
-    dscComentarioAvalia varchar(200),
-    dscImagemAvalia varchar(100),
+    idAvaliacao SERIAL,
+    notaAvaliacao integer,
+    comentarioAvaliacao varchar(200),
+    imagemAvaliacao varchar(100),
 
     idAvaliador INT,
     idAvaliado INT,
 
-    PRIMARY KEY(idAvalia)
+    PRIMARY KEY(idAvaliacao)
 );
 
 /* Criação da Tabela Contato */
 CREATE TABLE Contato (
-    idCont SERIAL,
-    dscTopicoCont varchar(100),
-    dscMensagemCont varchar(500),
+    idContato SERIAL,
+    topicoContato varchar(100),
+    mensagemContato varchar(500),
 
     idUsr INT,
 
-    PRIMARY KEY(idCont)
+    PRIMARY KEY(idContato)
 );
 
 /* Criação da Tabela DiaSemana */
@@ -123,14 +124,14 @@ CREATE TABLE DiaSemana (
 
 /* Criação da Tabela Contrat */
 CREATE TABLE Contrato (
-    idContrt SERIAL,
-    datInicioContrt date,
-    datFimContrt date,
+    idContrato SERIAL,
+    inicioContrato date,
+    fimContrato date,
 
     idContratante INT,
     idContratado INT,
 
-    PRIMARY KEY(idContrt)
+    PRIMARY KEY(idContrato)
 );
 
 /* Criação da Tabela Disponibilidade */
@@ -230,7 +231,7 @@ ALTER TABLE UsrEspec ADD CONSTRAINT fk_usrEspec_especializacao
    ================================== */
 
 /* Inserts na Tabela Estado */
-INSERT INTO Estado (dscEstado, dscSiglaEstado) VALUES
+INSERT INTO Estado (dscEstado, siglaEstado) VALUES
 ('Espírito Santo', 'ES'),
 ('São Paulo', 'SP'),
 ('Bahia', 'SP'),
@@ -252,7 +253,7 @@ INSERT INTO Bairro (idCidade, dscBairro) VALUES
 (3, 'Morumbi');
 
 /* Inserts na Tabela Usuario */
-INSERT INTO Usuario (idBairro, nomUsr, datNascimentoUsr, numCPFUsr, numTelefoneUsr, dscFotoUsr, dscEmailUsr, dscSenhaUsr) VALUES
+INSERT INTO Usuario (idBairro, nomUsr, nascimentoUsr, cpfUsr, telefoneUsr, imgUsr, emailUsr, senhaUsr) VALUES
 (1, 'Rafael Rodrigues', '1990-09-13', '16443762703', '27997550259', 'rafael.png', 'rafael1309@gmail.com', 'gabigolmengao231119'),
 (5, 'Matheus Magnago', '2003-04-17', '19047174704', '27998230645', 'matheus.png', 'matheus@gmail.com', 'santospeixao2011'),
 (3, 'Jordana Lourenço', '2004-05-19', '15356745710', '27999445510', 'jordana.png', 'jordana@hotmail.com', 'cambridge2023'),
@@ -285,14 +286,14 @@ INSERT INTO UsrEspec (idUsr, idEspec) VALUES
 (2, 3);
 
 /* Inserts na Tabela Avaliacao */
-INSERT INTO Avaliacao (idAvaliado, idAvaliador, numNotaAvalia, dscComentarioAvalia, dscImagemAvalia) VALUES
+INSERT INTO Avaliacao (idAvaliado, idAvaliador, notaAvaliacao, comentarioAvaliacao, imagemAvaliacao) VALUES
 (1, 2, 4, 'pagina muito bem feita, porém nao gostei muito das cores', 'feedback.png'),
 (1, 4, 5, 'depois que meu filho começou a ter aulas de matématica com ele, suas notas aumentaram muito', null),
 (1, 5, 1, 'não gostei do resultado final do design do cartão de minha firma, pareceu feito às pressas', 'feedback3.png'),
 (2, 3, 2, 'contratei ele para transportar os móveis durante minha mudança, mas, apesar do bom preço, um dos móveis chegou amassado >:(', 'feedback4.png');
 
 /* Inserts na Tabela Contato */
-INSERT INTO Contato (idUsr, dscTopicoCont, dscMensagemCont) VALUES
+INSERT INTO Contato (idUsr, topicoContato, mensagemContato) VALUES
 (3, 'Problemas com a Profissão', 'Não consegui colocar minha profissão adequadamente'),
 (2, 'Problemas com Login', 'Esqueci minha senha, o que faço agora?'),
 (1, 'Sugestão', 'Estou gostando muito do aplicativo, mas sinto que seria bom um chat próprio para tornar a comunicação com meus clientes mais simples');
@@ -308,7 +309,7 @@ INSERT INTO DiaSemana (dscDiaSemn) VALUES
 ('sábado');
 
 /* Inserts na Tabela Contrato */
-INSERT INTO Contrato (idContratado, idContratante, datInicioContrt, datFimContrt) VALUES
+INSERT INTO Contrato (idContratado, idContratante, inicioContrato, fimContrato) VALUES
 (1, 2, '2022-06-23', '2022-06-30'),
 (1, 4, '2022-08-08', '2022-08-10'),
 (1, 5, '2022-08-09', '2022-08-15'),
