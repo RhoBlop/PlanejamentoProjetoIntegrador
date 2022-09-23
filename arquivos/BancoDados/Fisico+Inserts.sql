@@ -7,7 +7,6 @@ DROP TABLE IF EXISTS Bairro CASCADE;
 DROP TABLE IF EXISTS Usuario CASCADE;
 DROP TABLE IF EXISTS Profissao CASCADE;
 DROP TABLE IF EXISTS Especializacao CASCADE;
-DROP TABLE IF EXISTS Profissao CASCADE;
 DROP TABLE IF EXISTS UsrEspec CASCADE;
 DROP TABLE IF EXISTS Avaliacao CASCADE;
 DROP TABLE IF EXISTS Contato CASCADE;
@@ -15,12 +14,13 @@ DROP TABLE IF EXISTS DiaSemana CASCADE;
 DROP TABLE IF EXISTS Contrato CASCADE;
 DROP TABLE IF EXISTS Disponibilidade CASCADE;
 DROP TABLE IF EXISTS UsrDisp CASCADE;
+DROP TABLE IF EXISTS Favorito CASCADE;
 
 /* Criação da Tabela Estado*/
 CREATE TABLE Estado (
     idEstado SERIAL,
     dscEstado varchar(200),
-    siglaEstado char(2),
+    siglaEstado varchar(2),
 
     PRIMARY KEY(idEstado)
 );
@@ -48,14 +48,14 @@ CREATE TABLE Bairro (
 /* Criação da Tabela Usuário*/
 CREATE TABLE Usuario (
     idUsr SERIAL,
-    nomUsr varchar(50),
+    nomUsr varchar(60),
     nascimentoUsr date,
-    telefoneUsr varchar(13),
-    cpfUsr char(13),
+    telefoneUsr varchar(25),
+    cpfUsr varchar(20),
     imgUsr text,
     emailUsr varchar(100),
-    senhaUsr varchar(100),
-    biografiaUsr text;
+    senhaUsr text,
+    biografiaUsr text,
 
     idBairro INT,
 
@@ -94,11 +94,10 @@ CREATE TABLE UsrEspec (
 CREATE TABLE Avaliacao (
     idAvaliacao SERIAL,
     notaAvaliacao integer,
-    comentarioAvaliacao varchar(200),
-    imagemAvaliacao varchar(100),
+    comentarioAvaliacao text,
+    imgAvaliacao text,
 
-    idAvaliador INT,
-    idAvaliado INT,
+    idContrato INT,
 
     PRIMARY KEY(idAvaliacao)
 );
@@ -125,11 +124,12 @@ CREATE TABLE DiaSemana (
 /* Criação da Tabela Contrat */
 CREATE TABLE Contrato (
     idContrato SERIAL,
-    inicioContrato date,
-    fimContrato date,
+    datInicioContrato date,
+    datFimContrato date,
 
     idContratante INT,
     idContratado INT,
+    idEspec INT,
 
     PRIMARY KEY(idContrato)
 );
@@ -155,12 +155,25 @@ CREATE TABLE UsrDisp (
     PRIMARY KEY (idUsrDisp)
 );
 
+/* Criação da Tabela Favoritos */
+CREATE TABLE Favorito (
+    idFavorito SERIAL,
+    datFav date,
+
+    idFavoritador INT,
+    idFavoritado INT,
+
+    PRIMARY KEY (idFavorito)
+);
+
 /* Atribuição das Chaves Primárias e Estrangeiras nas tabelas */
+
+/* LOCALIZAÇÃO */
 ALTER TABLE Usuario ADD CONSTRAINT fk_usuario_bairro
     FOREIGN KEY (idBairro)
     REFERENCES Bairro (idBairro)
     ON DELETE CASCADE;
- 
+
 ALTER TABLE Cidade ADD CONSTRAINT fk_cidade_estado
     FOREIGN KEY (idEstado)
     REFERENCES Estado (idEstado)
@@ -171,31 +184,13 @@ ALTER TABLE Bairro ADD CONSTRAINT fk_bairro_cidade
     REFERENCES Cidade (idCidade)
     ON DELETE CASCADE;
  
-ALTER TABLE Especializacao ADD CONSTRAINT fk_especializacao_profissao
-    FOREIGN KEY (idProf)
-    REFERENCES Profissao (idProf)
-    ON DELETE CASCADE;
- 
+/* CONTATO */
 ALTER TABLE Contato ADD CONSTRAINT fk_contato_usuario
     FOREIGN KEY (idUsr)
     REFERENCES Usuario (idUsr)
     ON DELETE CASCADE;
  
-ALTER TABLE Disponibilidade ADD CONSTRAINT fk_disponibilidade_diaSemana
-    FOREIGN KEY (idDiaSemn)
-    REFERENCES DiaSemana (idDiaSemn)
-    ON DELETE CASCADE;
- 
-ALTER TABLE Avaliacao ADD CONSTRAINT fk_avaliacao_avaliador
-    FOREIGN KEY (idAvaliador)
-    REFERENCES Usuario (idUsr)
-    ON DELETE CASCADE;
- 
-ALTER TABLE Avaliacao ADD CONSTRAINT fk_avaliacao_avaliado
-    FOREIGN KEY (idAvaliado)
-    REFERENCES Usuario (idUsr)
-    ON DELETE CASCADE;
- 
+/* CONTRATO */
 ALTER TABLE Contrato ADD CONSTRAINT fk_contrato_contratante
     FOREIGN KEY (idContratante)
     REFERENCES Usuario (idUsr)
@@ -205,7 +200,18 @@ ALTER TABLE Contrato ADD CONSTRAINT fk_contrato_contratado
     FOREIGN KEY (idContratado)
     REFERENCES Usuario (idUsr)
     ON DELETE CASCADE;
- 
+
+ALTER TABLE Avaliacao ADD CONSTRAINT fk_avaliacao_contrato
+    FOREIGN KEY (idContrato)
+    REFERENCES Contrato (idContrato)
+    ON DELETE CASCADE;
+
+/* DISPONIBILIDADE DO USUÁRIO */ 
+ALTER TABLE Disponibilidade ADD CONSTRAINT fk_disponibilidade_diaSemana
+    FOREIGN KEY (idDiaSemn)
+    REFERENCES DiaSemana (idDiaSemn)
+    ON DELETE CASCADE;
+
 ALTER TABLE UsrDisp ADD CONSTRAINT fk_usrDisp_disponibilidade
     FOREIGN KEY (idDisp)
     REFERENCES Disponibilidade (idDisp)
@@ -216,14 +222,31 @@ ALTER TABLE UsrDisp ADD CONSTRAINT fk_usrDisp_usuario
     REFERENCES Usuario (idUsr)
     ON DELETE CASCADE;
 
+/* ESPECIALIZACAO DO USUÁRIO */
+ALTER TABLE Especializacao ADD CONSTRAINT fk_especializacao_profissao
+    FOREIGN KEY (idProf)
+    REFERENCES Profissao (idProf)
+    ON DELETE CASCADE;
+
 ALTER TABLE UsrEspec ADD CONSTRAINT fk_usrEspec_usuario
     FOREIGN KEY (idUsr)
     REFERENCES Usuario (idUsr)
     ON DELETE CASCADE;
- 
+
 ALTER TABLE UsrEspec ADD CONSTRAINT fk_usrEspec_especializacao
     FOREIGN KEY (idEspec)
     REFERENCES Especializacao (idEspec)
+    ON DELETE CASCADE;
+
+/* FAVORITO */
+ALTER TABLE Favorito ADD CONSTRAINT fk_favorito_favoritador
+    FOREIGN KEY (idFavoritador)
+    REFERENCES Usuario (idUsr)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Favorito ADD CONSTRAINT fk_favorito_favoritado
+    FOREIGN KEY (idFavoritado)
+    REFERENCES Usuario (idUsr)
     ON DELETE CASCADE;
 
 /* ==================================
@@ -254,11 +277,12 @@ INSERT INTO Bairro (idCidade, dscBairro) VALUES
 
 /* Inserts na Tabela Usuario */
 INSERT INTO Usuario (idBairro, nomUsr, nascimentoUsr, cpfUsr, telefoneUsr, imgUsr, emailUsr, senhaUsr) VALUES
-(1, 'Rafael Rodrigues', '1990-09-13', '16443762703', '27997550259', 'rafael.png', 'rafael1309@gmail.com', 'gabigolmengao231119'),
-(5, 'Matheus Magnago', '2003-04-17', '19047174704', '27998230645', 'matheus.png', 'matheus@gmail.com', 'santospeixao2011'),
-(3, 'Jordana Lourenço', '2004-05-19', '15356745710', '27999445510', 'jordana.png', 'jordana@hotmail.com', 'cambridge2023'),
-(4, 'Breno Amâncio', '2003-11-03', '19829381707', '27997528603', 'breno.png', 'breno@outlook.com', 'breninlindo2003'),
-(3, 'Thiago Neves', '2004-08-08', '11111111111', '27912345678', 'thiago.png', 'snow.thiago@gmail.com', 'batata123');
+(1, 'Rafael Rodrigues', '1990-09-13', '16443762703', '27997550259', null, 'rafael1309@gmail.com', 'gabigolmengao231119'),
+(5, 'Matheus Magnago', '2003-04-17', '19047174704', '27998230645', null, 'matheus@gmail.com', 'santospeixao2011'),
+(3, 'Jordana Lourenço', '2004-05-19', '15356745710', '27999445510', null, 'jordana@hotmail.com', 'cambridge2023'),
+(4, 'Breno Amâncio', '2003-11-03', '19829381707', '27997528603', null, 'breno@outlook.com', 'breninlindo2003'),
+(3, 'Thiago Neves', '2004-08-08', '11111111111', '27912345678', null, 'snow.thiago@gmail.com', 'batata123'),
+(null, 'Wr White', '1958-09-07', '99999999999', '(27) xxxxx-xxxx', null, 'admin@gmail.com', 'abc');
 
 /* Inserts na Tabela Profissao */
 INSERT INTO Profissao (dscProf) VALUES
@@ -285,12 +309,19 @@ INSERT INTO UsrEspec (idUsr, idEspec) VALUES
 (1, 8),
 (2, 3);
 
+/* Inserts na Tabela Contrato */
+INSERT INTO Contrato (idEspec, idContratado, idContratante, datInicioContrato, datFimContrato) VALUES
+(8, 1, 2, '2022-06-23', '2022-06-30'),
+(1, 1, 4, '2022-08-08', '2022-08-10'),
+(8, 1, 5, '2022-08-09', '2022-08-15'),
+(3, 2, 3, '2022-02-03', '2022-02-04');
+
 /* Inserts na Tabela Avaliacao */
-INSERT INTO Avaliacao (idAvaliado, idAvaliador, notaAvaliacao, comentarioAvaliacao, imagemAvaliacao) VALUES
-(1, 2, 4, 'pagina muito bem feita, porém nao gostei muito das cores', 'feedback.png'),
-(1, 4, 5, 'depois que meu filho começou a ter aulas de matématica com ele, suas notas aumentaram muito', null),
-(1, 5, 1, 'não gostei do resultado final do design do cartão de minha firma, pareceu feito às pressas', 'feedback3.png'),
-(2, 3, 2, 'contratei ele para transportar os móveis durante minha mudança, mas, apesar do bom preço, um dos móveis chegou amassado >:(', 'feedback4.png');
+INSERT INTO Avaliacao (idContrato, notaAvaliacao, comentarioAvaliacao, imgAvaliacao) VALUES
+(1, 4, 'pagina muito bem feita, porém nao gostei muito das cores', null),
+(2, 5, 'depois que meu filho começou a ter aulas de matématica com ele, suas notas aumentaram muito', null),
+(3, 1, 'não gostei do resultado final do design do cartão de minha firma, pareceu feito às pressas', null),
+(4, 2, 'contratei ele para transportar os móveis durante minha mudança, mas, apesar do bom preço, um dos móveis chegou amassado >:(', null);
 
 /* Inserts na Tabela Contato */
 INSERT INTO Contato (idUsr, topicoContato, mensagemContato) VALUES
@@ -307,13 +338,6 @@ INSERT INTO DiaSemana (dscDiaSemn) VALUES
 ('quinta'),
 ('sexta'),
 ('sábado');
-
-/* Inserts na Tabela Contrato */
-INSERT INTO Contrato (idContratado, idContratante, inicioContrato, fimContrato) VALUES
-(1, 2, '2022-06-23', '2022-06-30'),
-(1, 4, '2022-08-08', '2022-08-10'),
-(1, 5, '2022-08-09', '2022-08-15'),
-(2, 3, '2022-02-03', '2022-02-04');
 
 /* Inserts na Tabela Disponibilidade */
 INSERT INTO Disponibilidade (idDiaSemn, horaInicioDisp, horaFimDisp) VALUES
