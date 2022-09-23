@@ -19,8 +19,8 @@ DROP TABLE IF EXISTS UsrDisp CASCADE;
 /* Criação da Tabela Estado*/
 CREATE TABLE Estado (
     idEstado SERIAL,
-    dscEstado varchar(200),
-    siglaEstado char(2),
+    dscEstado text,
+    siglaEstado text,
 
     PRIMARY KEY(idEstado)
 );
@@ -28,7 +28,7 @@ CREATE TABLE Estado (
 /* Criação da Tabela Cidade */
 CREATE TABLE Cidade (
     idCidade SERIAL,
-    dscCidade varchar(200),
+    dscCidade text,
 
     idEstado INT,
 
@@ -38,7 +38,7 @@ CREATE TABLE Cidade (
 /* Criação da Tabela Bairro*/
 CREATE TABLE Bairro (
     idBairro SERIAL,
-    dscBairro varchar(200),
+    dscBairro text,
 
     idCidade INT,
 
@@ -48,13 +48,13 @@ CREATE TABLE Bairro (
 /* Criação da Tabela Usuário*/
 CREATE TABLE Usuario (
     idUsr SERIAL,
-    nomUsr varchar(50),
+    nomUsr text,
     nascimentoUsr date,
-    telefoneUsr varchar(13),
-    cpfUsr char(13),
+    telefoneUsr text,
+    cpfUsr text,
     imgUsr text,
-    emailUsr varchar(100),
-    senhaUsr varchar(100),
+    emailUsr text,
+    senhaUsr text,
     biografiaUsr text;
 
     idBairro INT,
@@ -65,7 +65,7 @@ CREATE TABLE Usuario (
 /* Criação da Tabela Profissão*/
 CREATE TABLE Profissao (
     idProf SERIAL,
-    dscProf varchar(50),
+    dscProf text,
 
     PRIMARY KEY(idProf)
 );
@@ -73,7 +73,7 @@ CREATE TABLE Profissao (
 /* Criação da Tabela Especializacao */
 CREATE TABLE Especializacao (
     idEspec SERIAL,
-    dscEspec varchar(50),
+    dscEspec text,
 
     idProf INT,
 
@@ -94,8 +94,8 @@ CREATE TABLE UsrEspec (
 CREATE TABLE Avaliacao (
     idAvaliacao SERIAL,
     notaAvaliacao integer,
-    comentarioAvaliacao varchar(200),
-    imagemAvaliacao varchar(100),
+    comentarioAvaliacao text,
+    imagemAvaliacao text,
 
     idAvaliador INT,
     idAvaliado INT,
@@ -106,8 +106,8 @@ CREATE TABLE Avaliacao (
 /* Criação da Tabela Contato */
 CREATE TABLE Contato (
     idContato SERIAL,
-    topicoContato varchar(100),
-    mensagemContato varchar(500),
+    topicoContato text,
+    mensagemContato text,
 
     idUsr INT,
 
@@ -117,7 +117,7 @@ CREATE TABLE Contato (
 /* Criação da Tabela DiaSemana */
 CREATE TABLE DiaSemana (
     idDiaSemn SERIAL,
-    dscDiaSemn varchar(100),
+    dscDiaSemn text,
 
     PRIMARY KEY(idDiaSemn)
 );
