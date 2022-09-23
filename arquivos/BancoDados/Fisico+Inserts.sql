@@ -7,13 +7,13 @@ DROP TABLE IF EXISTS Bairro CASCADE;
 DROP TABLE IF EXISTS Usuario CASCADE;
 DROP TABLE IF EXISTS Profissao CASCADE;
 DROP TABLE IF EXISTS Especializacao CASCADE;
-DROP TABLE IF EXISTS UsrEspec CASCADE;
+DROP TABLE IF EXISTS UserEspec CASCADE;
 DROP TABLE IF EXISTS Avaliacao CASCADE;
 DROP TABLE IF EXISTS Contato CASCADE;
 DROP TABLE IF EXISTS DiaSemana CASCADE;
 DROP TABLE IF EXISTS Contrato CASCADE;
 DROP TABLE IF EXISTS Disponibilidade CASCADE;
-DROP TABLE IF EXISTS UsrDisp CASCADE;
+DROP TABLE IF EXISTS UserDisp CASCADE;
 DROP TABLE IF EXISTS Favorito CASCADE;
 
 /* Criação da Tabela Estado*/
@@ -47,19 +47,19 @@ CREATE TABLE Bairro (
 
 /* Criação da Tabela Usuário*/
 CREATE TABLE Usuario (
-    idUsr SERIAL,
-    nomUsr varchar(60),
-    nascimentoUsr date,
-    telefoneUsr varchar(25),
-    cpfUsr varchar(20),
-    imgUsr text,
-    emailUsr varchar(100),
-    senhaUsr text,
-    biografiaUsr text,
+    idUser SERIAL,
+    nomUser varchar(60),
+    nascimentoUser date,
+    telefoneUser varchar(25),
+    cpfUser varchar(20),
+    imgUser text,
+    emailUser varchar(100),
+    senhaUser text,
+    biografiaUser text,
 
     idBairro INT,
 
-    PRIMARY KEY(idUsr)
+    PRIMARY KEY(idUser)
 );
 
 /* Criação da Tabela Profissão*/
@@ -80,14 +80,14 @@ CREATE TABLE Especializacao (
     PRIMARY KEY(idEspec)
 );
 
-/* Criação da Tabela UsrEspec */
-CREATE TABLE UsrEspec (
-    idUsrEspec SERIAL,
+/* Criação da Tabela UserEspec */
+CREATE TABLE UserEspec (
+    idUserEspec SERIAL,
     
-    idUsr INT,
+    idUser INT,
     idEspec INT,
 
-    PRIMARY KEY(idUsrEspec)
+    PRIMARY KEY(idUserEspec)
 );
 
 /* Criação da Tabela Avaliacao */
@@ -108,7 +108,7 @@ CREATE TABLE Contato (
     topicoContato varchar(100),
     mensagemContato varchar(500),
 
-    idUsr INT,
+    idUser INT,
 
     PRIMARY KEY(idContato)
 );
@@ -145,14 +145,14 @@ CREATE TABLE Disponibilidade (
     PRIMARY KEY(idDisp)
 );
 
-/* Criação da Tabela UsrDisp */
-CREATE TABLE UsrDisp (
-    idUsrDisp SERIAL,
+/* Criação da Tabela UserDisp */
+CREATE TABLE UserDisp (
+    idUserDisp SERIAL,
 
-    idUsr INT,
+    idUser INT,
     idDisp INT,
 
-    PRIMARY KEY (idUsrDisp)
+    PRIMARY KEY (idUserDisp)
 );
 
 /* Criação da Tabela Favoritos */
@@ -186,19 +186,19 @@ ALTER TABLE Bairro ADD CONSTRAINT fk_bairro_cidade
  
 /* CONTATO */
 ALTER TABLE Contato ADD CONSTRAINT fk_contato_usuario
-    FOREIGN KEY (idUsr)
-    REFERENCES Usuario (idUsr)
+    FOREIGN KEY (idUser)
+    REFERENCES Usuario (idUser)
     ON DELETE CASCADE;
  
 /* CONTRATO */
 ALTER TABLE Contrato ADD CONSTRAINT fk_contrato_contratante
     FOREIGN KEY (idContratante)
-    REFERENCES Usuario (idUsr)
+    REFERENCES Usuario (idUser)
     ON DELETE CASCADE;
  
 ALTER TABLE Contrato ADD CONSTRAINT fk_contrato_contratado
     FOREIGN KEY (idContratado)
-    REFERENCES Usuario (idUsr)
+    REFERENCES Usuario (idUser)
     ON DELETE CASCADE;
 
 ALTER TABLE Avaliacao ADD CONSTRAINT fk_avaliacao_contrato
@@ -212,14 +212,14 @@ ALTER TABLE Disponibilidade ADD CONSTRAINT fk_disponibilidade_diaSemana
     REFERENCES DiaSemana (idDiaSemn)
     ON DELETE CASCADE;
 
-ALTER TABLE UsrDisp ADD CONSTRAINT fk_usrDisp_disponibilidade
+ALTER TABLE UserDisp ADD CONSTRAINT fk_UserDisp_disponibilidade
     FOREIGN KEY (idDisp)
     REFERENCES Disponibilidade (idDisp)
     ON DELETE CASCADE;
  
-ALTER TABLE UsrDisp ADD CONSTRAINT fk_usrDisp_usuario
-    FOREIGN KEY (idUsr)
-    REFERENCES Usuario (idUsr)
+ALTER TABLE UserDisp ADD CONSTRAINT fk_UserDisp_usuario
+    FOREIGN KEY (idUser)
+    REFERENCES Usuario (idUser)
     ON DELETE CASCADE;
 
 /* ESPECIALIZACAO DO USUÁRIO */
@@ -228,12 +228,12 @@ ALTER TABLE Especializacao ADD CONSTRAINT fk_especializacao_profissao
     REFERENCES Profissao (idProf)
     ON DELETE CASCADE;
 
-ALTER TABLE UsrEspec ADD CONSTRAINT fk_usrEspec_usuario
-    FOREIGN KEY (idUsr)
-    REFERENCES Usuario (idUsr)
+ALTER TABLE UserEspec ADD CONSTRAINT fk_UserEspec_usuario
+    FOREIGN KEY (idUser)
+    REFERENCES Usuario (idUser)
     ON DELETE CASCADE;
 
-ALTER TABLE UsrEspec ADD CONSTRAINT fk_usrEspec_especializacao
+ALTER TABLE UserEspec ADD CONSTRAINT fk_UserEspec_especializacao
     FOREIGN KEY (idEspec)
     REFERENCES Especializacao (idEspec)
     ON DELETE CASCADE;
@@ -241,12 +241,12 @@ ALTER TABLE UsrEspec ADD CONSTRAINT fk_usrEspec_especializacao
 /* FAVORITO */
 ALTER TABLE Favorito ADD CONSTRAINT fk_favorito_favoritador
     FOREIGN KEY (idFavoritador)
-    REFERENCES Usuario (idUsr)
+    REFERENCES Usuario (idUser)
     ON DELETE CASCADE;
  
 ALTER TABLE Favorito ADD CONSTRAINT fk_favorito_favoritado
     FOREIGN KEY (idFavoritado)
-    REFERENCES Usuario (idUsr)
+    REFERENCES Usuario (idUser)
     ON DELETE CASCADE;
 
 /* ==================================
@@ -276,7 +276,7 @@ INSERT INTO Bairro (idCidade, dscBairro) VALUES
 (3, 'Morumbi');
 
 /* Inserts na Tabela Usuario */
-INSERT INTO Usuario (idBairro, nomUsr, nascimentoUsr, cpfUsr, telefoneUsr, imgUsr, emailUsr, senhaUsr) VALUES
+INSERT INTO Usuario (idBairro, nomUser, nascimentoUser, cpfUser, telefoneUser, imgUser, emailUser, senhaUser) VALUES
 (1, 'Rafael Rodrigues', '1990-09-13', '16443762703', '27997550259', null, 'rafael1309@gmail.com', 'gabigolmengao231119'),
 (5, 'Matheus Magnago', '2003-04-17', '19047174704', '27998230645', null, 'matheus@gmail.com', 'santospeixao2011'),
 (3, 'Jordana Lourenço', '2004-05-19', '15356745710', '27999445510', null, 'jordana@hotmail.com', 'cambridge2023'),
@@ -302,8 +302,8 @@ INSERT INTO Especializacao (idProf, dscEspec) VALUES
 (3, 'programador fullstack'),
 (4, 'designer gráfico');
 
-/* Inserts na Tabela UsrEspec */
-INSERT INTO UsrEspec (idUsr, idEspec) VALUES
+/* Inserts na Tabela UserEspec */
+INSERT INTO UserEspec (idUser, idEspec) VALUES
 (1, 1),
 (1, 2),
 (1, 8),
@@ -324,7 +324,7 @@ INSERT INTO Avaliacao (idContrato, notaAvaliacao, comentarioAvaliacao, imgAvalia
 (4, 2, 'contratei ele para transportar os móveis durante minha mudança, mas, apesar do bom preço, um dos móveis chegou amassado >:(', null);
 
 /* Inserts na Tabela Contato */
-INSERT INTO Contato (idUsr, topicoContato, mensagemContato) VALUES
+INSERT INTO Contato (idUser, topicoContato, mensagemContato) VALUES
 (3, 'Problemas com a Profissão', 'Não consegui colocar minha profissão adequadamente'),
 (2, 'Problemas com Login', 'Esqueci minha senha, o que faço agora?'),
 (1, 'Sugestão', 'Estou gostando muito do aplicativo, mas sinto que seria bom um chat próprio para tornar a comunicação com meus clientes mais simples');
@@ -414,8 +414,8 @@ INSERT INTO Disponibilidade (idDiaSemn, horaInicioDisp, horaFimDisp) VALUES
 (7, '16:00', '17:00'),
 (7, '17:00', '18:00');
 
-/* Inserts na Tabela UsrDisp */
-INSERT INTO UsrDisp (idUsr, idDisp) VALUES
+/* Inserts na Tabela UserDisp */
+INSERT INTO UserDisp (idUser, idDisp) VALUES
 (1, 1),
 (1, 2),
 (1, 3),
