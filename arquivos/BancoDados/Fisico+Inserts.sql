@@ -61,6 +61,7 @@ CREATE TABLE Usuario (
     dataCriacaoUser DATE DEFAULT CURRENT_DATE,
     isAtivoUser boolean DEFAULT FALSE,
     isAdminUser boolean DEFAULT FALSE,
+    preferenciaDisabledCalendar boolean DEFAULT FALSE,  -- se contratos devem impedir novas contratações nos dias cadastrados
 
     idBairro INT,
 
@@ -132,6 +133,8 @@ CREATE TABLE DiaSemana (
 /* Criação da Tabela Contrato */
 CREATE TABLE Contrato (
     idContrato SERIAL,
+    timeCriacaoContrato TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    timeFinalizacaoContrato TIMESTAMP DEFAULT NULL,
 
     idContratante INT,
     idContratado INT,
@@ -158,8 +161,21 @@ CREATE TABLE DiaContrato (
     PRIMARY KEY (idDiaContrato)
 );
 
+CREATE TABLE NotificacaoContrato (
+    idNotific SERIAL,
+    titleNotific VARCHAR(30),
+    descrNotific VARCHAR(50),
+    timeCriacaoNotific TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    idRemetente INT,
+    idDestinatario INT,
+    idContrato INT,
+
+    PRIMARY KEY (idNotific)
+);
+
 /* Criação da Tabela Favoritos */
-CREATE TABLE Favorito (
+/* CREATE TABLE Favorito (
     idFavorito SERIAL,
     dataFav DATE DEFAULT CURRENT_DATE,
 
@@ -167,7 +183,7 @@ CREATE TABLE Favorito (
     idFavoritado INT,
 
     PRIMARY KEY (idFavorito)
-);
+); */
 
 /* Atribuição das Chaves Primárias e Estrangeiras nas tabelas */
 
@@ -175,7 +191,7 @@ CREATE TABLE Favorito (
 ALTER TABLE Usuario ADD CONSTRAINT fk_usuario_bairro
     FOREIGN KEY (idBairro)
     REFERENCES Bairro (idBairro)
-    ON DELETE CASCADE;
+    ON DELETE SET NULL;
 
 ALTER TABLE Cidade ADD CONSTRAINT fk_cidade_estado
     FOREIGN KEY (idEstado)
@@ -191,18 +207,34 @@ ALTER TABLE Bairro ADD CONSTRAINT fk_bairro_cidade
 ALTER TABLE Contato ADD CONSTRAINT fk_contato_usuario
     FOREIGN KEY (idUser)
     REFERENCES Usuario (idUser)
+    ON DELETE SET NULL;
+
+/* NOTIFICAÇÕES */
+ALTER TABLE NotificacaoContrato ADD CONSTRAINT fk_notificacao_remetente
+    FOREIGN KEY (idRemetente)
+    REFERENCES Usuario (idUser)
+    ON DELETE CASCADE;
+
+ALTER TABLE NotificacaoContrato ADD CONSTRAINT fk_notificacao_destinatario
+    FOREIGN KEY (idDestinatario)
+    REFERENCES Usuario (idUser)
+    ON DELETE CASCADE;
+
+ALTER TABLE NotificacaoContrato ADD CONSTRAINT fk_notificacao_contrato
+    FOREIGN KEY (idContrato)
+    REFERENCES Contrato (idContrato)
     ON DELETE CASCADE;
  
 /* CONTRATO */
 ALTER TABLE Contrato ADD CONSTRAINT fk_contrato_contratante
     FOREIGN KEY (idContratante)
     REFERENCES Usuario (idUser)
-    ON DELETE CASCADE;
+    ON DELETE SET NULL;
  
 ALTER TABLE Contrato ADD CONSTRAINT fk_contrato_contratado
     FOREIGN KEY (idContratado)
     REFERENCES Usuario (idUser)
-    ON DELETE CASCADE;
+    ON DELETE SET NULL;
 
 ALTER TABLE Contrato ADD CONSTRAINT fk_contrato_especializacao
     FOREIGN KEY (idEspec)
@@ -212,7 +244,7 @@ ALTER TABLE Contrato ADD CONSTRAINT fk_contrato_especializacao
 ALTER TABLE Contrato ADD CONSTRAINT fk_contrato_statuscontrato
     FOREIGN KEY (idStatus)
     REFERENCES StatusContrato (idStatus)
-    ON DELETE CASCADE;
+    ON DELETE RESTRICT;
 
 ALTER TABLE DiaContrato ADD CONSTRAINT fk_diacontrato_contrato
     FOREIGN KEY (idContrato)
@@ -241,7 +273,7 @@ ALTER TABLE UserEspec ADD CONSTRAINT fk_UserEspec_especializacao
     ON DELETE CASCADE;
 
 /* FAVORITO */
-ALTER TABLE Favorito ADD CONSTRAINT fk_favorito_favoritador
+/* ALTER TABLE Favorito ADD CONSTRAINT fk_favorito_favoritador
     FOREIGN KEY (idFavoritador)
     REFERENCES Usuario (idUser)
     ON DELETE CASCADE;
@@ -249,7 +281,7 @@ ALTER TABLE Favorito ADD CONSTRAINT fk_favorito_favoritador
 ALTER TABLE Favorito ADD CONSTRAINT fk_favorito_favoritado
     FOREIGN KEY (idFavoritado)
     REFERENCES Usuario (idUser)
-    ON DELETE CASCADE;
+    ON DELETE CASCADE; */
 
 /* ==================================
                 INSERTS
