@@ -339,7 +339,8 @@ INSERT INTO Usuario (idBairro, nomeuser, nascimentoUser, cpfUser, telefoneUser, 
 (9, 'Yago Hugo Murilo Corte Real', '1975-03-12', '31492510793', '2728808333', null, 'yagohugocortereal@india.com', 'AbdrwrIOfK', '2022-12-12'),
 (10, 'Julio Cauê Ramos', '1993-04-02', '61070880752', '27991599305', null, 'julio_ramos@icloud.com', 'JNy0IS3qgO', '2022-02-06'),
 (11, 'Sarah Giovana Campos', '1999-02-22', '32140701771', '27994037243', null, 'sarah-campos94@prohaska.com.br', '2DzgKik5id', '2022-02-15'),
-(12, 'Isabella Isabel Rosângela Farias', '2003-10-05', '27995972667', null, 'isabella_farias@cheryamur.com.br', '9ar9glABme', '2022-03-12');
+(12, 'Isabella Isabel Rosângela Farias', '2003-10-05', '27995972667', null, 'isabella_farias@cheryamur.com.br', '9ar9glABme', '2022-03-12'),
+(1, 'Aline Rodrigues Matos', '1981-08-07', '08642103701' ,'27996192320', null, 'alinermatos@yahoo.com.br', '', '2022-10-20');
 
 /* Inserts na Tabela Profissao */
 INSERT INTO Profissao (descrProf) VALUES
@@ -348,7 +349,8 @@ INSERT INTO Profissao (descrProf) VALUES
 ('programador'),
 ('designer'),
 ('jardineiro'),
-('massagista');
+('massagista'),
+('enfermeiro');
 
 
 /* Inserts na Tabela Especializacao */
@@ -364,7 +366,11 @@ INSERT INTO Especializacao (idProf, descrEspec) VALUES
 (4, 'designer gráfico'),
 (5, 'jardineiro'),
 (1, 'professor de português'),
-(6, 'massagista');
+(6, 'massagista'),
+(7, 'enfermeiro especialista em CTI'),
+(7, 'enfermeiro especialista em centro-cirúrgico'),
+(7, 'enfermeiro especialista em pronto-socorro');
+
 
 /* Inserts na Tabela UserEspec */
 INSERT INTO UserEspec (idUser, idEspec) VALUES
@@ -375,7 +381,8 @@ INSERT INTO UserEspec (idUser, idEspec) VALUES
 (6, 3),
 (7, 10),
 (11 ,11),
-(13, 12);
+(13, 12),
+(15, 14);
 
 
 
