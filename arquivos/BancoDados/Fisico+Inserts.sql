@@ -301,7 +301,9 @@ INSERT INTO Cidade (idEstado, descrCidade) VALUES
 (1, 'Vitória'),
 (2, 'São Paulo'),
 (3, 'Salvador'),
-(1, 'Vila Velha');
+(1, 'Vila Velha'),
+(1, 'Cariacica');
+
 
 /* Inserts na Tabela Bairro */
 INSERT INTO Bairro (idCidade, descrBairro) VALUES
@@ -314,7 +316,9 @@ INSERT INTO Bairro (idCidade, descrBairro) VALUES
 (1, 'Morada de Laranjeiras'),
 (5, 'Ulisses Guimarães'),
 (5, 'Barramares'),
-(1, 'Balneário de Carapebus');
+(1, 'Balneário de Carapebus'),
+(1, 'Novo'),
+(6, 'Novo Brasil');
 
 
 /* Inserts na Tabela Usuario */
@@ -333,7 +337,9 @@ INSERT INTO Usuario (idBairro, nomeuser, nascimentoUser, cpfUser, telefoneUser, 
 (7, 'Carlos Azevedo Borges', '1981-12-13', '70777721791', '27591222474', null, 'carlosazevedo@ifes.com', 'TeT8UT9OwA', '2022-10-19'),
 (8, 'Thales Geraldo da Mota', '1991-08-09', '18253853785', '27984578359', null, 'thales_geraldo_damota@prodam.am.gov.br', 'fCEa3MxM0k', '2022-12-03'),
 (9, 'Yago Hugo Murilo Corte Real', '1975-03-12', '31492510793', '2728808333', null, 'yagohugocortereal@india.com', 'AbdrwrIOfK', '2022-12-12'),
-(10, 'Julio Cauê Ramos', '1993-04-02', '61070880752', '27991599305', null, 'julio_ramos@icloud.com', 'JNy0IS3qgO', '2022-02-06');
+(10, 'Julio Cauê Ramos', '1993-04-02', '61070880752', '27991599305', null, 'julio_ramos@icloud.com', 'JNy0IS3qgO', '2022-02-06'),
+(11, 'Sarah Giovana Campos', '1999-02-22', '32140701771', '27994037243', null, 'sarah-campos94@prohaska.com.br', '2DzgKik5id', '2022-02-15'),
+(12, 'Isabella Isabel Rosângela Farias', '2003-10-05', '27995972667', null, 'isabella_farias@cheryamur.com.br', '9ar9glABme', '2022-03-12');
 
 /* Inserts na Tabela Profissao */
 INSERT INTO Profissao (descrProf) VALUES
@@ -341,7 +347,9 @@ INSERT INTO Profissao (descrProf) VALUES
 ('motorista'),
 ('programador'),
 ('designer'),
-('jardineiro');
+('jardineiro'),
+('massagista');
+
 
 /* Inserts na Tabela Especializacao */
 INSERT INTO Especializacao (idProf, descrEspec) VALUES
@@ -355,7 +363,8 @@ INSERT INTO Especializacao (idProf, descrEspec) VALUES
 (3, 'programador fullstack'),
 (4, 'designer gráfico'),
 (5, 'jardineiro'),
-(1, 'professor de português');
+(1, 'professor de português'),
+(6, 'massagista');
 
 /* Inserts na Tabela UserEspec */
 INSERT INTO UserEspec (idUser, idEspec) VALUES
@@ -365,7 +374,9 @@ INSERT INTO UserEspec (idUser, idEspec) VALUES
 (3, 4),
 (6, 3),
 (7, 10),
-(11 ,11);
+(11 ,11),
+(13, 12);
+
 
 
 INSERT INTO StatusContrato (descrStatus) VALUES
