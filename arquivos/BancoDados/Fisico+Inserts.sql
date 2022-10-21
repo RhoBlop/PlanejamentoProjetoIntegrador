@@ -327,20 +327,20 @@ INSERT INTO Usuario (idBairro, nomeuser, nascimentoUser, cpfUser, telefoneUser, 
 Professor de Ensino Médio 🤡', 'admin@gmail.com', 'abc', TRUE);
 
 INSERT INTO Usuario (idBairro, nomeuser, nascimentoUser, cpfUser, telefoneUser, imgUser, emailUser, senhaUser, dataCriacaoUser) VALUES
-(1, 'Rafael Rodrigues Matos', '1990-09-13', '16443762703', '27997550259', null, 'rafael1309@gmail.com', 'gabigolmengao231119', '2022-01-28'),
-(5, 'Matheus Magnago', '2003-04-17', '19047174704', '27998230645', null, 'matheus@gmail.com', 'santospeixao2011', '2022-02-08'),
-(3, 'Jordana Lourenço', '2004-05-19', '15356745710', '27999445510', null, 'jordana@hotmail.com', 'cambridge2023', '2022-04-16'),
-(4, 'Breno Amâncio', '2003-11-03', '19829381707', '27997528603', null, 'breno@outlook.com', 'breninlindo2003', '2022-04-28'),
-(3, 'Thiago Neves Neves Luz', '2004-08-08', '11111111111', '27912345678', null, 'snow.thiago@gmail.com', 'batata123', '2022-05-30'),
-(2, 'Gianluca Scalzi Sampogli', '2004-01-12', '20252739752', '27997330504', null, 'gianlucascalzi01@gmail.com', 'coxinha123', '2022-05-31'),
-(6, 'Miguel Abreu de Matos', '2004-08-06', '15883113761', '27920381722', null, 'miguelgalao13@gmail.com', 'hulkmatador2021', '2022-09-28'),
-(7, 'Carlos Azevedo Borges', '1981-12-13', '70777721791', '27591222474', null, 'carlosazevedo@ifes.com', 'TeT8UT9OwA', '2022-10-19'),
-(8, 'Thales Geraldo da Mota', '1991-08-09', '18253853785', '27984578359', null, 'thales_geraldo_damota@prodam.am.gov.br', 'fCEa3MxM0k', '2022-12-03'),
-(9, 'Yago Hugo Murilo Corte Real', '1975-03-12', '31492510793', '2728808333', null, 'yagohugocortereal@india.com', 'AbdrwrIOfK', '2022-12-12'),
-(10, 'Julio Cauê Ramos', '1993-04-02', '61070880752', '27991599305', null, 'julio_ramos@icloud.com', 'JNy0IS3qgO', '2022-02-06'),
-(11, 'Sarah Giovana Campos', '1999-02-22', '32140701771', '27994037243', null, 'sarah-campos94@prohaska.com.br', '2DzgKik5id', '2022-02-15'),
-(12, 'Isabella Isabel Rosângela Farias', '2003-10-05', '27995972667', null, 'isabella_farias@cheryamur.com.br', '9ar9glABme', '2022-03-12'),
-(1, 'Aline Rodrigues Matos', '1981-08-07', '08642103701' ,'27996192320', null, 'alinermatos@yahoo.com.br', '', '2022-10-20');
+(1, 'Rafael Rodrigues Matos', '1990-09-13', '179.106.395-03', '(27) 96637-4177', null, 'rafael@gmail.com', 'abc', '2022-01-28'),
+(5, 'Matheus Magnago', '2003-04-17', '904.100.091-72', '(27) 91475-1620', null, 'matheus@gmail.com', 'abc', '2022-02-08'),
+(3, 'Jordana Lourenço', '2004-05-19', '609.151.069-06', '(27) 97743-2199', null, 'jordana@gmail.com', 'abc', '2022-04-16'),
+(4, 'Breno Amâncio', '2003-11-03', '605.165.160-86', '(27) 96685-7708', null, 'breno@gmail.com', 'abc', '2022-04-28'),
+(3, 'Thiago Neves Luz', '2004-08-08', '254.575.588-51', '(27) 95342-5874', null, 'thiago@gmail.com', 'abc', '2022-05-30'),
+(2, 'Gianluca Scalzi Sampogli', '2004-01-12', '865.692.933-03', '(27) 92057-6788', null, 'gian@gmail.com', 'abc', '2022-05-31'),
+(6, 'Miguel Abreu de Matos', '2004-08-06', '684.463.124-33', '(27) 96717-9349', null, 'miguel@gmail.com', 'abc', '2022-09-28'),
+(7, 'Carlos Azevedo Borges', '1981-12-13', '114.064.999-00', '(27) 97269-8961', null, 'carlos@gmail.com', 'abc', '2022-10-19'),
+(8, 'Thales Geraldo da Mota', '1991-08-09', '335.659.090-13', '(27) 98452-9172', null, 'thales@gmail.com', 'abc', '2022-12-03'),
+(9, 'Yago Hugo Murilo Corte Real', '1975-03-12', '602.160.962-00', '(27) 98361-2776', null, 'yago@gmail.com', 'abc', '2022-12-12'),
+(10, 'Julio Cauê Ramos', '1993-04-02', '320.402.308-74', '(27) 91556-9585', null, 'julio@gmail.com', 'abc', '2022-02-06'),
+(11, 'Sarah Giovana Campos', '1999-02-22', '305.371.427-20', '(27) 97733-8972', null, 'sarah@gmail.com', 'abc', '2022-02-15'),
+(12, 'Isabella Isabel Rosângela Farias', '2003-10-05', '166.127.822-18', '(27) 96661-8222', null, 'isabella@gmail.com', 'abc', '2022-03-12'),
+(1, 'Aline Rodrigues Matos', '1981-08-07', '133.733.029-94' ,'(27) 96931-9856', null, 'alinermatos@yahoo.com.br', 'abc', '2022-10-20');
 
 /* Inserts na Tabela Profissao */
 INSERT INTO Profissao (descrProf) VALUES
@@ -378,12 +378,17 @@ INSERT INTO UserEspec (idUser, idEspec) VALUES
 (2, 2),
 (2, 9),
 (3, 4),
+(3, 5),
+(3, 6),
+(3, 7),
+(3, 8),
 (6, 3),
+(6, 1),
+(6, 8),
 (7, 10),
-(11 ,11),
+(11, 11),
 (13, 12),
 (15, 14);
-
 
 
 INSERT INTO StatusContrato (descrStatus) VALUES
@@ -393,13 +398,68 @@ INSERT INTO StatusContrato (descrStatus) VALUES
 ('recusado'),
 ('atrasado');
 
-/* Inserts na Tabela Contrato */
-INSERT INTO Contrato (idEspec, idContratado, idContratante, idStatus) VALUES
-(9, 2, 6, 3),
-(1, 2, 4, 2),
-(9, 2, 5, 1),
-(3, 6, 5, 4);
+/* 
+Rafael: 2
+    professor de matematica: 1
+    professor de física: 2
+    designer gráfico: 9
 
+Matheus: 3
+    fretador: 4
+
+Thiago: 6
+    professor de quimica: 3
+
+Gian: 7
+    jardineiro: 10
+
+Yago: 11
+    professor de português: 11
+
+Sarah: 13
+    massagista: 12
+
+Aline: 15
+    enfermeiro especialista em centro-cirúrgico: 14
+*/
+/* Inserts na Tabela Contrato */
+INSERT INTO Contrato (idEspec, idContratado, idContratante, idStatus, timeCriacaoContrato) VALUES
+-- RAFAEL
+(9, 2, 6, 3, '2022-10-18 02:39:36'),
+(9, 2, 8, 3, '2022-05-11 05:08:25'),
+(1, 2, 4, 3, '2022-05-14 01:47:23'),
+(1, 2, 8, 3, '2022-05-26 09:59:10'),
+(9, 2, 5, 3, '2022-01-19 10:35:07'),
+(9, 2, 11, 3, '2022-08-29 06:05:01'),
+-- THIAGO
+(3, 6, 3, 3, '2022-08-22 11:57:39'),
+(3, 6, 2, 3, '2022-03-21 04:14:34'),
+(1, 6, 6, 3, '2022-05-27 07:40:00'),
+(1, 6, 5, 3, '2022-09-12 07:10:29'),
+(1, 6, 5, 3, '2022-01-11 09:41:44'),
+(1, 6, 4, 3, '2022-09-07 09:45:29'),
+(8, 6, 2, 3, '2022-09-19 06:59:24'),
+(8, 6, 15, 3, '2022-01-22 04:26:49'),
+(8, 6, 13, 3, '2022-04-30 03:18:31'),
+-- SARAH
+(12, 13, 9, 3, '2022-02-03 01:55:36'),
+(12, 13, 14, 3, '2022-06-14 08:44:04'),
+(12, 13, 13, 3, '2022-02-19 06:48:46'),
+-- MATHEUS
+(4, 3, 15, 3, '2022-06-15 11:50:26'),
+(5, 3, 5, 3, '2022-03-08 10:30:06'),
+(6, 3, 2, 3, '2022-05-28 02:11:33'),
+(7, 3, 3, 3, '2022-02-18 03:20:44'),
+(8, 3, 9, 3, '2022-09-27 09:47:13'),
+-- GIAN
+(10, 7, 9, 3, '2022-02-03 01:55:36'),
+(10, 7, 5, 3, '2022-06-14 08:44:04'),
+(10, 7, 12, 3, '2022-02-19 06:48:46'),
+-- ALINE
+(14, 15, 5, 3, '2022-09-19 02:18:57');
+
+
+-- por enquanto sem dados dos contratos
 INSERT INTO DiaContrato (idContrato, diaContrato) VALUES
 (1, '2022-06-23'),
 (1, '2022-06-24'),
@@ -416,10 +476,33 @@ INSERT INTO DiaContrato (idContrato, diaContrato) VALUES
 
 /* Inserts na Tabela Avaliacao */
 INSERT INTO Avaliacao (idContrato, notaAvaliacao, comentarioAvaliacao) VALUES
-(1, 4, 'pagina muito bem feita, porém nao gostei muito das cores'),
-(2, 5, 'depois que meu filho começou a ter aulas de matématica com ele, suas notas aumentaram muito'),
-(3, 1, 'não gostei do resultado final do design do cartão de minha firma, pareceu feito às pressas'),
-(4, 4, 'boas aulas de química :)');
+(1, 4, 'Avaliacao1'),
+(2, 1, 'Avaliacao2'),
+(3, 1, 'Avaliacao3'),
+(4, 2, 'Avaliacao4'),
+(5, 5, 'Avaliacao5'),
+(6, 4, 'Avaliacao6'),
+(7, 3, 'Avaliacao7'),
+(8, 5, 'Avaliacao8'),
+(9, 3, 'Avaliacao9'),
+(10, 5, 'Avaliacao10'),
+(11, 1, 'Avaliacao11'),
+(12, 3, 'Avaliacao12'),
+(13, 3, 'Avaliacao13'),
+(14, 2, 'Avaliacao14'),
+(15, 4, 'Avaliacao15'),
+(16, 4, 'Avaliacao16'),
+(17, 2, 'Avaliacao17'),
+(18, 2, 'Avaliacao18'),
+(19, 5, 'Avaliacao19'),
+(20, 2, 'Avaliacao20'),
+(21, 4, 'Avaliacao21'),
+(22, 1, 'Avaliacao22'),
+(23, 3, 'Avaliacao23'),
+(24, 3, 'Avaliacao24'),
+(25, 5, 'Avaliacao25'),
+(26, 5, 'Avaliacao26'),
+(27, 1, 'Avaliacao27');
 
 /* Inserts na Tabela Contato */
 INSERT INTO Contato (idUser, topicoContato, mensagemContato) VALUES
