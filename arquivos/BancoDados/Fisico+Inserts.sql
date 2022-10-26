@@ -136,6 +136,7 @@ CREATE TABLE Contrato (
     idContrato SERIAL,
     timeCriacaoContrato TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     timeFinalizacaoContrato TIMESTAMP DEFAULT NULL,
+    isAvaliado boolean DEFAULT FALSE,
 
     idContratante INT,
     idContratado INT,
@@ -392,8 +393,9 @@ INSERT INTO UserEspec (idUser, idEspec) VALUES
 
 
 INSERT INTO StatusContrato (descrStatus) VALUES
-('solicitacao'),
+('solicitacao contratacao'),
 ('em andamento'),
+('solicitacao finalizacao')
 ('finalizado'),
 ('recusado'),
 ('atrasado');
