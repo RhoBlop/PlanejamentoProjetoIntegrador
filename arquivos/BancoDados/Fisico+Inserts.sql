@@ -148,7 +148,7 @@ CREATE TABLE Contrato (
 
 CREATE TABLE StatusContrato (
     idStatus SERIAL,
-    descrStatus VARCHAR(20),
+    descrStatus VARCHAR(35),
     corCalendario VARCHAR(15),  -- cor desse tipo no calendário de eventos do usuário
 
     PRIMARY KEY (idStatus)
@@ -395,7 +395,7 @@ INSERT INTO UserEspec (idUser, idEspec) VALUES
 INSERT INTO StatusContrato (descrStatus) VALUES
 ('solicitacao contratacao'),
 ('em andamento'),
-('solicitacao finalizacao')
+('solicitacao finalizacao'),
 ('finalizado'),
 ('recusado'),
 ('atrasado');
