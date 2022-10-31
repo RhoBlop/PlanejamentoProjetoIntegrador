@@ -134,6 +134,7 @@ CREATE TABLE DiaSemana (
 /* Criação da Tabela Contrato */
 CREATE TABLE Contrato (
     idContrato SERIAL,
+    descrContrato VARCHAR(200),
     timeCriacaoContrato TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     timeFinalizacaoContrato TIMESTAMP DEFAULT NULL,
     isAvaliado boolean DEFAULT FALSE,
@@ -392,13 +393,13 @@ INSERT INTO UserEspec (idUser, idEspec) VALUES
 (15, 14);
 
 
-INSERT INTO StatusContrato (descrStatus) VALUES
-('solicitacao contratacao'),
-('em andamento'),
-('solicitacao finalizacao'),
-('finalizado'),
-('recusado'),
-('atrasado');
+INSERT INTO StatusContrato (descrStatus, corCalendario) VALUES
+('solicitacao contratacao', '#ff0000'),
+('em andamento', '#ff00ff'),
+('solicitacao finalizacao', '#000000'),
+('finalizado', '#ffffff'),
+('recusado', '#00ff00'),
+('atrasado', '#0000ff');
 
 /* 
 Rafael: 2
