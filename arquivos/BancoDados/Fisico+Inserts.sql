@@ -166,8 +166,8 @@ CREATE TABLE DiaContrato (
 
 CREATE TABLE NotificacaoContrato (
     idNotific SERIAL,
-    titleNotific VARCHAR(30),
-    descrNotific VARCHAR(50),
+    titleNotific VARCHAR(50),
+    descrNotific VARCHAR(100),
     timeCriacaoNotific TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
     idRemetente INT,
