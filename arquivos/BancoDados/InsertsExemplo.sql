@@ -1,3 +1,99 @@
+/* LOCALIZAÇÃO */
+ALTER TABLE Usuario ADD CONSTRAINT fk_usuario_bairro
+    FOREIGN KEY (idBairro)
+    REFERENCES Bairro (idBairro)
+    ON DELETE SET NULL;
+
+ALTER TABLE Cidade ADD CONSTRAINT fk_cidade_estado
+    FOREIGN KEY (idEstado)
+    REFERENCES Estado (idEstado)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Bairro ADD CONSTRAINT fk_bairro_cidade
+    FOREIGN KEY (idCidade)
+    REFERENCES Cidade (idCidade)
+    ON DELETE CASCADE;
+ 
+/* Suporte */
+ALTER TABLE Suporte ADD CONSTRAINT fk_suporte_usuario
+    FOREIGN KEY (idUser)
+    REFERENCES Usuario (idUser)
+    ON DELETE SET NULL;
+
+/* NOTIFICAÇÕES */
+ALTER TABLE NotificacaoContrato ADD CONSTRAINT fk_notificacao_remetente
+    FOREIGN KEY (idRemetente)
+    REFERENCES Usuario (idUser)
+    ON DELETE CASCADE;
+
+ALTER TABLE NotificacaoContrato ADD CONSTRAINT fk_notificacao_destinatario
+    FOREIGN KEY (idDestinatario)
+    REFERENCES Usuario (idUser)
+    ON DELETE CASCADE;
+
+ALTER TABLE NotificacaoContrato ADD CONSTRAINT fk_notificacao_contrato
+    FOREIGN KEY (idContrato)
+    REFERENCES Contrato (idContrato)
+    ON DELETE CASCADE;
+ 
+/* CONTRATO */
+ALTER TABLE Contrato ADD CONSTRAINT fk_contrato_contratante
+    FOREIGN KEY (idContratante)
+    REFERENCES Usuario (idUser)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE Contrato ADD CONSTRAINT fk_contrato_contratado
+    FOREIGN KEY (idContratado)
+    REFERENCES Usuario (idUser)
+    ON DELETE SET NULL;
+
+ALTER TABLE Contrato ADD CONSTRAINT fk_contrato_especializacao
+    FOREIGN KEY (idEspec)
+    REFERENCES Especializacao (idEspec)
+    ON DELETE CASCADE;
+
+ALTER TABLE Contrato ADD CONSTRAINT fk_contrato_statuscontrato
+    FOREIGN KEY (idStatus)
+    REFERENCES StatusContrato (idStatus)
+    ON DELETE RESTRICT;
+
+ALTER TABLE DiaContrato ADD CONSTRAINT fk_diacontrato_contrato
+    FOREIGN KEY (idContrato)
+    REFERENCES Contrato (idContrato)
+    ON DELETE CASCADE;
+
+ALTER TABLE Avaliacao ADD CONSTRAINT fk_avaliacao_contrato
+    FOREIGN KEY (idContrato)
+    REFERENCES Contrato (idContrato)
+    ON DELETE CASCADE;
+
+/* ESPECIALIZACAO DO USUÁRIO */
+ALTER TABLE Especializacao ADD CONSTRAINT fk_especializacao_profissao
+    FOREIGN KEY (idProf)
+    REFERENCES Profissao (idProf)
+    ON DELETE CASCADE;
+
+ALTER TABLE UserEspec ADD CONSTRAINT fk_UserEspec_usuario
+    FOREIGN KEY (idUser)
+    REFERENCES Usuario (idUser)
+    ON DELETE CASCADE;
+
+ALTER TABLE UserEspec ADD CONSTRAINT fk_UserEspec_especializacao
+    FOREIGN KEY (idEspec)
+    REFERENCES Especializacao (idEspec)
+    ON DELETE CASCADE;
+
+/* FAVORITO */
+/* ALTER TABLE Favorito ADD CONSTRAINT fk_favorito_favoritador
+    FOREIGN KEY (idFavoritador)
+    REFERENCES Usuario (idUser)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Favorito ADD CONSTRAINT fk_favorito_favoritado
+    FOREIGN KEY (idFavoritado)
+    REFERENCES Usuario (idUser)
+    ON DELETE CASCADE; */
+
 /* ==================================
                 INSERTS
    ================================== */
@@ -105,12 +201,13 @@ INSERT INTO UserEspec (idUser, idEspec) VALUES
 (15, 14);
 
 
-INSERT INTO StatusContrato (descrStatus) VALUES
-('solicitacao'),
-('em andamento'),
-('finalizado'),
-('recusado'),
-('atrasado');
+INSERT INTO StatusContrato (descrStatus, corCalendario) VALUES
+('solicitacao contratacao', '#ff0000'),
+('em andamento', '#ff00ff'),
+('solicitacao finalizacao', '#000000'),
+('finalizado', '#ffffff'),
+('recusado', '#00ff00'),
+('atrasado', '#0000ff');
 
 /* 
 Rafael: 2
@@ -190,36 +287,36 @@ INSERT INTO DiaContrato (idContrato, diaContrato) VALUES
 
 /* Inserts na Tabela Avaliacao */
 INSERT INTO Avaliacao (idContrato, notaAvaliacao, comentarioAvaliacao) VALUES
-(1, 4, 'Avaliacao1'),
-(2, 1, 'Avaliacao2'),
-(3, 1, 'Avaliacao3'),
-(4, 2, 'Avaliacao4'),
-(5, 5, 'Avaliacao5'),
-(6, 4, 'Avaliacao6'),
-(7, 3, 'Avaliacao7'),
-(8, 5, 'Avaliacao8'),
-(9, 3, 'Avaliacao9'),
-(10, 5, 'Avaliacao10'),
-(11, 1, 'Avaliacao11'),
-(12, 3, 'Avaliacao12'),
-(13, 3, 'Avaliacao13'),
-(14, 2, 'Avaliacao14'),
-(15, 4, 'Avaliacao15'),
-(16, 4, 'Avaliacao16'),
-(17, 2, 'Avaliacao17'),
-(18, 2, 'Avaliacao18'),
-(19, 5, 'Avaliacao19'),
-(20, 2, 'Avaliacao20'),
-(21, 4, 'Avaliacao21'),
-(22, 1, 'Avaliacao22'),
-(23, 3, 'Avaliacao23'),
-(24, 3, 'Avaliacao24'),
-(25, 5, 'Avaliacao25'),
-(26, 5, 'Avaliacao26'),
-(27, 1, 'Avaliacao27');
+(1, 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(2, 1, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(3, 1, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(4, 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(5, 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(6, 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(7, 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(8, 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(9, 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(10, 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(11, 1, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(12, 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(13, 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(14, 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(15, 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(16, 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(17, 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(18, 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(19, 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(20, 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(21, 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(22, 1, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(23, 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(24, 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(25, 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(26, 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!'),
+(27, 1, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem consequatur ipsam tempora quos iure porro modi beatae alias, fugit inventore!');
 
-/* Inserts na Tabela Contato */
-INSERT INTO Contato (idUser, topicoContato, mensagemContato) VALUES
+/* Inserts na Tabela Suporte */
+INSERT INTO Suporte (idUser, topicoSuporte, mensagemSuporte) VALUES
 (3, 'Problemas com a Profissão', 'Não consegui colocar minha profissão adequadamente'),
 (2, 'Problemas com Login', 'Esqueci minha senha, o que faço agora?'),
 (1, 'Sugestão', 'Estou gostando muito do aplicativo, mas sinto que seria bom um chat próprio para tornar a comunicação com meus clientes mais simples');
