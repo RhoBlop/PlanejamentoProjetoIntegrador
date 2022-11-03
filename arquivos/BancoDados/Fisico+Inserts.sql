@@ -9,7 +9,7 @@ DROP TABLE IF EXISTS Profissao CASCADE;
 DROP TABLE IF EXISTS Especializacao CASCADE;
 DROP TABLE IF EXISTS UserEspec CASCADE;
 DROP TABLE IF EXISTS Avaliacao CASCADE;
-DROP TABLE IF EXISTS Contato CASCADE;
+DROP TABLE IF EXISTS Suporte CASCADE;
 DROP TABLE IF EXISTS DiaSemana CASCADE;
 DROP TABLE IF EXISTS Contrato CASCADE;
 DROP TABLE IF EXISTS Disponibilidade CASCADE;
@@ -22,8 +22,8 @@ DROP TABLE IF EXISTS NotificacaoContrato;
 /* Criação da Tabela Estado*/
 CREATE TABLE Estado (
     idEstado SERIAL,
-    descrEstado varchar(200),
-    siglaEstado varchar(2),
+    descrEstado VARCHAR(100),
+    siglaEstado VARCHAR(5),
 
     PRIMARY KEY(idEstado)
 );
@@ -31,7 +31,7 @@ CREATE TABLE Estado (
 /* Criação da Tabela Cidade */
 CREATE TABLE Cidade (
     idCidade SERIAL,
-    descrCidade varchar(200),
+    descrCidade VARCHAR(100),
 
     idEstado INT,
 
@@ -41,7 +41,7 @@ CREATE TABLE Cidade (
 /* Criação da Tabela Bairro*/
 CREATE TABLE Bairro (
     idBairro SERIAL,
-    descrBairro varchar(200),
+    descrBairro VARCHAR(100),
 
     idCidade INT,
 
@@ -51,18 +51,18 @@ CREATE TABLE Bairro (
 /* Criação da Tabela Usuário*/
 CREATE TABLE Usuario (
     idUser SERIAL,
-    nomeuser varchar(60),
-    nascimentoUser date,
-    telefoneUser varchar(25),
-    cpfUser varchar(20),
-    imgUser text,
-    emailUser varchar(100),
-    senhaUser text,
-    biografiaUser text,
+    nomeuser VARCHAR(60),
+    nascimentoUser DATE,
+    telefoneUser VARCHAR(25),
+    cpfUser VARCHAR(20),
+    imgUser TEXT,
+    emailUser VARCHAR(100),
+    senhaUser TEXT,
+    biografiaUser TEXT,
     dataCriacaoUser DATE DEFAULT CURRENT_DATE,
-    isAtivoUser boolean DEFAULT FALSE,
-    isAdminUser boolean DEFAULT FALSE,
-    preferenciaDisabledCalendar boolean DEFAULT FALSE,  -- se contratos devem impedir novas contratações nos dias cadastrados
+    isAtivoUser BOOLEAN DEFAULT FALSE,
+    isAdminUser BOOLEAN DEFAULT FALSE,
+    preferenciaDisabledCalendar BOOLEAN DEFAULT FALSE,  -- se contratos devem impedir novas contratações nas datas já marcadas
 
     idBairro INT,
 
@@ -72,8 +72,8 @@ CREATE TABLE Usuario (
 /* Criação da Tabela Profissão*/
 CREATE TABLE Profissao (
     idProf SERIAL,
-    descrProf varchar(50),
-    imgProf text,
+    descrProf VARCHAR(50),
+    imgProf TEXT,
 
     PRIMARY KEY(idProf)
 );
@@ -81,7 +81,7 @@ CREATE TABLE Profissao (
 /* Criação da Tabela Especializacao */
 CREATE TABLE Especializacao (
     idEspec SERIAL,
-    descrEspec varchar(50),
+    descrEspec VARCHAR(50),
     -- para controle de especializações criadas por usuários, um admin pode setar isso para true
     isPublicEspec BOOLEAN DEFAULT FALSE,
 
@@ -104,7 +104,7 @@ CREATE TABLE UserEspec (
 CREATE TABLE Avaliacao (
     idAvaliacao SERIAL,
     notaAvaliacao INT,
-    comentarioAvaliacao text,
+    comentarioAvaliacao TEXT,
     dataAvaliacao DATE DEFAULT CURRENT_DATE,
 
     idContrato INT,
@@ -112,21 +112,21 @@ CREATE TABLE Avaliacao (
     PRIMARY KEY(idAvaliacao)
 );
 
-/* Criação da Tabela Contato */
-CREATE TABLE Contato (
-    idContato SERIAL,
-    topicoContato varchar(100),
-    mensagemContato varchar(500),
+/* Criação da Tabela Suporte */
+CREATE TABLE Suporte (
+    idSuporte SERIAL,
+    topicoSuporte VARCHAR(100),
+    mensagemSuporte VARCHAR(500),
 
     idUser INT,
 
-    PRIMARY KEY(idContato)
+    PRIMARY KEY(idSuporte)
 );
 
 /* Criação da Tabela DiaSemana */
 CREATE TABLE DiaSemana (
     idDiaSemn SERIAL,
-    descrDiaSemn varchar(100),
+    descrDiaSemn VARCHAR(100),
 
     PRIMARY KEY(idDiaSemn)
 );
@@ -137,7 +137,7 @@ CREATE TABLE Contrato (
     descrContrato VARCHAR(200),
     timeCriacaoContrato TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     timeFinalizacaoContrato TIMESTAMP DEFAULT NULL,
-    isAvaliado boolean DEFAULT FALSE,
+    isAvaliado BOOLEAN DEFAULT FALSE,
 
     idContratante INT,
     idContratado INT,
@@ -149,8 +149,8 @@ CREATE TABLE Contrato (
 
 CREATE TABLE StatusContrato (
     idStatus SERIAL,
-    descrStatus VARCHAR(35),
-    corCalendario VARCHAR(15),  -- cor desse tipo no calendário de eventos do usuário
+    descrStatus VARCHAR(40),
+    corCalendario VARCHAR(20),  -- cor desse tipo no calendário de eventos do usuário
 
     PRIMARY KEY (idStatus)
 );
@@ -207,8 +207,8 @@ ALTER TABLE Bairro ADD CONSTRAINT fk_bairro_cidade
     REFERENCES Cidade (idCidade)
     ON DELETE CASCADE;
  
-/* CONTATO */
-ALTER TABLE Contato ADD CONSTRAINT fk_contato_usuario
+/* Suporte */
+ALTER TABLE Suporte ADD CONSTRAINT fk_suporte_usuario
     FOREIGN KEY (idUser)
     REFERENCES Usuario (idUser)
     ON DELETE SET NULL;
@@ -508,8 +508,8 @@ INSERT INTO Avaliacao (idContrato, notaAvaliacao, comentarioAvaliacao) VALUES
 (26, 5, 'Avaliacao26'),
 (27, 1, 'Avaliacao27');
 
-/* Inserts na Tabela Contato */
-INSERT INTO Contato (idUser, topicoContato, mensagemContato) VALUES
+/* Inserts na Tabela Suporte */
+INSERT INTO Suporte (idUser, topicoSuporte, mensagemSuporte) VALUES
 (3, 'Problemas com a Profissão', 'Não consegui colocar minha profissão adequadamente'),
 (2, 'Problemas com Login', 'Esqueci minha senha, o que faço agora?'),
 (1, 'Sugestão', 'Estou gostando muito do aplicativo, mas sinto que seria bom um chat próprio para tornar a comunicação com meus clientes mais simples');
