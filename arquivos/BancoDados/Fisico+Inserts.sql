@@ -17,7 +17,9 @@ DROP TABLE IF EXISTS UserDisp CASCADE;
 DROP TABLE IF EXISTS Favorito CASCADE;
 DROP TABLE IF EXISTS DiaContrato CASCADE;
 DROP TABLE IF EXISTS StatusContrato CASCADE;
-DROP TABLE IF EXISTS NotificacaoContrato;
+DROP TABLE IF EXISTS NotificacaoContrato CASCADE;
+DROP TABLE IF EXISTS Mensagem CASCADE;
+DROP TABLE IF EXISTS UserMensagem CASCADE;
 
 /* Criação da Tabela Estado*/
 CREATE TABLE Estado (
@@ -178,6 +180,19 @@ CREATE TABLE NotificacaoContrato (
     PRIMARY KEY (idNotific)
 );
 
+/* CHAT */
+CREATE TABLE Mensagem (
+    idMensagem SERIAL,
+    textoMensagem TEXT,
+    timeCriacaoMensagem TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    idRemetente SERIAL,
+    idDestinatario SERIAL,
+
+    PRIMARY KEY(idMensagem)
+);
+
+
 /* Criação da Tabela Favoritos */
 /* CREATE TABLE Favorito (
     idFavorito SERIAL,
@@ -275,6 +290,18 @@ ALTER TABLE UserEspec ADD CONSTRAINT fk_UserEspec_especializacao
     FOREIGN KEY (idEspec)
     REFERENCES Especializacao (idEspec)
     ON DELETE CASCADE;
+
+/* CHAT */
+ALTER TABLE Mensagem ADD CONSTRAINT fk_Mensagem_Remetente
+    FOREIGN KEY (idRemetente)
+    REFERENCES Usuario (idUser)
+    ON DELETE NO ACTION;
+
+ALTER TABLE Mensagem ADD CONSTRAINT fk_Mensagem_Destinatario
+    FOREIGN KEY (idDestinatario)
+    REFERENCES Usuario (idUser)
+    ON DELETE NO ACTION;
+
 
 /* FAVORITO */
 /* ALTER TABLE Favorito ADD CONSTRAINT fk_favorito_favoritador
