@@ -187,7 +187,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 ⬇️ Segue abaixo o diagrama de classes do nosso sistema <br>
 
-! [Diagrama de classes](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/DiagramaClasses.png?raw=true "Diagrama de classes") <br>
+![Diagrama de classes](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/DiagramaClasses.png?raw=true "Diagrama de classes") <br>
 
 ⬆️ [Voltar ao início](#topo) <br>
 
