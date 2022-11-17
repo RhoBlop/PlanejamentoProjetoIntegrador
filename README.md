@@ -183,7 +183,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 - 📃 [Físico + Inserts](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/BancoDados/Fisico+Inserts.sql?raw=true)
 
 
-### 📄 12. CLASSES DO SISTEMA <a id="12-classes-do-sistema"></a>
+### 📚 12. CLASSES DO SISTEMA <a id="12-classes-do-sistema"></a>
 
 ⬇️ Segue abaixo o diagrama de classes do nosso sistema <br>
 
