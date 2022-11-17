@@ -15,8 +15,9 @@ Trabalho desenvolvido durante a disciplina de Projeto Integrador
 9. [Modelo Lógico](#9-modelo-lógico)
 10. [Modelo Físico](#10-modelo-físico)
 11. [Inserts](#11-insert-aplicado-nas-tabelas-do-banco-de-dados)
-12. Tabelas e Principais Consultas 
-    1. [Anteprojeto](#123-anteprojeto-versão-1)
+12. [Diagrama de Classes](#12-classes-do-sistema)
+13. Tabelas e Principais Consultas 
+    1. [Anteprojeto](#133-anteprojeto-versão-1)
 
 
 ### 👨‍💻 1. COMPONENTES <a id="1-componentes"></a>
@@ -182,11 +183,19 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 - 📃 [Físico + Inserts](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/BancoDados/Fisico+Inserts.sql?raw=true)
 
 
+### 📄 12. CLASSES DO SISTEMA <a id="12-classes-do-sistema"></a>
+
+⬇️ Segue abaixo o diagrama de classes do nosso sistema <br>
+
+! [Diagrama de classes](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/DiagramaClasses.png?raw=true "Diagrama de classes") <br>
+
+⬆️ [Voltar ao início](#topo) <br>
+
 <!--
-### 12	TABELAS E PRINCIPAIS CONSULTAS<br>
+### 13	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
-#### 12.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-#### 12.2 PRINCIPAIS CONSULTAS DO SISTEMA 
+#### 13.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
+#### 13.2 PRINCIPAIS CONSULTAS DO SISTEMA 
  Inserir as principais consultas (relativas aos 5 principais relatórios) definidas previamente no iten 3.1 deste template.
  <br>
   a) Você deve apresentar as consultas em formato SQL para cad um dos relatórios.
@@ -194,7 +203,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
   b) Além da consulta deve ser apresentada uma imagem com o resultado obtido para cada consulta.<br>
 -->
 
-### 📑 12.3. ANTEPROJETO VERSÃO 1 <a id="123-anteprojeto-versão-1"></a>
+### 📑 13.3. ANTEPROJETO VERSÃO 1 <a id="133-anteprojeto-versão-1"></a>
  
 🔗 Link para [Modelo de Anteprojeto](https://docs.google.com/document/d/1j5ghB1QAEJij-8y80AIXdLZREqfTdI0EJTIJvSlYktc/edit?usp=sharing)
 
@@ -202,21 +211,21 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
  
  
 <!--
- ### 13 Gráficos, relatórios, integração com Linguagem de programação e outras solicitações.<br>
+ ### 14 Gráficos, relatórios, integração com Linguagem de programação e outras solicitações.<br>
      OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
- #### 13.1	Integração com Linguagem de programação; <br>
- #### 13.2	Desenvolvimento de gráficos/relatórios pertinentes, juntamente com demais <br>
+ #### 14.1	Integração com Linguagem de programação; <br>
+ #### 14.2	Desenvolvimento de gráficos/relatórios pertinentes, juntamente com demais <br>
  #### solicitações feitas pelo professor. <br>
- #### 13.3 ANTEPROJETO VERSÃO 2
+ #### 14.3 ANTEPROJETO VERSÃO 2
  <br>
  <br>
  
  
- ### 14 Slides e Apresentação em vídeo. <br>
+ ### 15 Slides e Apresentação em vídeo. <br>
      OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
- #### 14.1 Slides; <br>
- #### 14.2 Apresentação em vídeo <br>
- #### 14.3 ANTEPROJETO VERSÃO FINAL
+ #### 15.1 Slides; <br>
+ #### 15.2 Apresentação em vídeo <br>
+ #### 15.3 ANTEPROJETO VERSÃO FINAL
  <br>
  <br>   
 
