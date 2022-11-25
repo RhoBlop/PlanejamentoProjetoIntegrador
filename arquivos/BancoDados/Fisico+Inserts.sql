@@ -168,14 +168,12 @@ CREATE TABLE DiaContrato (
 
 CREATE TABLE NotificacaoContrato (
     idNotific SERIAL,
-    titleNotific VARCHAR(50),
-    descrNotific VARCHAR(100),
     isVisualizado BOOLEAN DEFAULT FALSE,
     timeCriacaoNotific TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
     idRemetente INT,
     idDestinatario INT,
-    idContrato INT,
+    idContrato INT
 
     PRIMARY KEY (idNotific)
 );
