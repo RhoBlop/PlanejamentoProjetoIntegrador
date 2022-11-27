@@ -88,7 +88,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 ### 💭 7. MODELO CONCEITUAL <a id="7modelo-conceitual"></a>
      
-![Conceitual](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/BancoDados/ModeloConceitual.png?raw=true "Modelo Conceitual")
+![Conceitual](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/BancoDados/aaaaaaaaaaaaaaa.png?raw=true "Modelo Conceitual")
 
 #### ⬜ Principais Entidades
 - Usuário
