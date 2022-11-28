@@ -43,15 +43,15 @@ Para feedback quanto ao aplicativo, sejam para sugestões, problemas ou reclama�
 
 ⬆️ [Voltar ao início](#topo)
 
-### 🗓️ 4. Calendário reverso <a id="4calendario-reverso"></a>
+### 🗓️ 4. CALENDÁRIO REVERSO <a id="4calendario-reverso"></a>
 
 Para nos organizarmos, criamos um calendário reverso para acompanharmos o andamentos de nossas tarefas e se elas estavam sendo feitas nos prazos estipulados. <br>
 
-🔗 [Link para o calendário reverso](https://docs.google.com/spreadsheets/d/1k9YNGqm7fSp0WxOwgUg43jRwyoubNQXO9H_cI1iwJvs/edit?usp=sharing) <br>
+🔗 [Link para o calendário reverso](https://docs.google.com/spreadsheets/d/1k9YNGqm7fSp0WxOwgUg43jRwyoubNQXO9H_cI1iwJvs/edit?usp=sharing?raw=true) <br>
 
 ⬆️ [Voltar ao início](#topo)
 
-### 👥 5. Personas e Histórias de usuário <a id="5personas-e-histórias-de-usuário"></a>
+### 👥 5. PERSONAS E HISTÓRIAS DE USUÁRIO <a id="5personas-e-histórias-de-usuário"></a>
 
 👤 a) Personas desenvolvidos pelo grupo <br>
 
@@ -77,16 +77,17 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 ⬆️ [Voltar ao início](#topo)
 
-#### ❓ 6.1. QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO? <a id="51-quais-perguntas-podem-ser-respondidas-com-o-sistema-proposto"></a>
+#### ❓ 6.1. QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO? <a id="61-quais-perguntas-podem-ser-respondidas-com-o-sistema-proposto"></a>
   
 > a) Informações voltadas aos usuários 
 
 > b) A Empresa Contratai precisa inicialmente dos seguintes relatórios:
-* Relatório de todos os usuários que não possuem nenhuma profissão com as seguintes informações: nome, email, nascimento, cpf e estado.
-* Relatório que informe quem são os usuários que possuem alguma profissão com as seguintes informações: nome, email, nascimento, cpf, profissão e estado. 
-* Relatório dos dias disponíveis que um usuário com profissão possui com as seguintes informações: nome, email, nascimento, cpf, profissão, estado e dias disponíveis.
-* Relatório com a quantidade de usuários cadastrados que possuem profissão. 
-* Relatório com as especializações de cada profissão, contendo as seguintes informações: profissão e especialização.
+* Relatório com a quantidade de usuários com profissão em comparação com usuários sem profissão cadastrada.
+* Relatório com a quantidade de usuários por bairro no ES.  
+* Relatório com a quantidade de cadastros de novos usuários por mês no ano atual.
+* Relatório com a quantidade de contratos realizados e suas profissões por bairro no ES. 
+* Relatório com a quantidade de solicitações de contratos em função do mês do ano atual.
+* Relatório com a média de avaliações por profissão. 
 
 ⬆️ [Voltar ao início](#topo)
 
@@ -102,12 +103,12 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
      
 ![Conceitual](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/BancoDados/ModeloConceitual.png?raw=true "Modelo Conceitual")
 
-#### ⬜ Principais Entidades
+#### ⬜ PRINCIPAIS ENTIDADES
 - Usuario
 - Contrato
 - Especializacao
 
-#### 🔀 Principais Fluxos
+#### 🔀 PRINCIPAIS FLUXOS
 - Usuario → Mensagem → Usuario
 - Usuario → Tem → Especializacao → Tem → Profissao
 - Avaliacao ← Tem ← Contrato ← Realizado ← Usuario 
@@ -117,7 +118,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 <br>
     
-#### 📄 8.1. Descrição dos dados <a id="81-descrição-dos-dados"></a>
+#### 📄 8.1. DESCRIÇÃO DOS DADOS <a id="81-descrição-dos-dados"></a>
 
 **USUÁRIO**: Tabela que armazena as informações dos usuários cadastrados <br>
 - **nomUser**: Armazena o nome completo do usuário cadastrado.
@@ -174,8 +175,6 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 
 ⬆️ [Voltar ao início](#topo)
-
-<br>
 
 ### 📡9. RASTREABILIDADE DOS ARTEFATOS <a id="9-rastreabilidade-dos-artefatos"></a>
 
@@ -237,16 +236,34 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
  
  
 <!--
- ### 14 Gráficos, relatórios, integração com Linguagem de programação e outras solicitações.<br>
+ ### 15 Gráficos, relatórios, integração com Linguagem de programação e outras solicitações.<br>
      OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
- #### 14.1	Integração com Linguagem de programação; <br>
- #### 14.2	Desenvolvimento de gráficos/relatórios pertinentes, juntamente com demais <br>
+ #### 15.1	Integração com Linguagem de programação; <br>
+ #### 15.2	Desenvolvimento de gráficos/relatórios pertinentes, juntamente com demais <br>
  #### solicitações feitas pelo professor. <br>
- #### 14.3 ANTEPROJETO VERSÃO 2
+ #### 15.3 ANTEPROJETO VERSÃO 2
  <br>
  <br>
- 
- 
+-->
+
+### 📊 15 GRÁFICOS DOS RELATÓRIOS
+
+Apresentaremos os gráficos obitdos a partir dos [relatórios](#61-quais-perguntas-podem-ser-respondidas-com-o-sistema-proposto). <br>
+
+1. Relatório com a quantidade de usuários com profissão em comparação com usuários sem profissão cadastrada.
+
+![Relatorio 1](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Relatórios/Relatorio1.png?raw=true "Relatório 1")
+
+2. Relatório com a quantidade de usuários por bairro no ES.
+
+3. Relatório com a quantidade de cadastros de novos usuários por mês no ano atual.
+
+4. Relatório com a quantidade de contratos realizados e suas profissões por bairro no ES. 
+
+5. Relatório com a quantidade de solicitações de contratos em função do mês do ano atual.
+
+6. Relatório com a média de avaliações por profissão.
+
  ### 15 Slides e Apresentação em vídeo. <br>
      OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
  #### 15.1 Slides; <br>
@@ -256,7 +273,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
  <br>   
 
 
-    
+<!--
 ##### About Formatting
     https://help.github.com/articles/about-writing-and-formatting-on-github/
     
