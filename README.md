@@ -271,7 +271,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 4. **Relatório com a quantidade de contratos realizados e suas profissões por bairro no ES.** 
 
 <p align="center">
-<img src="https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Relatórios/Relatorio4.png?raw=true" alt="Relatório 4" />
+<img src="https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Relatórios/Relatorio4.png?raw=true" alt="Relatório 4" width="830px" />
 </p>
 
 5. **Relatório com a quantidade de solicitações de contratos em função do mês do ano atual.**
