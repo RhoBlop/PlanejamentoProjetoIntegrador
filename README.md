@@ -277,7 +277,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 5. **Relatório com a quantidade de solicitações de contratos em função do mês do ano atual.**
 
 <p align="center">
-<img src="https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Relatórios/Relatorio5.png?raw=true" alt="Relatório 5" />
+<img src="https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Relatórios/Relatorio5.png?raw=true" alt="Relatório 5" width="830px" />
 </p>
 
 6. **Relatório com a média de avaliações por profissão.**
