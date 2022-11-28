@@ -29,9 +29,12 @@ Matheus de Oliveira Magnago: magnagomatheus7@gmail.com<br>
 ### 🌎 2. MINIMUNDO <a id="2minimundo"></a>
 
 > O Mundo está ficando cada vez mais modernizado... Utilizamos cada vez mais nossos celulares e computadores para facilitar nossas tarefas diárias. Pensando nisso, um grupo de estudantes do IFES Serra resolveu desenvolver um aplicativo focado em serviços autônomos, com o objetivo de facilitar a comunicação entre ambos clientes e prestadores de serviços.<br>
-O Sistema do "Contrata Aí" seria feito nos seguintes moldes: O **USUÁRIO** se cadastraria com as seguintes informações: **nome**, **data de nascimento**, **cpf**, **email**, **senha**, **telefone**, REGIÃO (**BAIRRO**, **CIDADE**, **ESTADO**) e uma **foto** de perfil. Ele também irá informar as suas **ESPECIALIZAÇÕES**, caso seja um prestador de serviços, para que assim possamos diferenciar os profissionais dos clientes. O **USUÁRIO** que possua **ESPECIALIZAÇÕES** irá também colocar a sua **DISPONIBILIDADE**, para que ela fique visível em seu perfil e assim a pessoa que o queira contratar fique ciente dos dias da semana em que ele está disponível.<br>
-Cadastrado, o **USUÁRIO** contrataria um serviço com os seguintes passos: buscaria um profissional em um mecanismo de busca com diversos filtros (REGIÃO, **PROFISSÃO**, **ESPECIALIZAÇÃO**, **AVALIAÇÃO**), checaria a agenda do mesmo, entraria em contato com ele e, caso ambos resolvam fazer um **CONTRATO**, ele informará ao nosso sistema a **data de contratação** e a **data de fim** do serviço. O **CONTRATO** não ficará visível a todos os clientes, mas essas datas serão usadas para montar a agenda pública do profissional (caso ele tenha um contrato em X horário no dia Y, aquele horário não estará disponível). Passada a data da realização do **CONTRATO**, o **USUÁRIO** poderia então fazer uma **AVALIAÇÃO** do serviço feito, colocando sua **nota**, um **comentário** e uma **imagem** (opcional).<br>
-Para feedback quanto ao aplicativo, sejam para sugestões, problemas ou reclamações, os **USUÁRIOS** podem fazer um **CONTATO** com nós, desenvolvedores, enviando uma **mensagem** com um **tópico** pré-definido.
+O Sistema do "Contrata Aí" seria feito nos seguintes moldes: O **USUÁRIO** se cadastraria com as seguintes informações: **nome**, **data de nascimento**, **cpf**, **email**, **senha**, **telefone**, REGIÃO (**BAIRRO**, **CIDADE**, **ESTADO**) e uma **foto** de perfil. Ele também irá informar as suas **ESPECIALIZAÇÕES**, caso seja um prestador de serviços, para que assim possamos diferenciar os profissionais dos clientes. Cada **ESPECIALIZAÇÃO** tem uma **PROFISSÃO** atribuída. Um usuário também pode ser um **ADMINISTRADOR**, caso **isAdminUser** seja verdadeira. 
+Cadastrado, o **USUÁRIO** contrataria um serviço com os seguintes passos: buscaria um profissional em um mecanismo de busca com diversos filtros (REGIÃO, **PROFISSÃO**, **ESPECIALIZAÇÃO**, **AVALIAÇÃO**), entraria em seu perfil e veria suas **AVALIAÇÕES** e por fim solicitaria um contrato com o profissional. Caso ambos (Contratante e contratado) resolvam fazer um **CONTRATO**, ele informará ao nosso sistema a **data de contratação** e a **data de fim** do serviço, além de atribuir qual **ESPECIALIZAÇÃO** e uma **descrContrat**. O **CONTRATO** não ficará visível a todos os clientes, mas essas datas serão usadas para montar a agenda do profissional (que aparecerá na aba de Contratos no perfil do usuário). 
+Os **CONTRATOS** também são **notificados** para o usuário (com a ajuda da tabela **NotificacaoContrato**). As notificações carregam consigo um **title** e uma **descricao**, além da **timeCriacao** (hora em que foi criada a notificação) e um controle de visualização (**isVisualizado**).
+Passada a data da realização do **CONTRATO**, o **USUÁRIO** poderia então fazer uma **AVALIAÇÃO** do serviço feito, colocando sua **nota**, um **comentário** e uma **imagem** (opcional).<br>
+**USUARIOS** também podem se enviar **MENSAGENS** em tempo real entre si, facilitando a interação entre ambos. 
+Para feedback quanto ao aplicativo, sejam para sugestões, problemas ou reclamações, os **USUÁRIOS** podem fazer um contato com nós, desenvolvedores, através do **SUPORETE**, enviando uma **mensagemSuporte** com um **tópicoSuporte** pré-definido.
  
 ### 📋 3. PMC <a id="3pmc"></a>
 ![PMC - Contrata Aí](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/CanvasPMC.png?raw=true "PMC")
@@ -91,15 +94,15 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 ![Conceitual](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/BancoDados/ModeloConceitual.png?raw=true "Modelo Conceitual")
 
 #### ⬜ Principais Entidades
-- Usuário
+- Usuario
 - Contrato
-- Profissão
+- Especializacao
 
 #### 🔀 Principais Fluxos
-- Usuário → Avalia → Usuário
-- Usuário → Tem → Especialização
-- Usuário → Contrato → Usuário
-- Usuário → Possui → Disponibilidade
+- Usuario → Mensagem → Usuario
+- Usuario → Tem → Especializacao → Tem → Profissao
+- Avaliacao ← Tem ← Contrato ← Realizado ← Usuario 
+- Contrato → Tem → NotificacaoContrato → Notifica → Usuario 
 
 ⬆️ [Voltar ao início](#topo)
 
@@ -108,43 +111,57 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 #### 📄 7.1. Descrição dos dados <a id="71-descrição-dos-dados"></a>
 
 **USUÁRIO**: Tabela que armazena as informações dos usuários cadastrados <br>
-- **nomUsr**: Armazena o nome completo do usuário cadastrado.
-- **datNascimentoUsr**: Armazena a data de nascimento do usuário cadastrado.
-- **numCPFUsr**: Armazena o número de CPF do usuário cadastrado.
-- **dscEmailUsr**: Armazena o endereço de email do usuário cadastrado.
-- **numTelefoneUsr**: Armazena o número de telefone do usuário cadastrado.
-- **dscFotoUsr**: Armazena a foto de perfil escolhida pelo usuário.
-- **dscSenhaUsr**: Armazena a senha (criptografada) escolhida pelo usuário.
+- **nomUser**: Armazena o nome completo do usuário cadastrado.
+- **nascimentoUser**: Armazena a data de nascimento do usuário cadastrado.
+- **cpfUser**: Armazena o número de CPF do usuário cadastrado.
+- **emailUser**: Armazena o endereço de email do usuário cadastrado.
+- **telefoneUser**: Armazena o número de telefone do usuário cadastrado.
+- **imgUser**: Armazena a foto de perfil escolhida pelo usuário.
+- **senhaUser**: Armazena a senha (criptografada) escolhida pelo usuário.
+- **dataCriacaoUser**: Armazena a data em que aquele usuário foi criado.
+- **isAdminUser**: Controla se aquele usuário é ou não um administrador. 
+- **biografiaUser**: Armazena a biografia do usuário cadastrado. 
 
 **ESPECIALIZAÇÃO**: Tabela referente às informações sobre a especialização de uma profissão <br>
-- **dscEspec**: Armazena o nome da especialização cadastrada no sistema.
+- **descrEspec**: Armazena o nome da especialização cadastrada no sistema.
+- **isPublicEspec**: Define se aquela especialização será pública ou não. 
 
 **PROFISSÃO**: Tabela que armazena as informações sobre as profissões cadastradas no sistema <br>
-- **dscProf**: Armazena o nome da profissão cadastrada no sistema. 
+- **descrProf**: Armazena o nome da profissão cadastrada no sistema. 
+- **imgProf**: Armazena a imagem da profissão cadastrada no sistema. 
 
-**DISPONIBILIDADE**: Tabela referente à disponibilidade daquele usuário <br>
-- **horaInicioDisp**: Hora inicial do período de disponibilidade.
-- **horaFimDisp**: Hora final do período de disponibilidade.
-
-**DIASEMANA**: Tabela que armazena os dias da semana <br>
+**DIASEMANA**: Tabela que armazena os dias da semana. <br>
 - **dscDiaSemn**: Nome do dia da semana cadastrado.
 
-**AVALIAÇÃO**: Tabela que refere as avaliações dos serviços de usuário <br>
-- **numNotaAvalia**: Valor da nota dada de 1 a 10 pelo usuário avaliador para quem está sendo avaliado.
-- **dscComentarioAvalia**: Comentário feito pelo usuário avaliador para quem está sendo avaliado.
-- **dscImagemAvalia**: Atributo que armazena uma imagem enviada pelo usuário avaliador (não é obrigatória).
+**SUPORTE**: Tabela referente ao contato entre os usuários e os desenvolverores (nós) <br>
+- **topicoSuporte**: Tópico do da mensagem que o usuário irá enviar.
+- **mensagemSuporte**: Armazena a mensagem propriamente escrita pelo usuário.
 
-**CONTATO**: Tabela referente ao contato entre os usuários e os desenvolverores (nós) <br>
-- **dscTopicoCont**: Tópico do da mensagem que o usuário irá enviar.
-- **dscMensagemCont**: Armazena a mensagem propriamente escrita pelo usuário.
+**CONTRATO**: Tabela referente ao contrato estabelecido por dois usuários. Um usuário contrata alguem para que sua demanda seja realizada. <br>
+- **timeCriacaoContrato**: Armazena a data de criação do contrato. 
+- **descrContrato**: Armazena a descrição daquele contrato.
+- **timeFinalizacaoContrato**: Armazena a data de quando aquele contrato foi finalizado. 
+- **isAvaliado**: Checa se o contrato foi ou não avaliado. 
 
-**CONTRATO**: Relacionamento entre os usuários referente aos serviços. Um usuário contrata alguem para que sua demanda seja realizada. <br>
-- **datInicioContrt**: Data referente ao dia em que houve a contratação.
-- **datFimContrt**: Data em que o serviço foi finalizado.
+**DiaContrato**: Tabela referente aos dias que aquele contrato vai ser realizado. <br>
+- **diaContrato**: Armazena o dia estabelecido no contrato. 
+
+**STATUSCONTRATO**: Tabela referente ao status de um contrato. <br>
+- **descrStatus**: Armazena o tipo de descrição daquele contrato.
+- **corCalendario**: Armazena qual a cor vai ser colocada na agenda do usuário. 
+
+**AVALIAÇÃO**: Tabela que refere as avaliações dos contratos. <br>
+- **notaAvaliacao**: Valor da nota dada de 1 a 5 pelo usuário avaliador para o contrato.
+- **comentarioAvaliacao**: Comentário feito pelo usuário avaliador para o contrato.
+- **dataAvaliacao**: Armazena a data referente ao dia que aquela avaliação foi feita.
+
+**MENSAGEM**: Autorelacionamento entre usuários onde cada um troca mensagens um com o outro (chat) <br>
+- **textoMensagem**: Armaezena o texto da mensagem. 
+- **timeCriacaoMensagem**: Armazena quando aquela mensagem foi criada. 
 
 **BAIRRO, CIDADE, ESTADO**: Tabelas referentes a localização do usuário <br>
-- **dscBairro, dscCidade, dscEstado**: Armazenam os nomes dos bairros, cidades e estados cadastrados no sistema respectivamente. 
-- **dscSiglaEstado**: Armazena a sigla do estado correspondente.
+- **descrBairro, descrCidade, descrEstado**: Armazenam os nomes dos bairros, cidades e estados cadastrados no sistema respectivamente. 
+- **siglaEstado**: Armazena a sigla do estado correspondente.
 
 
 ⬆️ [Voltar ao início](#topo)
