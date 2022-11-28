@@ -248,7 +248,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 ### 📊 15 GRÁFICOS DOS RELATÓRIOS
 
-Apresentaremos os gráficos obitdos a partir dos [relatórios](#61-quais-perguntas-podem-ser-respondidas-com-o-sistema-proposto). <br>
+#### Apresentaremos os gráficos obitdos a partir dos [relatórios](#61-quais-perguntas-podem-ser-respondidas-com-o-sistema-proposto). <br>
 
 1. Relatório com a quantidade de usuários com profissão em comparação com usuários sem profissão cadastrada.
 
@@ -257,6 +257,10 @@ Apresentaremos os gráficos obitdos a partir dos [relatórios](#61-quais-pergunt
 </p>
 
 2. Relatório com a quantidade de usuários por bairro no ES.
+
+<p align="center">
+<img src="https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Relatórios/Relatorio2.png?raw=true" alt="Relatório 2" />
+</p>
 
 3. Relatório com a quantidade de cadastros de novos usuários por mês no ano atual.
 
