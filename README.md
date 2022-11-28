@@ -19,6 +19,8 @@ Trabalho desenvolvido durante a disciplina de Projeto Integrador
 13. [Diagrama de Classes](#13-classes-do-sistema)
 14. Tabelas e Principais Consultas 
     1. [Anteprojeto](#143-anteprojeto-versão-1)
+15. [Gráficos dos Relatórios](#15-graficos-dos-relatórios)
+16. [Slides e apresentação em vídeo](#16-slides-e-apresentacao)
 
 
 ### 👨‍💻 1. COMPONENTES <a id="1-componentes"></a>
@@ -232,7 +234,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
  
 🔗 Link para [Modelo de Anteprojeto](https://docs.google.com/document/d/1j5ghB1QAEJij-8y80AIXdLZREqfTdI0EJTIJvSlYktc/edit?usp=sharing)
 
-⬆️ [Voltar ao início](#topo)
+⬆️ [Voltar ao início](#topo) <br>
  
  
 <!--
@@ -246,7 +248,7 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
  <br>
 -->
 
-### 📊 15 GRÁFICOS DOS RELATÓRIOS
+### 📊 15 GRÁFICOS DOS RELATÓRIOS <a id="15-graficos-dos-relatórios"></a>
 
 #### Apresentaremos os gráficos obitdos a partir dos [relatórios](#61-quais-perguntas-podem-ser-respondidas-com-o-sistema-proposto). <br>
 
@@ -286,15 +288,15 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 <img src="https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Relatórios/Relatorio6.png?raw=true" alt="Relatório 6" />
 </p>
 
+⬆️ [Voltar ao início](#topo) <br>
 
- ### 15 Slides e Apresentação em vídeo. <br>
-     OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
- #### 15.1 Slides; <br>
- #### 15.2 Apresentação em vídeo <br>
- #### 15.3 ANTEPROJETO VERSÃO FINAL
- <br>
- <br>   
+ ### 🎥 16 SLIDES E APRESENTAÇÃO EM VÍDEO. <a id="16-slides-e-apresentacao"></a> <br>
 
+ #### 16.1 Slides; <br>
+
+ #### 16.2 Apresentação em vídeo <br>
+
+⬆️ [Voltar ao início](#topo) <br>
 
 <!--
 ##### About Formatting
