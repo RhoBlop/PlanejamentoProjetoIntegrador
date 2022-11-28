@@ -250,25 +250,42 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
 #### Apresentaremos os gráficos obitdos a partir dos [relatórios](#61-quais-perguntas-podem-ser-respondidas-com-o-sistema-proposto). <br>
 
-1. Relatório com a quantidade de usuários com profissão em comparação com usuários sem profissão cadastrada.
+1. **Relatório com a quantidade de usuários com profissão em comparação com usuários sem profissão cadastrada.**
 
 <p align="center">
 <img src="https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Relatórios/Relatorio1.png?raw=true" alt="Relatório 1" />
 </p>
 
-2. Relatório com a quantidade de usuários por bairro no ES.
+2. **Relatório com a quantidade de usuários por bairro no ES.**
 
 <p align="center">
 <img src="https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Relatórios/Relatorio2.png?raw=true" alt="Relatório 2" />
 </p>
 
-3. Relatório com a quantidade de cadastros de novos usuários por mês no ano atual.
+3. **Relatório com a quantidade de cadastros de novos usuários por mês no ano atual.**
 
-4. Relatório com a quantidade de contratos realizados e suas profissões por bairro no ES. 
+<p align="center">
+<img src="https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Relatórios/Relatorio3.png?raw=true" alt="Relatório 3" />
+</p>
 
-5. Relatório com a quantidade de solicitações de contratos em função do mês do ano atual.
+4. **Relatório com a quantidade de contratos realizados e suas profissões por bairro no ES.** 
 
-6. Relatório com a média de avaliações por profissão.
+<p align="center">
+<img src="https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Relatórios/Relatorio4.png?raw=true" alt="Relatório 4" />
+</p>
+
+5. **Relatório com a quantidade de solicitações de contratos em função do mês do ano atual.**
+
+<p align="center">
+<img src="https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Relatórios/Relatorio5.png?raw=true" alt="Relatório 5" />
+</p>
+
+6. **Relatório com a média de avaliações por profissão.**
+
+<p align="center">
+<img src="https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Relatórios/Relatorio6.png?raw=true" alt="Relatório 6" />
+</p>
+
 
  ### 15 Slides e Apresentação em vídeo. <br>
      OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
