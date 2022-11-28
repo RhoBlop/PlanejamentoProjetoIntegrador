@@ -252,7 +252,9 @@ Apresentaremos os gráficos obitdos a partir dos [relatórios](#61-quais-pergunt
 
 1. Relatório com a quantidade de usuários com profissão em comparação com usuários sem profissão cadastrada.
 
+<p align="center">
 ![Relatorio 1](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Relatórios/Relatorio1.png?raw=true "Relatório 1")
+</p>
 
 2. Relatório com a quantidade de usuários por bairro no ES.
 
