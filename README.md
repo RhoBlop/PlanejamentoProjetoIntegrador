@@ -292,9 +292,13 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
 
  ### 🎥 16 SLIDES E APRESENTAÇÃO EM VÍDEO. <a id="16-slides-e-apresentacao"></a> <br>
 
- #### 16.1 Slides; <br>
+ #### 16.1 Slides <br>
+
+ 🔗 [Link para os slides do vídeo](https://docs.google.com/presentation/d/16yIQYZxLHH1xLNm7qGW-HxdIcSWTUzQsTSIr6xo-Zxg/edit?usp=sharing?raw=true) <br>
 
  #### 16.2 Apresentação em vídeo <br>
+
+ 🔗 [Link para o vídeo no formato Pecha Kucha](https://drive.google.com/file/d/16TCVi2YdwmK-Xs8t4XbdJewprMp4Ma5F/view?usp=share_linkraw=true) <br>
 
 ⬆️ [Voltar ao início](#topo) <br>
 
