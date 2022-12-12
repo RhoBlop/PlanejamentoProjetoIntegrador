@@ -174,6 +174,7 @@ CREATE TABLE NotificacaoContrato (
     idRemetente INT,
     idDestinatario INT,
     idContrato INT,
+    idStatus INT,
 
     PRIMARY KEY (idNotific)
 );
@@ -240,6 +241,11 @@ ALTER TABLE NotificacaoContrato ADD CONSTRAINT fk_notificacao_destinatario
 ALTER TABLE NotificacaoContrato ADD CONSTRAINT fk_notificacao_contrato
     FOREIGN KEY (idContrato)
     REFERENCES Contrato (idContrato)
+    ON DELETE CASCADE;
+
+ALTER TABLE NotificacaoContrato ADD CONSTRAINT fk_notificacao_statuscontrato
+    FOREIGN KEY (idStatus)
+    REFERENCES NotificacaoContrato (idStatus)
     ON DELETE CASCADE;
  
 /* CONTRATO */
@@ -420,12 +426,12 @@ INSERT INTO UserEspec (idUser, idEspec) VALUES
 
 
 INSERT INTO StatusContrato (descrStatus, corCalendario) VALUES
-('solicitacao contratacao', '#ff0000'),
-('em andamento', '#ff00ff'),
-('solicitacao finalizacao', '#000000'),
-('finalizado', '#ffffff'),
-('recusado', '#00ff00'),
-('atrasado', '#0000ff');
+('Solicitado para contratação', '#BEFBFF'),
+('Em andamento', '#008784'),
+('Solicitado para finalização', '#6BC682'),
+('Finalizado', '#2EA888'),
+('Recusado', '#000000'),
+('Atrasado', '#FF8D3E');
 
 /* 
 Rafael: 2
