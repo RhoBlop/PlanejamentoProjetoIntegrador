@@ -427,8 +427,8 @@ INSERT INTO UserEspec (idUser, idEspec) VALUES
 
 INSERT INTO StatusContrato (descrStatus, corCalendario) VALUES
 ('Solicitado para contratação', '#BEFBFF'),
-('Em andamento', '#008784'),
-('Solicitado para finalização', '#6BC682'),
+('Em andamento', '#304779'),
+('Solicitado para finalização', '#F9F871'),
 ('Finalizado', '#2EA888'),
 ('Recusado', '#000000'),
 ('Atrasado', '#FF8D3E');
