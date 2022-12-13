@@ -299,12 +299,12 @@ ALTER TABLE UserEspec ADD CONSTRAINT fk_UserEspec_especializacao
 ALTER TABLE Mensagem ADD CONSTRAINT fk_Mensagem_Remetente
     FOREIGN KEY (idRemetente)
     REFERENCES Usuario (idUser)
-    ON DELETE NO ACTION;
+    ON DELETE CASCADE;
 
 ALTER TABLE Mensagem ADD CONSTRAINT fk_Mensagem_Destinatario
     FOREIGN KEY (idDestinatario)
     REFERENCES Usuario (idUser)
-    ON DELETE NO ACTION;
+    ON DELETE CASCADE;
 
 
 /* FAVORITO */
