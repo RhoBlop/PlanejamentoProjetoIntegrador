@@ -21,6 +21,7 @@ Trabalho desenvolvido durante a disciplina de Projeto Integrador
     1. [Anteprojeto](#143-anteprojeto-versão-1)
 15. [Gráficos dos Relatórios](#15-graficos-dos-relatórios)
 16. [Slides e apresentação em vídeo](#16-slides-e-apresentacao)
+17. [Repositório do Código Fonte](#17-repositorio-codigo-fonte)
 
 
 ### 👨‍💻 1. COMPONENTES <a id="1-componentes"></a>
@@ -71,9 +72,10 @@ Persona 1 - José <br>
 <br>
 
 ### 📝 6. RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS) <a id="6rascunhos-básicos-da-interface-mockups"></a> 
-O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visualização: <br>
+O mockup tanto da aplicação mobile quanto do website foi feito pelo FIGMA, então disponibilizamos o link abaixo para visualização: <br>
 
-🔗 [Link para acesso](https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7%C3%A3o-Mobile?node-id=2%3A38) <br>
+🔗 [Link de acesso MOBILE](https://www.figma.com/file/1vqdnEQkiOlLbIIEcZ05ip/Aplica%C3%A7%C3%A3o-Mobile?node-id=2%3A38) <br>
+🔗 [Link de acesso WEBSITE](https://www.figma.com/file/L7hkiLoMDQsIkn4OR24LZN/Website?node-id=0%3A1&t=x24DXM0YqICDFI7P-1) <br>
 
 ![Figma](https://github.com/RhoBlop/PlanejamentoProjetoIntegrador/blob/main/arquivos/Prototipos/Mobile.png?raw=true "Print do Figma") 
 
@@ -301,6 +303,18 @@ O mockup foi feito pelo FIGMA, então disponibilizamos o link abaixo para visual
  🔗 [Link para o vídeo no formato Pecha Kucha](https://drive.google.com/file/d/16TCVi2YdwmK-Xs8t4XbdJewprMp4Ma5F/view?usp=share_linkraw=true) <br>
 
 ⬆️ [Voltar ao início](#topo) <br>
+
+
+### 🧑‍💻 17. CÓDIGO FONTE. <a id="17-repositorio-codigo-fonte"></a>
+
+⬇️ Segue abaixo o link para o repositório do nosso código fonte <br>
+
+![Repositório com o código fonte](https://github.com/RhoBlop/Contratai) <br>
+
+<br>
+
+## 😁 E isso é tudo! Obrigado e até mais!
+
 
 <!--
 ##### About Formatting
