@@ -309,7 +309,7 @@ O mockup tanto da aplicação mobile quanto do website foi feito pelo FIGMA, ent
 
 ⬇️ Segue abaixo o link para o repositório do nosso código fonte <br>
 
-![Repositório com o código fonte](https://github.com/RhoBlop/Contratai) <br>
+🔗 [Repositório com o código fonte](https://github.com/RhoBlop/Contratai) <br>
 
 <br>
 
